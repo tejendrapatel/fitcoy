@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="description" content="TopGym Template">
+    <meta name="keywords" content="TopGym, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TopGym | Fitness HTML Template</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,500,700,900" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{% static 'header/css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'header/css/font-awesome.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'header/css/owl.carousel.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'header/css/magnific-popup.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'header/css/barfiller.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'header/css/slicknav.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'header/css/style.css' %}" type="text/css">
+    <style>.columns {
+        float: left;
+        width: 32%;
+        padding: 0 10px;
+      }
+      
+      /* Remove extra left and right margins, due to padding */
+      .rows {margin: 0 -5px;}
+      
+      /* Clear floats after the columns */
+      .rows:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      /* Responsive columns */
+      @media screen and (max-width: 600px) {
+        .columns {
+          width: 100%;
+          display: block;
+          margin-bottom: 20px;
+        }
+      }
+      
+      /* Style the counter cards */
+      .cards {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        padding: 16px;
+        text-align: center;
+        background-color: #f1f1f1;
+      }
+      </style></style>
+</head>
+
+<body>
+    <!-- Page Preloder -->
+   
+    <!-- Header Section Begin -->
+    <header class="header-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="main-menu">
+                        <div class="logo">
+                            <a href="./index.html">
+                                <img src="{% static 'header/img/logo-04.png' %}" alt="">
+                            </a>
+                        </div>
+                        <nav class="mobile-menu">
+                            <ul>
+                                <li><a href="{% url 'home' %}">Home</a></li>
+                                <li><a href="{% url 'about' %}">About us</a></li>
+                                <li><a href="{% url 'services' %}">Services</a></li>
+                                <li><a href="{% url 'team' %}">Teams</a></li>
+                                <li><a href="{% url 'blogs' %}">Blogs</a></li>
+                                <li><a href="{% url 'contact' %}">Contact</a></li>
+                                <li class="search-btn search-trigger"><i class="fa fa-search"></i></li>
+                            </ul>
+                        </nav>
+                        <div id="mobile-menu-wrap"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+    <!-- Search Bar Begin -->
+    <section class="search-bar-wrap">
+        <span class="search-close"><i class="fa fa-close"></i></span>
+        <div class="search-bar-table">
+            <div class="search-bar-tablecell">
+                <div class="search-bar-inner">
+                    <h2>Search</h2>
+                    <form action="#">
+                        <input type="search" placeholder="Type Keywords">
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Search Bar End -->
+    <!-- Top Social Begin -->
+    <div class="top-social">
+        <div class="top-social-links">
+            <ul>
+                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                <li><a href="#"><i class="fa fa-behance"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Top Social End -->
+
+
+    <!-- Js Plugins -->
+    <script src="{% static 'header/js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'header/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'header/js/jquery.slicknav.js' %}"></script>
+    <script src="{% static 'header/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'header/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'header/js/circle-progress.min.js' %}"></script>
+    <script src="{% static 'header/js/jquery.barfiller.js' %}"></script>
+    <script src="{% static 'header/js/main.js' %}"></script>
+</body>
+
+</html>
