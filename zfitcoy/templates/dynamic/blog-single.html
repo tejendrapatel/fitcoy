@@ -1,0 +1,101 @@
+{% include 'header.html' %}
+	
+
+
+<section class="page-title bg-1">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block text-center"><br><br><br><br>
+          <h1 class="text-capitalize mb-5 text-lg" style="text-shadow: 2px 2px 3px black;">DETAIL</h1>
+
+          <!-- <ul class="list-inline breadcumb-nav">
+            <li class="list-inline-item"><a href="index.html" class="text-white">Home</a></li>
+            <li class="list-inline-item"><span class="text-white">/</span></li>
+            <li class="list-inline-item"><a href="#" class="text-white-50">News details</a></li>
+          </ul> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section blog-wrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="row">
+	<div class="col-lg-12 mb-5">
+		<div class="single-blog-item">
+			<img src="images/blog/blog-1.jpg" alt="" class="img-fluid">
+
+			<div class="blog-item-content mt-5">
+				<div class="blog-item-meta mb-3">
+					<span class="text-color-2 text-capitalize mr-3"><i class="icofont-book-mark mr-2"></i> {{ blosingle.categorys }}</span>
+					<span class="text-muted text-capitalize mr-3"><i class="icofont-comment mr-2"></i>5 Comments</span>
+					<span class="text-black text-capitalize mr-3"><i class="icofont-calendar mr-2"></i>{{ blosingle.date }}</span>
+				</div> 
+
+				<h2 class="mb-4 text-md">{{ blosingle.name }}</h2>
+
+				{{ blosingle.detail|safe }}
+			</div>
+		</div>
+	</div>
+
+	
+		
+
+
+	
+</div>
+            </div>
+            <div class="col-lg-4">
+                <div class="sidebar-wrap pl-lg-4 mt-5 mt-lg-0">
+	<div class="sidebar-widget search  mb-3 ">
+		<h5>Search Here</h5>
+		<form action="#" class="search-form">
+			<input type="text" class="form-control" placeholder="search">
+			<i class="ti-search"></i>
+		</form>
+	</div>
+
+
+	<div class="sidebar-widget category mb-3">
+		<h5 class="mb-4">Categories</h5>
+		{% for i in ca %}
+		<ul class="list-unstyled">
+		  <li class="align-items-center">
+			<a href="{% url 'blog_category_filter' i.id %}">{{ i.name }}</a>
+		  </li>
+		</ul>
+		{% endfor %}
+	</div>
+
+
+<div class="sidebar-widget latest-post mb-3">
+<h5>Popular Posts</h5>
+{% for i in p %}
+<div class="py-2">
+<span class="text-sm text-muted">{{ i.date }}</span>
+<h6 class="my-2"><a href="{% url 'blog_single' i.id %}">{{ i.name }}</a></h6>
+</div>
+{% endfor %}
+
+</div>
+
+
+	
+
+</div>
+            </div>   
+        </div>
+    </div>
+</section>
+
+
+
+{% include 'footer.html' %}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <title>Fitcoy | Gym</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,400i,600,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'crousel/css/open-iconic-bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'crousel/css/animate.css' %}">
+    
+    <link rel="stylesheet" href="{% static 'crousel/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'crousel/css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'crousel/css/magnific-popup.css' %}">
+
+    <link rel="stylesheet" href="{% static 'crousel/css/aos.css' %}">
+
+    <link rel="stylesheet" href="{% static 'crousel/css/ionicons.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'crousel/css/bootstrap-datepicker.css' %}">
+    <link rel="stylesheet" href="{% static 'crousel/css/jquery.timepicker.css' %}">
+
+    
+    <link rel="stylesheet" href="{% static 'crousel/css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'crousel/css/icomoon.css' %}">
+    <link rel="stylesheet" href="{% static 'crousel/css/style.css' %}">
+  </head>
+  <body>
+    
+
+
+ 
+
+
+    <section class="ftco-section bg-light">
+    	<div class="container-fluid">
+    		<div class="container">
+          <div class="row justify-content-center">
+              <div class="col-lg-7">
+                  <div class="section-title text-center">
+                      <h2 style="color: black;">Our Services</h2>
+                      <div class="divider mx-auto my-4"></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    		<div class="row">
+    			<div class="col-md-12 ftco-animate">
+    				<div class="carousel-cause owl-carousel">
+              {% for i in ser %}
+	    				<div class="item">
+	    					<div class="cause-entry">
+		    					<a href="{% url 'services_single' i.id %}" class="img" style="background-image: url({{ i.image.url }});"></a>
+		    					<div class="text p-3 p-md-4">
+		    						<h3 style="font-size: 20px;"><a href="{% url 'services_single' i.id %}">{{ i.name }}</a></h3>
+		    						<p></p>
+		    						<span class="donation-time mb-3 d-block" style="color: #7b7979;">{{ i.detail }}</span>
+		                
+		                <a href="{% url 'services_single' i.id %}" class="read-more">Learn More <i class="icofont-simple-right ml-2"></i></a>
+		    					</div>
+		    				</div>
+	    				</div>
+	    				
+	    				{% endfor %}
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+    
+   
+
+  <script src="{% static 'crousel/js/jquery.min.js' %}"></script>
+  <script src="{% static 'crousel/js/jquery-migrate-3.0.1.min.js' %}"></script>
+  <script src="{% static 'crousel/js/popper.min.js' %}"></script>
+  <script src="{% static 'crousel/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'crousel/js/jquery.easing.1.3.js' %}"></script>
+  <script src="{% static 'crousel/js/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'crousel/js/jquery.stellar.min.js' %}"></script>
+  <script src="{% static 'crousel/js/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'crousel/js/jquery.magnific-popup.min.js' %}"></script>
+  <script src="{% static 'crousel/js/aos.js' %}"></script>
+  <script src="{% static 'crousel/js/jquery.animateNumber.min.js' %}"></script>
+  <script src="{% static 'crousel/js/bootstrap-datepicker.js' %}"></script>
+  <script src="{% static 'crousel/js/jquery.timepicker.min.js' %}"></script>
+  <script src="{% static 'crousel/js/scrollax.min.js' %}"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="{% static 'crousel/js/google-map.js' %}"></script>
+  <script src="{% static 'crousel/js/main.js' %}"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,72 @@
+{% include 'header.html' %}
+
+
+<section class="page-title bg-1">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block text-center">
+          <span class="text-white"></span><br><br><br><br>
+          <h1 class="text-capitalize mb-5 text-lg" style="text-shadow: 2px 2px 3px black;">Team Single</h1>
+
+          <!-- <ul class="list-inline breadcumb-nav">
+            <li class="list-inline-item"><a href="index.html" class="text-white">Home</a></li>
+            <li class="list-inline-item"><span class="text-white">/</span></li>
+            <li class="list-inline-item"><a href="#" class="text-white-50">Doctor Details</a></li>
+          </ul> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section doctor-single">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 col-md-6">
+				<div class="doctor-img-block">
+					<img src="{{ sersingle.image.url }}" alt="" class="img-fluid w-100">
+
+					<div class="info-block mt-4">
+						<h4 class="mb-0">{{ sersingle.name }}</h4>
+						<p>{{ sersingle.post }}</p>
+
+						<ul class="list-inline mt-4 doctor-social-links">
+							<li class="list-inline-item"><a href="{{ sersingle.facebook }}"><i class="icofont-facebook"></i></a></li>
+							<li class="list-inline-item"><a href="{{ sersingle.twitter }}"><i class="icofont-twitter"></i></a></li>
+							<li class="list-inline-item"><a href="{{ sersingle.instagram }}"><i class="icofont-instagram"></i></a></li>
+							<li class="list-inline-item"><a href="{{ sersingle.linkedin }}"><i class="icofont-linkedin"></i></a></li>
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-8 col-md-6">
+				<div class="doctor-details mt-4 mt-lg-0">
+				{{ sersingle.detail|safe }}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section cta-page">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-7">
+				<div class="cta-content">
+					<div class="divider mb-4"></div>
+					<h2 class="mb-5 text-lg">We are pleased to offer you the <span >chance to have the healthy</span></h2>
+					<a href="{% url 'contact' %}" class="btn btn-main-2 btn-round-full">Get appoinment<i class="icofont-simple-right  ml-2"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+{% include 'footer.html' %}

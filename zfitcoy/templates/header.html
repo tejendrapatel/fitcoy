@@ -8,7 +8,7 @@
     <meta name="keywords" content="TopGym, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>TopGym | Fitness HTML Template</title>
+    <title>Fitcoy | Gym</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,500,700,900" rel="stylesheet">
@@ -54,40 +54,86 @@
         background-color: #f1f1f1;
       }
       </style></style>
+         <style>
+            .dropbtn {
+              background-color: transparent;
+              color: white;
+              padding: 16px;
+              font-size: 16px;
+              border: none;
+            }
+            
+            .dropdown {
+              position: relative;
+              display: inline-block;
+            }
+            
+            .dropdown-content {
+              display: none;
+              position: absolute;
+              background-color: #000000;
+              min-width: 16px;
+              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+              z-index: 1;
+            }
+            
+            .dropdown-content a {
+              float: left;  
+              color: black;
+              padding: 12px 16px;
+              text-decoration: none;
+              display: block;
+            }
+            
+            .dropdown-content a:hover {background-color: #a7f200;}
+            
+            .dropdown:hover .dropdown-content {display: block;}
+            
+            
+            </style>
 </head>
 
 <body>
     <!-- Page Preloder -->
    
-    <!-- Header Section Begin -->
-    <header class="header-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="main-menu">
-                        <div class="logo">
-                            <a href="./index.html">
-                                <img src="{% static 'header/img/logo-04.png' %}" alt="">
-                            </a>
+        <!-- Header Section Begin -->
+        <header class="header-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="main-menu">
+                            <div class="logo">
+                                <a href="{% url 'home' %}">
+                                    <img src="{% static 'header/img/logo-04.png' %}" alt="">
+                                </a>
+                            </div>
+                            <nav class="mobile-menu">
+                                <ul >
+                                    <li ><a href="{% url 'home' %}" style="font-size: 15px;margin-top: 16px;" >Home</a></li>
+                                    <li><a href="{% url 'about' %}"  style="font-size: 15px;margin-top: 16px;"  >About us</a></li>
+                                    <li><a href="{% url 'team' %}" style="font-size: 15px;margin-top: 16px;"  >Our Teams</a></li>
+                                    <li><a href="{% url 'services' %}" style="font-size: 15px;margin-top: 16px;"  ></a></li>
+                                    <li><a href="{% url 'services' %}" style="font-size: 15px;margin-top: 16px; "  >Services</a></li>
+                                    </li>
+                                    <li><div class="dropdown">
+                                        <a href=""><button class="dropbtn" style="font-size: 15px;margin-left: -30px;"  >RESOURCES</button></a> 
+                                        <div class="dropdown-content">
+                                          <a href="{% url 'blogs' %}" style="font-size: 15px;"  >Blogs</a>
+                                          <a href="{% url 'recipie' %}" style="font-size: 15px;"  >Recipies</a>
+                                        </div>
+                                      </div>
+                                    </li>
+                                    <li><a href="{% url 'contact' %}" style="font-size: 15px;"  >Contact</a></li>
+                                    <li class="search-btn search-trigger"><i class="fa fa-search"></i></li>
+                                </ul>
+                            </nav>
+                            
+                            <div id="mobile-menu-wrap"></div>
                         </div>
-                        <nav class="mobile-menu">
-                            <ul>
-                                <li><a href="{% url 'home' %}">Home</a></li>
-                                <li><a href="{% url 'about' %}">About us</a></li>
-                                <li><a href="{% url 'services' %}">Services</a></li>
-                                <li><a href="{% url 'team' %}">Teams</a></li>
-                                <li><a href="{% url 'blogs' %}">Blogs</a></li>
-                                <li><a href="{% url 'contact' %}">Contact</a></li>
-                                <li class="search-btn search-trigger"><i class="fa fa-search"></i></li>
-                            </ul>
-                        </nav>
-                        <div id="mobile-menu-wrap"></div>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <!-- Header End -->
+        </header>
     <!-- Search Bar Begin -->
     <section class="search-bar-wrap">
         <span class="search-close"><i class="fa fa-close"></i></span>
@@ -107,13 +153,13 @@
     <!-- Top Social Begin -->
     <div class="top-social">
         <div class="top-social-links">
-            <ul>
-                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                <li><a href="#"><i class="fa fa-behance"></i></a></li>
-            </ul>
+          <ul>
+            <li><a href="#" style="color: #000000;background-color: #a7f200;"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#" style="color: #000000;background-color: #a7f200;"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#" style="color: #000000;background-color: #a7f200;"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#" style="color: #000000;background-color: #a7f200;"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#" style="color: #000000;background-color: #a7f200;"><i class="fa fa-whatsapp"></i></a></li>
+        </ul>
         </div>
     </div>
     <!-- Top Social End -->

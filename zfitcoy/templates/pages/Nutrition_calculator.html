@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="description" content="TopGym Template">
+    <meta name="keywords" content="TopGym, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fitcoy | Gym</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,500,700,900" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{% static 'header/css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'header/css/font-awesome.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'header/css/owl.carousel.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'header/css/magnific-popup.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'header/css/barfiller.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'header/css/slicknav.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'header/css/style.css' %}" type="text/css">
+    <style>.columns {
+        float: left;
+        width: 32%;
+        padding: 0 10px;
+      }
+      
+      /* Remove extra left and right margins, due to padding */
+      .rows {margin: 0 -5px;}
+      
+      /* Clear floats after the columns */
+      .rows:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      /* Responsive columns */
+      @media screen and (max-width: 600px) {
+        .columns {
+          width: 100%;
+          display: block;
+          margin-bottom: 20px;
+        }
+      }
+      
+      /* Style the counter cards */
+      .cards {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        padding: 16px;
+        text-align: center;
+        background-color: #f1f1f1;
+      }
+      </style></style>
+         <style>
+            .dropbtn {
+              background-color: transparent;
+              color: white;
+              padding: 16px;
+              font-size: 16px;
+              border: none;
+            }
+            
+            .dropdown {
+              position: relative;
+              display: inline-block;
+            }
+            
+            .dropdown-content {
+              display: none;
+              position: absolute;
+              background-color: #000000;
+              min-width: 16px;
+              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+              z-index: 1;
+            }
+            
+            .dropdown-content a {
+              float: left;  
+              color: black;
+              padding: 12px 16px;
+              text-decoration: none;
+              display: block;
+            }
+            
+            .dropdown-content a:hover {background-color: #16257d;}
+            
+            .dropdown:hover .dropdown-content {display: block;}
+            
+            
+            </style>
+</head>
+
+<body>
+    <!-- Page Preloder -->
+   
+        <!-- Header Section Begin -->
+        <header class="header-section">
+            <div class="container" style="background-color: transparent;">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="main-menu">
+                            <div class="logo">
+                                <a href="{% url 'home' %}">
+                                    <img src="{% static 'header/img/logo-04.png' %}" alt="">
+                                </a>
+                            </div>
+                            <nav class="mobile-menu">
+                                <ul >
+                                    <li ><a href="{% url 'home' %}" style="font-size: 15px;margin-top: 16px;" >Home</a></li>
+                                    <li><a href="{% url 'about' %}"  style="font-size: 15px;margin-top: 16px;"  >About us</a></li>
+                                    <li><a href="{% url 'team' %}" style="font-size: 15px;margin-top: 16px;"  >Our Teams</a></li>
+                                    <li><a href="{% url 'services' %}" style="font-size: 15px;margin-top: 16px;"  ></a></li>
+                                    <li><a href="{% url 'services' %}" style="font-size: 15px;margin-top: 16px; "  >Services</a></li>
+                                    </li>
+                                    <li><div class="dropdown">
+                                        <a href=""><button class="dropbtn" style="font-size: 15px;"  >RESOURCES</button></a> 
+                                        <div class="dropdown-content">
+                                          <a href="{% url 'blogs' %}" style="font-size: 15px;"  >Blogs</a>
+                                          <a href="{% url 'recipie' %}" style="font-size: 15px;"  >Recipies</a>
+                                        </div>
+                                      </div>
+                                    </li>
+                                    <li><a href="{% url 'contact' %}" style="font-size: 15px;"  >Contact</a></li>
+                                    <li class="search-btn search-trigger"><i class="fa fa-search"></i></li>
+                                </ul>
+                            </nav>
+                            
+                            <div id="mobile-menu-wrap"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    <!-- Search Bar Begin -->
+    <section class="search-bar-wrap">
+       
+        <span class="search-close"><i class="fa fa-close"></i></span>
+        <div class="search-bar-table">
+            <div class="search-bar-tablecell">
+                <div class="search-bar-inner">
+                    <h2>Search</h2>
+                    <form action="#">
+                        <input type="search" placeholder="Type Keywords">
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Search Bar End -->
+
+    <!-- Top Social Begin -->
+    <div class="top-social">
+        <div class="top-social-links">
+         <ul>
+            <li><a href="#" style="color: #000000;background-color: #a7f200;"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#" style="color: #000000;background-color: #a7f200;"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#" style="color: #000000;background-color: #a7f200;"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#" style="color: #000000;background-color: #a7f200;"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#" style="color: #000000;background-color: #a7f200;"><i class="fa fa-whatsapp"></i></a></li>
+        </ul>
+        </div>
+    </div>
+    <!-- Top Social End -->
+<section class="page-title bg-1" style="background: linear-gradient(rgba(0%,0%,0%, 0.80), rgba(13%,252%,75%, 0.67)), url( 'https://images.unsplash.com/photo-1521986329282-0436c1f1e212?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=876&q=80');height: 395px; > 
+   <div class="overlay" >
+  <div class="" >
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block text-center">
+          <span class="text-white"></span>
+          <h1 class="text-capitalize mb-5 text-lg" style="margin-top: 220px;color: #fff;font-size: 50px;font-family: sans-serif;font-weight: 900;text-shadow: 2px 2px 3px black">Nutrition Calculator</h1>
+
+          <!-- <ul class="list-inline breadcumb-nav">
+            <li class="list-inline-item"><a href="index.html" class="text-white">Home</a></li>
+            <li class="list-inline-item"><span class="text-white">/</span></li>
+            <li class="list-inline-item"><a href="#" class="text-white-50">About Us</a></li>
+          </ul> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Js Plugins -->
+    <script src="{% static 'header/js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'header/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'header/js/jquery.slicknav.js' %}"></script>
+    <script src="{% static 'header/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'header/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'header/js/circle-progress.min.js' %}"></script>
+    <script src="{% static 'header/js/jquery.barfiller.js' %}"></script>
+    <script src="{% static 'header/js/main.js' %}"></script>
+</body>
+
+</html>
+<!-- Search Bar Begin -->
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+     {% load static %}
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>Fitcoy | Gym</title>
+      <link href="{% static 'bmi/css/style.css' %}" rel="stylesheet">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+      <script src="{% static 'bmi/js/calc.js' %}"></script>
+      
+   </head>
+   <body>
+    
+
+      <div id="main-wrapper">
+         <div class="header">
+            <div class="nav-header">
+               <div class="brand-logo">
+                  <a href="index.html">
+                     <b class="logo-abbr">Fitcoy</b>
+                     <span class="logo-compact">Fitcoy</span>
+                     <span class="brand-title">
+                       
+                     </span>
+                  </a>
+               </div>
+            </div>
+         </div>
+         
+         <div class="container card" >
+            <div class="row" >
+               <div class="col-md-5 loginform">
+                  <div class="row">
+                     <section class="login-block">
+                        <form>
+                           <div id="tdeeCalc">
+                              <h3>Fitcoy Nutrition Calculator</h3>
+                              <div class="calculator">
+                                 <div id="alertError"></div>
+                                 <div class="form-group metric">
+                                    <input name="metric" type="radio" value="metric" checked />
+                                    <label for="opt2">Metric</label>
+                                 </div>
+
+                                 <fieldset class="form-group">
+                                    <div class="row">
+                                    <legend class="col-form-label col-sm-3 pt-0">Gender</legend>                                 
+                                       <div class="col-sm-9">
+                                          <div class="gendermale">
+                                             <input class="form-check-input" type="radio" name="gender" value="male" id="male" checked />
+                                             <label class="form-check-label" for="male">
+                                             Male
+                                             </label>
+                                          </div>
+                                          <div class="gendermale">
+                                             <input class="form-check-input" name="gender" type="radio" value="female" id="female">
+                                             <label class="form-check-label" for="female">
+                                                Female
+                                             </label>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </fieldset>
+                                 <fieldset class="form-group">
+                                    <div class="row">
+                                    <legend class="col-form-label col-sm-3 pt-0">BMR Formula:</legend>
+                                       <div class="col-sm-9">
+                                          <div class="col-md-12">
+                                             <input class="form-check-input" type="radio" name="formula" value="opt1" id="opt1" checked />
+                                             <label class="form-check-label" for="opt1">
+                                                Harris Benedict
+                                             </label>
+                                          </div>
+                                         
+                                       </div>
+                                    </div>
+                                 </fieldset>
+                                 <div class="form-group row">
+                                    <label for="age" class="col-sm-3 col-form-label">Age</label>
+                                    <div class="col-sm-9">
+                                       <input type="number" name="age" id="age" size="3" class="form-control" placeholder="Age"/>
+                                    </div>
+                                 </div>
+                                 <div class="form-group row">
+                                    <label for="feet" class="col-sm-3 col-form-label">Height</label>
+                                    <div class="col-md-9">
+                                       <div class="form-row">
+                                          <div class="col-md-12">
+                                             <input type="number" id="feet" size="2" class="form-control" placeholder="cm" />
+                                             <!-- <span class="text-muted">ft</span> -->
+                                          </div>
+                                          <!-- <div class="col-md-6">
+                                             <input type="number" name="inch" id="inch" size="2" class="form-control" placeholder="inch" />
+                                          </div> -->
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="form-group row">
+                                    <label for="weight" class="col-sm-3 col-form-label">Weight</label>
+                                    <div class="col-sm-9">
+                                       <input type="number" name="weight" id="weight" size="4" class="form-control" placeholder="kg"/>
+                                       <!-- <span class="text-muted">Kg</span> -->
+                                    </div>
+                                 </div>
+                                 
+                                 <div class="form-group row">
+                                    <span class="col-sm-3 col-form-label">Activity</span>
+                                    <div class="col-md-9">
+                                       <select name="activity" id="activity" class="form-control">
+                                          <option value="1.2">Sedentary = 1.2 (little or no exercise, desk job)</option>
+                                          <option value="1.375">Lightly active = 1.375 (light exercise/ sports 1-3 days/week)</option>
+                                          <option value="1.55">Moderately active = 1.55 (moderate exercise/ sports 6-7 days/week)</option>
+                                          <option value="1.725">Very active = 1.725 (hard exercise every day, or exercising 2xs/day)</option>
+                                          <option value="1.9">Extra active = 1.9 (hard exercise 2 or more times per day, or training for marathon, or triathlon, etc)</option>
+                                       </select>
+                                    </div>
+                                 </div>
+                                 <div class="form-group row" id="opt2Mass">
+                                    <label for="bodyFat" class="col-sm-3 col-form-label">Body Fat %</label>
+                                    <div class="col-md-9">
+                                       <input type="text" name="bodyFat" id="bodyFat" size="2" maxlength="2"  class="form-control"/>
+                                    </div>
+                                 </div>
+                                 <div class="calculate">
+                                    <input type="button" class="btn btn-primary btn-block" id="results" value="Calculate" />
+                                    <span>></span>
+                                 </div>
+                                 <div id="result"></div>
+                              </div>
+                           </div>
+                        </form>
+                     </section>
+                  </div>
+               </div>
+               <div class="col-md-7 tdeetext">
+                  <p><b>Basal metabolic rate or BMR,</b> is the minimal calorie need required for a healthy sustenance in a resting individual. </p>
+                  <p><b>BMR can be responsible for burning up to 70% of the total calories expended,</b> but this figure varies due to different factors like gender, age, weight, body fat %, diet, external temperature, exercise and hormones.</p>
+                  <p><b>Harris Benedict principle</b> is a method used to determine basal metabolic rate (BMR) and daily calorie need depending on the factors like height, weight, age, and gender. </p>
+                  <p><b>Katch & McArdle Formula</b> takes in account of the body composition parameters- fat % and lean mass; hence is more accurate than a formula based on total body weight.</p>
+                  <p><b>Physical activity level (PAL) </b>is a factor that is formulated on the extent of activity a person endures in a day. This takes into consideration of the graded exercises as well as other activities a person undergoes as part of their daily job or distinctive chores.</p>
+                  <p><b>Total daily energy expenditure (TDEE),</b> also known as our "maintenance level“ is the total number of calories that our body expends in 24 hours, including all activities. It is the first step in designing a personal nutrition plan for an individual to estimate how many calories one should burn in a day.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- <div class="footer">
+         <div class="copyright">
+            <p>Copyright & Designed & Developed by <a href="#">HCL HealthCare</a> 2020</p>
+         </div>
+      </div> -->
+      <!-- <script src="assets/common.min.js"></script> -->
+      <script src="{% static 'bmi/js/custom.min.js' %}"></script>
+<!--       <script src="assets/settings.js"></script>
+      <script src="assets/gleek.js"></script> -->
+   </body>
+</html>
+<br><br><br>
+<!-- footer Start -->
+<footer class="footer section gray-bg" style="background-color: #000000">
+	<div class="container" style="background-color: #000000">
+		<div class="row">
+			<div class="col-lg-4 mr-auto col-sm-6" style="margin-top: 60px;">
+				<div class="widget mb-5 mb-lg-0">
+					<div class="logo mb-4">
+						<img src="{% static 'header/img/logo-05.png' %}" alt="" class="img-fluid">
+					</div>
+					<p style="color: #fff;line-height: 2.5em;text-align: justify;">The Fit India Company is a health, fitness and well-being-oriented firm that brings to you an inclusive health and wellness array to provide you the utmost of your health from inside-out.</p>
+
+					<ul class="list-inline footer-socials mt-4">
+						<li class="list-inline-item" ><a href="https://www.facebook.com/themefisher"><i class="icofont-facebook"></i></a></li>
+						<li class="list-inline-item"><a href="https://twitter.com/themefisher"><i class="icofont-twitter"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.pinterest.com/themefisher/"><i class="icofont-linkedin"></i></a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="col-lg-2 col-md-6 col-sm-6" style="margin-top: 60px;">
+				<div class="widget mb-5 mb-lg-0">
+					<h4 class="text-capitalize mb-3" style="color: #a7f200;font-size: 22px;font-weight: 700;">Quick Links</h4>
+					<div class="divider mb-4"></div>
+
+					<ul class="list-unstyled footer-menu lh-35">
+						<li><a style="color:#ffee00 ;font-size: 15px;line-height: 2.5em;" href="{% url 'about' %}">About </a></li>
+						<li><a style="color:#ffee00 ;font-size: 15px;line-height: 2.5em;" href="{% url 'team' %}">Teams</a></li>
+						<li><a style="color:#ffee00 ;font-size: 15px;line-height: 2.5em;" href="{% url 'services' %}">Services</a></li>
+						<li><a style="color:#ffee00 ;font-size: 15px;line-height: 2.5em;" href="{% url 'blogs' %}">Blogs</a></li>
+						<li><a style="color:#ffee00 ;font-size: 15px;line-height: 2.5em;" href="{% url 'contact' %}">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="col-lg-2 col-md-6 col-sm-6" style="margin-top: 60px;">
+				<div class="widget mb-5 mb-lg-0">
+					<h4 class="text-capitalize mb-3" style="color: #a7f200;font-size: 22px;font-weight: 700;">Support</h4>
+					<div class="divider mb-4"></div>
+
+					<ul class="list-unstyled footer-menu lh-35" >
+						<li><a style="color:#ffee00 ;font-size: 15px;line-height: 2.5em;" href="{% url 'companey_lisence' %}">Why Choose Us</a></li>
+						<li><a style="color:#ffee00 ;font-size: 15px;line-height: 2.5em;" href="{% url 'terms_conditions' %}">Terms & Conditions</a></li>
+						<li><a style="color:#ffee00;font-size: 15px;line-height: 2.5em;" href="{% url 'privacy_policy' %}">Privacy Policy</a></li>
+						<li><a style="color:#ffee00 ;font-size: 15px;line-height: 2.5em;" href="{% url 'companey_support' %}">Company Support </a></li>
+						<li><a style="color:#ffee00 ;font-size: 15px;line-height: 2.5em;" href="{% url 'faqss' %}">FAQuestions</a></li>
+						
+					</ul>
+				</div>
+			</div>
+
+			<div class="col-lg-3 col-md-6 col-sm-6" style="margin-top: 60px;">
+				<div class="widget widget-contact mb-5 mb-lg-0">
+					<h4 class="text-capitalize mb-3" style="color: #a7f200;font-size: 22px;font-weight: 700;">Get in Touch</h4>
+					<div class="divider mb-4"></div>
+
+					<div class="footer-contact-block mb-4">
+						<div class="icon d-flex align-items-center">
+							<i class="icofont-email mr-3" style="color: #ffee00;"></i>
+							<span class="h6 mb-0" style="color: #ffee00;">Support Available for 24/7</span>
+						</div>
+						<h4  class="mt-2"><a style="color: #fff;" href="fit.indcoy@gmail.com">fit.indcoy@gmail.com</a></h4>
+					</div>
+
+					<div class="footer-contact-block">
+						<div class="icon d-flex align-items-center">
+							<i class="icofont-support mr-3" style="color: #ffee00;"></i>
+							<span class="h6 mb-0" style="color: #ffee00;">Mon to Fri : 08:30 - 18:00</span>
+						</div>
+						<h4  class="mt-2"><a style="color: #fff;" href="+918700955586">+918700955586</a></h4>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer-btm py-4 mt-5">
+			<div class="row align-items-center justify-content-between">
+				<div class="col-lg-6">
+					<div class="copyright" style="background-color: #000000;font-size: 16px;color:#fff">
+						All rights reserved <span class="text-color" style="color: #a7f200;">Design</span>&<span class="text-color" style="color: #a7f200;">Developed</span> by <a href="https://www.vistaarwebx.com/" target="_blank" style="color:#fff"><img src="{% static 'header/img/logos.png' %}" style="width:4%;">istaarwebX</a>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="subscribe-form text-lg-right mt-5 mt-lg-0">
+						<form action="#" class="subscribe">
+              
+							<input type="text" class="form-control" placeholder="Your Email address" style="border-radius: 30px;height:60px;">
+              
+            
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-4">
+					<a class="backtop js-scroll-trigger" href="#top">
+						<i class="icofont-long-arrow-up"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+   
