@@ -113,15 +113,16 @@
                             <ul>
                                 <li ><a href="{% url 'home' %}" style="font-size: 15px;margin-top: 16px;" >Home</a></li>
                                 <li><a href="{% url 'about' %}"  style="font-size: 15px;margin-top: 16px;"  >About us</a></li>
-                                <li><a href="{% url 'team' %}" style="font-size: 15px;margin-top: 16px;"  >Our Teams</a></li>
+                                <li><a href="{% url 'team' %}" style="font-size: 15px;margin-top: 16px;"  >Our Team</a></li>
                                 <li><a href="{% url 'services' %}" style="font-size: 15px;margin-top: 16px;"  ></a></li>
                                 <li><a href="{% url 'services' %}" style="font-size: 15px;margin-top: 16px;">Services</a></li>
                                 </li>
                                 <li><div class="dropdown">
-                                    <a href=""><button class="dropbtn" style="font-size: 15px;margin-left: -30px;"  >RESOURCES</button></a> 
+                                    <a href=""><button class="dropbtn" style="font-size: 15px;margin-left: -30px;"  >RESOURCES<img src="{% static 'header/img/ado.png' %}" style="width:15px;margin-top: -3px;">
+                                    </button></a> 
                                     <div class="dropdown-content">
                                         <a href="{% url 'blogs' %}" style="font-size: 15px;"  >Blogs</a>
-                                      <a href="{% url 'recipie' %}" style="font-size: 15px;"  >Recipies</a>
+                                      <a href="{% url 'recipie' %}" style="font-size: 15px;"  >Recipes</a>
                                     </div>
                                   </div>
                                 </li>
@@ -168,7 +169,7 @@
     <!-- Top Social End -->
     <!-- Hero Slider Section Begin -->
     <section class="hero-slider">
-        <div class="slide-items owl-carousel">
+        <div class="slide-items owl-carousel" >
             <div class="single-slide set-bg active" data-setbg="{% static 'header/img/b1.jpg' %}">
                 <a href="https://www.youtube.com/watch?v=SEVuD_djKrU" class="play-btn pop-up"><i class="fa fa-play"></i></a>
                 <h1>Be Fit.Top Gym</h1>
@@ -207,8 +208,7 @@
                                 <a href="{% url 'bmi' %}"><img src="{% static 'header/img/bbmi.png' %}" style="width:40%" alt=""></a> 
                             </div>
                             <a href="{% url 'bmi' %}"><h5>BMI calculator</h5></a>
-                            <p style="color: #000000;">Pellentesque dictum nisl in nibh dictum volutpat nec a quam. Vivamus suscipit nisl quis
-                                nulla pretium, vitae ornare leo.</p>
+                            <p style="color: #000000;">Feed in your Age, height, and weight to know your present health-about</p>
                         </div>
                     </div>
                 </div>
@@ -219,11 +219,10 @@
                         </div>
                         <div class="feature-text">
                             <div class="feature-icon"  style="background-color: #a7f200;box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);">
-                                <a href=""><img src="{% static 'header/img/bquiz.png' %}" style="width:40%"  alt=""></a>
+                                <a href="{% url 'quiz_user' %}"><img src="{% static 'header/img/bquiz.png' %}" style="width:40%"  alt=""></a>
                             </div>
-                            <a href=""><h5>Quiz</h5></a>
-                            <p style="color: #000000;">Pellentesque dictum nisl in nibh dictum volutpat nec a quam. Vivamus suscipit nisl quis
-                                nulla pretium, vitae ornare leo.</p>
+                            <a href="{% url 'quiz_user' %}"><h5>Quiz</h5></a>
+                            <p style="color: #000000;">Take our MBS (Mind Body Soul) quiz and know what the nature has to offer you based on your existence. </p>
                         </div>
                     </div>
                 </div>
@@ -237,8 +236,7 @@
                                 <a href="{% url 'nutrition_calculator' %}"> <img src="{% static 'header/img/bnutrition.png' %}" style="width:40%" alt=""></a>
                             </div>
                             <a href="{% url 'nutrition_calculator' %}"> <h5>Nutrition Calculator</h5></a>
-                            <p style="color: #000000;">Pellentesque dictum nisl in nibh dictum volutpat nec a quam. Vivamus suscipit nisl quis
-                                nulla pretium, vitae ornare leo.</p>
+                            <p style="color: #000000;">Know how many calories to consume based on your health goals. Rest, we are here for your rescue!</p>
                         </div>
                     </div>
                 </div>
@@ -364,7 +362,7 @@
     </section>
 
     
-    {% include 'testimonial.html' %}
+    {% include 'blogs.html' %}
  {% include 'footer.html' %}
 
     <!-- Js Plugins -->

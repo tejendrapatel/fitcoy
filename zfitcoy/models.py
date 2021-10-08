@@ -118,12 +118,11 @@ class MCQQUCTIONS(models.Model):
         return self.quctions
 
 class MCQUSER(models.Model):
-    fname = models.CharField(max_length=100,null=True)
-    lname = models.CharField(max_length=100,null=True)
+    name = models.CharField(max_length=100,null=True)
     email = models.EmailField(null=True)
     mobile = models.IntegerField(null=True)
     def __str__(self):
-        return self.fname
+        return self.name
 
 class MCQANSWERS(models.Model):
     categorys = models.ForeignKey(MCQUSER, on_delete=models.CASCADE, null=True)

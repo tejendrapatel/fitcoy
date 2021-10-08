@@ -1,0 +1,515 @@
+{% include 'header.html' %}
+{% load static %}
+ttps://templatemo.com/tm-565-onix-digital
+
+--><script src="{% static 'zheader/js/jquery-1.11.1.min.js' %}"></script>
+<script src="{% static 'zheader/js/jquery.vide.min.js' %}"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$("#myModal").modal('show');
+	});
+</script>
+  </head>
+
+<body>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.2.js"></script>
+  <style type="text/css">
+    #overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 60%;
+      height: 100%;
+      background-color: #000;
+      filter: alpha(opacity=70);
+      -moz-opacity: 0.7;
+      -khtml-opacity: 0.7;
+      opacity: 0.7;
+      z-index: 100;
+      display: none;
+      
+    }
+  
+    .cnt223 a {
+      text-decoration: none;
+    }
+  
+    .popup {
+      width: 90%;
+      margin: 0 auto;
+      display: none;
+      position: fixed;
+      z-index: 101;
+      
+    }
+  
+    .cnt223 {
+      min-width: 500px;
+      width: 500px;
+      min-height: 150px;
+      margin: 100px auto;
+      position: relative;
+      z-index: 103;
+      padding: 15px 35px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px #000;
+      border-radius: 15px;
+      border: 10px solid rgba(255, 255, 255, 0.15);
+      box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+      filter: blur(5px);
+      -webkit-filter: blur(6px);
+      -moz-filter: blur(6px);
+      -o-filter: blur(6px);
+      -ms-filter: blur(6px);
+      filter: url(#blur);
+      filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='6');
+      
+    }
+  
+    .cnt223 p {
+      clear: both;
+      color: #555555;
+      /* text-align: justify; */
+      font-size: 20px;
+      font-family: sans-serif;
+    }
+  
+    .cnt223 p a {
+      color: #d91900;
+      font-weight: bold;
+    }
+  
+    .cnt223 .x {
+      float: right;
+      height: 35px;
+      left: 22px;
+      position: relative;
+      top: -25px;
+      width: 34px;
+    }
+  
+    .cnt223 .x:hover {
+      cursor: pointer;
+    }
+  </style>
+  <script type='text/javascript'>
+    $(function() {
+      var overlay = $('<div id="overlay"></div>');
+      overlay.show();
+      overlay.appendTo(document.body);
+      $('.popup').show();
+      $('.close').click(function() {
+        $('.popup').hide();
+        overlay.appendTo(document.body).remove();
+        return false;
+      });
+      $('.x').click(function() {
+        $('.popup').hide();
+        overlay.appendTo(document.body).remove();
+        return false;
+      });
+    });
+  </script>
+  <div class='popup'>
+    <div class='cnt223' style="margin-top:300px;background-color: teal;">
+      <form method="POST">
+        {% csrf_token %}
+        <br><br>
+        <div class="form-group" >
+            <input  type="text" name="nam" class="form-control" placeholder="Name">
+        </div>
+        <div class="form-group">
+          <input type="text" name="mob"  minlength="10" maxlength="10" class="form-control" placeholder="Mobile">
+      </div>
+        <div class="form-group">
+            <input type="email" name="ema" class="form-control" placeholder="Email Address">
+        </div>
+        <button type="submit" class="btn btn-primary" style="background-color: #c20000;">Start Quiz</button>
+    </form>
+    </div>
+  </div>
+<section class="page-title bg-1" style="background-image: url({% static 'header/img/mcq.jpg' %});">
+    <div class="overlay" >
+    <div class="container" >
+      <div class="row">
+        <div class="col-md-12">
+          <div class="block text-center">
+            <span class="text-white"></span><br><br><br><br><br><br><br><br>
+            <h1 class="text-capitalize mb-5 text-lg" style="text-shadow: 2px 2px 3px black;color:#000">Quiz</h1>
+            <br><br><br><br><br>
+            <!-- <ul class="list-inline breadcumb-nav">
+              <li class="list-inline-item"><a href="index.html" class="text-white">Home</a></li>
+              <li class="list-inline-item"><span class="text-white">/</span></li>
+              <li class="list-inline-item"><a href="#" class="text-white-50">About Us</a></li>
+            </ul> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<html lang="zxx">
+
+<head>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>   
+      
+      a{
+        text-decoration:none;
+        color:#444444;
+      }
+      .login-reg-panel{
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%);
+        text-align:center;
+          width:70%;
+        right:0;left:0;
+          margin:auto;
+          height:400px;
+          background-color: rgba(236, 48, 20, 0.9);
+      }
+      .white-panel{
+          background-color: #a7f200;
+          height:500px;
+          position:absolute;
+          top:-50px;
+          width:50%;
+          right:calc(50% - 50px);
+          transition:.3s ease-in-out;
+          z-index:0;
+          box-shadow: 0 0 15px 9px #00000096;
+      }
+     
+     
+      
+      .login-show, 
+      .register-show{
+          z-index: 1;
+          display:none;
+          opacity:0;
+          transition:0.3s ease-in-out;
+          color:#242424;
+          text-align:left;
+          padding:50px;
+      }
+      .show-log-panel{
+          display:block;
+          opacity:0.9;
+      }
+      .login-show input[type="text"], .login-show input[type="password"]{
+          width: 100%;
+          display: block;
+          margin:20px 0;
+          padding: 15px;
+          border: 1px solid #a7f200;
+          outline: none;
+      }
+      .login-show input[type="button"] {
+          max-width: 150px;
+          width: 100%;
+          background: #444444;
+          color: #a7f200;
+          border: none;
+          padding: 10px;
+          text-transform: uppercase;
+          border-radius: 2px;
+          float:right;
+          cursor:pointer;
+      }
+      .login-show a{
+          display:inline-block;
+          padding:10px 0;
+      }
+      
+      .register-show input[type="text"], .register-show input[type="password"]{
+          width: 100%;
+          display: block;
+          margin:20px 0;
+          padding: 15px;
+          border: 1px solid #b5b5b5;
+          outline: none;
+      }
+      .register-show input[type="button"] {
+          max-width: 150px;
+          width: 100%;
+          background: #444444;
+          color: #f9f9f9;
+          border: none;
+          padding: 10px;
+          text-transform: uppercase;
+          border-radius: 2px;
+          float:right;
+          cursor:pointer;
+      }
+      .credit {
+          position:absolute;
+          bottom:10px;
+          left:10px;
+          color: #3B3B25;
+          margin: 0;
+          padding: 0;
+          font-family: Arial,sans-serif;
+          text-transform: uppercase;
+          font-size: 12px;
+          font-weight: bold;
+          letter-spacing: 1px;
+          z-index: 99;
+      }
+      a{
+        text-decoration:none;
+        color:#2c7715;
+      }
+          
+          
+          </style>
+          <style>
+
+            .header {
+                    overflow: hidden;
+                    background-color: #ffee00;
+                    padding: 20px 10px;
+              }
+            </style>
+</head>
+<body style="background-color: #242424;min-height: -110px;">
+  <div class="login-reg-panel"  > 
+		<div class="login-info-box" >
+			<label id="label-register" for="log-reg-show"></label>
+			<input type="radio" name="active-log-panel" id="log-reg-show"  checked="checked">
+		</div>
+							
+		<div class="register-info-box">
+      <img src="{% static 'header/img/1w.svg' %}"  style="width:30%;margin-left: 550px;margin-top:35px" alt="" class="img-fluid">
+		</div>
+							
+		<div class="white-panel">
+      
+      <form method="POST" id="sss">
+        {% csrf_token %}
+        {% for cat in count_quctions %}
+        <div id="content-{{cat.id}}" >
+          <div class="header" style="height: 120px;">
+            <br>
+            <h1 style="text-align:left;font-size: 26px;" >{{cat.id}} )    {{cat.quctions}}</h1>
+          </div>
+          <br><br><br>
+          <input type="hidden"  id="que-{{cat.id}}" name="que" value="{{cat.quctions}}">
+          <div style="text-align: left;margin-left: 20px;">
+          <input  type="radio" name="ans-{{cat.id}}" onclick="checkval('{{ cat.choice1 }}')" value="{{ cat.choice1 }}">
+          <label style="font-size: 20px;font-weight: 600px;" >{{ cat.choice1 }}</label><br>
+             <br>
+          <input   type="radio"  name="ans-{{cat.id}}" onclick="checkval('{{ cat.choice2 }}')" value="{{ cat.choice2 }}" >
+          <label style="font-size: 20px;font-weight: 600px;"  >{{ cat.choice2 }}</label><br>
+              <br>
+          <input  type="radio"  name="ans-{{cat.id}}" onclick="checkval('{{ cat.choice3 }}')" value="{{ cat.choice3 }}" >
+          <label  style="font-size: 20px;font-weight: 600px;"  >{{ cat.choice3 }}</label>
+      </div>
+        
+    </div>
+        {% endfor %}
+        <input type="hidden" id="count" value="{{total}}">
+        </form> 
+        <br><br>
+        <button id="nextbtn" style="float: right;border-radius: 25px;width: 140px;height: 50px;background-color: #ffee00;font-weight: 900px;box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);margin-right: 20px;">Next</button>
+        
+		</div>
+	</div>
+
+    
+
+
+ <script>
+     var pid = 1;
+     $(document).ready(function(e) {
+         
+         var count = document.getElementById("count").value;
+         var que = "";
+         var ans = "";
+         
+         for(var i=1;i<=count;i++){
+            if(pid != i){
+                document.getElementById("content-"+i).style.display = "none";
+            }
+            else{
+                document.getElementById("content-"+i).style.display = "block";
+                que = document.getElementById("que-"+i).value;
+                
+            }
+         }
+         pid++;
+        
+    
+    });
+
+    var answer = ""
+
+    function checkval(data){
+        answer = data;
+    }
+          
+    $("#nextbtn").click(function(e) {
+         var count = document.getElementById("count").value;
+         var que = "";
+         var ans = "";
+        
+         for(var i=1;i<=count;i++){
+            if(pid != i){
+                document.getElementById("content-"+i).style.display = "none";
+            }
+            else{
+                document.getElementById("content-"+i).style.display = "block";
+                que = document.getElementById("que-"+i).value;
+                
+            }
+         }
+
+        $.ajax({
+        url:"/mcq_answer/"+ pid + "/?que="+que+"&op1="+answer,
+        success: function(data)
+            {
+                
+            }
+
+        })
+
+
+        pid++;
+        
+    
+    });
+        </script>
+
+
+<br><br><br><br><br><br><br><br><br><br>
+
+<footer class="footer section gray-bg" style="background-color: #000000">
+	<div class="container" style="background-color: #000000">
+		<div class="row">
+			<div class="col-lg-4 mr-auto col-sm-6" style="margin-top: 60px;">
+				<div class="widget mb-5 mb-lg-0">
+					<div class="logo mb-4">
+						<img src="{% static 'header/img/logo-05.png' %}" alt="" class="img-fluid">
+					</div>
+					<p style="color: #fff;line-height: 2.5em;text-align: justify;">The Fit India Company is a health, fitness and well-being-oriented firm that brings to you an inclusive health and wellness array to provide you the utmost of your health from inside-out.</p>
+
+					<ul class="list-inline footer-socials mt-4">
+						<li class="list-inline-item" ><a href="https://www.facebook.com/themefisher"><i class="icofont-facebook"></i></a></li>
+						<li class="list-inline-item"><a href="https://twitter.com/themefisher"><i class="icofont-twitter"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.pinterest.com/themefisher/"><i class="icofont-linkedin"></i></a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="col-lg-2 col-md-6 col-sm-6" style="margin-top: 60px;">
+				<div class="widget mb-5 mb-lg-0">
+					<h4 class="text-capitalize mb-3" style="color: #a7f200;font-size: 22px;font-weight: 700;">Quick Links</h4>
+					<div class="divider mb-4"></div>
+
+					<ul class="list-unstyled footer-menu lh-35">
+						<li><a style="color:#ffee00 ;font-size: 15px;line-height: 2.5em;" href="{% url 'about' %}">About </a></li>
+						<li><a style="color:#ffee00 ;font-size: 15px;line-height: 2.5em;" href="{% url 'team' %}">Teams</a></li>
+						<li><a style="color:#ffee00 ;font-size: 15px;line-height: 2.5em;" href="{% url 'services' %}">Services</a></li>
+						<li><a style="color:#ffee00 ;font-size: 15px;line-height: 2.5em;" href="{% url 'blogs' %}">Blogs</a></li>
+						<li><a style="color:#ffee00 ;font-size: 15px;line-height: 2.5em;" href="{% url 'contact' %}">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="col-lg-2 col-md-6 col-sm-6" style="margin-top: 60px;">
+				<div class="widget mb-5 mb-lg-0">
+					<h4 class="text-capitalize mb-3" style="color: #a7f200;font-size: 22px;font-weight: 700;">Support</h4>
+					<div class="divider mb-4"></div>
+
+					<ul class="list-unstyled footer-menu lh-35" >
+						<li><a style="color:#ffee00 ;font-size: 15px;line-height: 2.5em;" href="{% url 'companey_lisence' %}">Why Choose Us</a></li>
+						<li><a style="color:#ffee00 ;font-size: 15px;line-height: 2.5em;" href="{% url 'terms_conditions' %}">Terms & Conditions</a></li>
+						<li><a style="color:#ffee00;font-size: 15px;line-height: 2.5em;" href="{% url 'privacy_policy' %}">Privacy Policy</a></li>
+						<li><a style="color:#ffee00 ;font-size: 15px;line-height: 2.5em;" href="{% url 'companey_support' %}">Company Support </a></li>
+						<li><a style="color:#ffee00 ;font-size: 15px;line-height: 2.5em;" href="{% url 'faqss' %}">FAQuestions</a></li>
+						
+					</ul>
+				</div>
+			</div>
+
+			<div class="col-lg-3 col-md-6 col-sm-6" style="margin-top: 60px;">
+				<div class="widget widget-contact mb-5 mb-lg-0">
+					<h4 class="text-capitalize mb-3" style="color: #a7f200;font-size: 22px;font-weight: 700;">Get in Touch</h4>
+					<div class="divider mb-4"></div>
+
+					<div class="footer-contact-block mb-4">
+						<div class="icon d-flex align-items-center">
+							<i class="icofont-email mr-3" style="color: #ffee00;"></i>
+							<span class="h6 mb-0" style="color: #ffee00;">Support Available for 24/7</span>
+						</div>
+						<h4  class="mt-2"><a style="color: #fff;" href="fit.indcoy@gmail.com">fit.indcoy@gmail.com</a></h4>
+					</div>
+
+					<div class="footer-contact-block">
+						<div class="icon d-flex align-items-center">
+							<i class="icofont-support mr-3" style="color: #ffee00;"></i>
+							<span class="h6 mb-0" style="color: #ffee00;">Mon to Fri : 08:30 - 18:00</span>
+						</div>
+						<h4  class="mt-2"><a style="color: #fff;" href="+918700955586">+918700955586</a></h4>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer-btm py-4 mt-5">
+			<div class="row align-items-center justify-content-between">
+				<div class="col-lg-6">
+					<div class="copyright" style="background-color: #000000;font-size: 16px;color:#fff">
+						All rights reserved <span class="text-color" style="color: #a7f200;">Design</span>&<span class="text-color" style="color: #a7f200;">Developed</span> by <a href="https://www.vistaarwebx.com/" target="_blank" style="color:#fff"><img src="{% static 'header/img/logos.png' %}" style="width:4%;">istaarwebX</a>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="subscribe-form text-lg-right mt-5 mt-lg-0">
+						<form action="#" class="subscribe">
+              
+							<input type="text" class="form-control" placeholder="Your Email address" style="border-radius: 30px;height:60px;">
+              
+            
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-4">
+					<a class="backtop js-scroll-trigger" href="#top">
+						<i class="icofont-long-arrow-up"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<script>
+  // Acc
+    $(document).on("click", ".naccs .menu div", function() {
+      var numberIndex = $(this).index();
+
+      if (!$(this).is("active")) {
+          $(".naccs .menu div").removeClass("active");
+          $(".naccs ul li").removeClass("active");
+
+          $(this).addClass("active");
+          $(".naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
+
+          var listItemHeight = $(".naccs ul")
+            .find("li:eq(" + numberIndex + ")")
+            .innerHeight();
+          $(".naccs ul").height(listItemHeight + "px");
+        }
+    });
+  </script>
+ 
+</body>
+</html>

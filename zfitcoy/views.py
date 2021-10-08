@@ -8,7 +8,7 @@ from django.template.loader import get_template
 from django.core.mail import EmailMultiAlternatives, message
 from fitcoy.settings import EMAIL_HOST_USER
 from django.contrib.auth.models import User
-
+import json
 def HOME(request):
     if request.method == "POST":
         c = request.POST
@@ -20,7 +20,9 @@ def HOME(request):
         Appionment.objects.create(name=cname,date=clname,mobile=cmobile,time=ctime,message=cmessage)
         return redirect('home')
     ser = Services.objects.all()
-    d = {"ser":ser}
+    blo = Blogs.objects.all()
+    blog= blo[:3]
+    d = {"ser":ser,"blog":blog}
     return render(request, 'pages/index.html',d)
 
 def ABOUT(request):
@@ -210,27 +212,28 @@ def BODY_TYPES3(request):
     d = {"ter": ter}
     return render(request, 'pages/body_types.html',d)
 
-
-z=0
-def MCQS(request,blog_id):
+def QUIZ_USER(request):
     if request.method == "POST":
         c = request.POST
-        name1 = c['op1']
-        MCQANSWERS.objects.create(choice1=name1)
-    cat = MCQQUCTIONS.objects.get(id=blog_id)
+        cname = c['ema']
+        cmob = c['mob']
+        cage = c['nam']
+        MCQUSER.objects.create(name=cage, email=cname, mobile=cmob)
+        return redirect('mcqs')
     count_quctions = MCQQUCTIONS.objects.all()
-    li =  []
-    count=0
-    for i in count_quctions:
-        li.append(i.id)
-        count += 1
-    global z 
-    if z<count:
-        z=z+1  
-        return render(request, 'index.html',{'z':z,'cat':cat})
-    elif z==17:
-        z = 0
-        return redirect('about')
-    else: 
-        z=0
-        return redirect('about')
+    d={'count_quctions':count_quctions, 'total':count_quctions.count()}
+    return render(request, 'quiz_user.html',d)
+
+
+def MCQS(request):
+    count_quctions = MCQQUCTIONS.objects.all()
+    d={'count_quctions':count_quctions, 'total':count_quctions.count()}
+    return render(request, 'in.html',d)
+ 
+def MCQ_ANSWER(request, blo_id):
+    c = request.GET
+    quctio = c['que']
+    choic = c['op1']
+    MCQANSWERS.objects.create(choice1=choic,quctions=quctio)
+    return HttpResponse(json.dumps(1), content_type="application/json")
+

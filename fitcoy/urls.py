@@ -31,10 +31,11 @@ urlpatterns = [
     path('body_types1',BODY_TYPES1,name='body_types1'),
     path('body_types2',BODY_TYPES2,name='body_types2'),
     path('body_types3',BODY_TYPES3,name='body_types3'),
-
+    path('mcqs',MCQS, name='mcqs'),
+    path('quiz_user',QUIZ_USER, name='quiz_user'),
 
     ####           dynamic urls       #######
-    path('mcqs/<int:blog_id>/',MCQS, name='mcqs'),
+    path('mcq_answer/<int:blo_id>/',MCQ_ANSWER, name='mcq_answer'),
     path('blog_single/<int:blo_id>/',BLOG_SINGLE, name='blog_single'),
     path('blog_category_filter/<int:blo_id>/',BLOG_CATEGORY_FILTER, name='blog_category_filter'),
     path('services_single/<int:blo_id>/',SERVICES_SINGLE, name='services_single'),
