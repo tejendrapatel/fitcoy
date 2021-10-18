@@ -7,8 +7,14 @@ from django.http import HttpResponse, request
 from django.template.loader import get_template
 from django.core.mail import EmailMultiAlternatives, message
 from fitcoy.settings import EMAIL_HOST_USER
+from fitcoy.settings import RAZORPAY_KEY_ID
+from fitcoy.settings import RAZORPAY_ACCESS_KEY
 from django.contrib.auth.models import User
 import json
+import razorpay
+client = razorpay.Client(auth=(RAZORPAY_KEY_ID, RAZORPAY_ACCESS_KEY))
+
+
 def HOME(request):
     if request.method == "POST":
         c = request.POST
@@ -128,8 +134,20 @@ def SERVICES_SINGLE(request,blo_id):
         cmail = c['mail']
         cmessage = c['message']
         SERVICE_CONTACT.objects.create(name=cname, email=cmail, mobile=cmob, age=cage,message=cmessage)
+        ter = MCQUSER.objects.filter().last()
     sersingle = Services.objects.get(id=blo_id)
-    d = {"sersingle":sersingle}
+    data={
+        'amount' : 100*100,
+        'currency' : 'INR',
+        'receipt' : 'receipt id of order',
+        'notes':{ 
+            "name":'hgfhg',
+            "service":"zumba",
+        },
+    }
+
+    order= client.order.create(data=data)
+    d = {"sersingle":sersingle,"order":order}
     return render(request, 'dynamic/services_single.html',d)
 
 def TEAM_SINGLE(request,blo_id):
@@ -228,12 +246,15 @@ def QUIZ_USER(request):
 def MCQS(request):
     count_quctions = MCQQUCTIONS.objects.all()
     d={'count_quctions':count_quctions, 'total':count_quctions.count()}
-    return render(request, 'in.html',d)
+    return render(request, 'quiz.html',d)
  
 def MCQ_ANSWER(request, blo_id):
     c = request.GET
     quctio = c['que']
     choic = c['op1']
-    MCQANSWERS.objects.create(choice1=choic,quctions=quctio)
+    ter = MCQUSER.objects.filter().last()
+    MCQANSWERS.objects.create(choice1=choic,quctions=quctio,categorys=ter)
     return HttpResponse(json.dumps(1), content_type="application/json")
 
+def THANKYOU(request):
+    return render(request, 'thankyou.html')

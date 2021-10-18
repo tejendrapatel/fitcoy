@@ -1,331 +1,428 @@
-
 {% include 'header.html' %}
-
-
-<section class="page-title bg-1">
-  <div >
-  <div class="container" >
-    <div class="row">
-      <div class="col-md-12">
-        <div class="block text-center">
-          <span class="text-white"></span><br><br><br><br>
-          <h1 class="text-capitalize mb-5 text-lg">Start Quiz </h1>
-
-          <!-- <ul class="list-inline breadcumb-nav">
-            <li class="list-inline-item"><a href="index.html" class="text-white">Home</a></li>
-            <li class="list-inline-item"><span class="text-white">/</span></li>
-            <li class="list-inline-item"><a href="#" class="text-white-50">About Us</a></li>
-          </ul> -->
+{% load static %}
+<section class="page-title bg-1" style="background-image: url({% static 'header/img/mcq.jpg' %});">
+    <div class="overlay" >
+    <div class="container" >
+      <div class="row">
+        <div class="col-md-12">
+          <div class="block text-center">
+            <span class="text-white"></span><br><br><br><br>
+            <h1 class="text-capitalize mb-5 text-lg" style="text-shadow: 2px 2px 3px black;color:#000">Quiz</h1>
+            <br><br><br><br><br>
+            <!-- <ul class="list-inline breadcumb-nav">
+              <li class="list-inline-item"><a href="index.html" class="text-white">Home</a></li>
+              <li class="list-inline-item"><span class="text-white">/</span></li>
+              <li class="list-inline-item"><a href="#" class="text-white-50">About Us</a></li>
+            </ul> -->
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+<html lang="zxx">
 
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html lang="en-US"  class="supernova"><head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="alternate" type="application/json+oembed" href="https://www.jotform.com/oembed/?format=json&amp;url=https%3A%2F%2Fform.jotform.com%2F212472828930459" title="oEmbed Form">
-<link rel="alternate" type="text/xml+oembed" href="https://www.jotform.com/oembed/?format=xml&amp;url=https%3A%2F%2Fform.jotform.com%2F212472828930459" title="oEmbed Form">
-<meta property="og:title" content="English_XI" >
-<meta property="og:url" content="https://form.jotform.com/212472828930459" >
-<meta property="og:description" content="Please click the link to complete this form." >
-<meta name="slack-app-id" content="AHNMASS8M">
-<link rel="shortcut icon" href="https://cdn.jotfor.ms/favicon.ico">
-<link rel="canonical" href="https://form.jotform.com/212472828930459" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=1" />
-<meta name="HandheldFriendly" content="true" />
-<title>English_XI</title>
-<link href="https://cdn01.jotfor.ms/static/formCss.css?3.3.27494" rel="stylesheet" type="text/css" />
-<style type="text/css">@media print{.form-section{display:inline!important}.form-pagebreak{display:none!important}.form-section-closed{height:auto!important}.page-section{position:initial!important}}</style>
-<link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/css/styles/nova.css?3.3.27494" />
-<link type="text/css" rel="stylesheet" href="https://cdn03.jotfor.ms/themes/CSS/54be8f18700cc4e0368b4568.css?themeRevisionID=5d7ca1edd72e2373d866fe41"/>
-<link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/css/styles/payment/payment_styles.css?3.3.27494" />
-<script src="alert/dist/sweetalert-dev.js"></script>
-  <link rel="stylesheet" href="alert/dist/sweetalert.css">
-<link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/css/styles/payment/payment_feature.css?3.3.27494" />
-<style type="text/css">
-    .form-label-left{
-        width:150px;
-    }
-    .form-line{
-        padding-top:12px;
-        padding-bottom:12px;
-    }
-    .form-label-right{
-        width:150px;
-    }
-    body, html{
-        margin:0;
-        padding:0;
-        background:#D9CEB2;
-    }
-
-    .form-all{
-        margin:0px auto;
-        padding-top:20px;
-        width:690px;
-        color:#7A6A53 !important;
-        font-family:'Coda';
-        font-size:14px;
-    }
-</style>
-
-<style type="text/css" id="form-designer-style">
-    /* Injected CSS Code */
-/*PREFERENCES STYLE*/
-    .form-all {
-      font-family: Coda, sans-serif;
-    }
-    .form-all .qq-upload-button,
-    .form-all .form-submit-button,
-    .form-all .form-submit-reset,
-    .form-all .form-submit-print {
-      font-family: Coda, sans-serif;
-    }
-    .form-all .form-pagebreak-back-container,
-    .form-all .form-pagebreak-next-container {
-      font-family: Coda, sans-serif;
-    }
-    .form-header-group {
-      font-family: Coda, sans-serif;
-    }
-    .form-label {
-      font-family: Coda, sans-serif;
-    }
-  
-    .form-label.form-label-auto {
+<head>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>   
       
-    display: inline-block;
-    float: left;
-    text-align: left;
-  
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    background-color: #fff
+}
+
+.containerss {
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    background-color: #e9ecef;
+    color: #000000;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 700px;
+    margin-left:25%
+}
+@media(max-width:576px) {
+    .containerss {
+    margin-left: 0%;
+  }
+}
+.containerss>p {
+    font-size: 32px
+}
+
+.question {
+    width: 75%
+}
+
+.options {
+    position: relative;
+    padding-left: 40px
+}
+
+#options label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 14px;
+    cursor: pointer
+}
+
+.options input {
+    opacity: 0
+}
+
+.checkmark {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #ffee00;
+    border: 1px solid #000000;
+    border-radius: 50%
+}
+
+.options input:checked~.checkmark:after {
+    display: block
+}
+
+.options .checkmark:after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    display: block;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 300ms ease-in-out 0s
+}
+
+.options input[type="radio"]:checked~.checkmark {
+    background: #21bf73;
+    transition: 300ms ease-in-out 0s
+}
+
+.options input[type="radio"]:checked~.checkmark:after {
+    transform: translate(-50%, -50%) scale(1)
+}
+
+.btn-primary {
+    background-color: #555;
+    color: #ddd;
+    border: 1px solid #ddd
+}
+
+.btn-primary:hover {
+    background-color: #21bf73;
+    border: 1px solid #21bf73
+}
+
+.btn-success {
+    padding: 5px 25px;
+    background-color: #21bf73
+}
+
+@media(max-width:576px) {
+    .question {
+        width: 100%;
+        word-spacing: 2px
     }
-  
-    .form-line {
-      margin-top: 12px;
-      margin-bottom: 12px;
-    }
-  
-    .form-all {
-      max-width: 900px;
-      width: 100%;
-    }
-  
-    .form-label.form-label-left,
-    .form-label.form-label-right,
-    .form-label.form-label-left.form-label-auto,
-    .form-label.form-label-right.form-label-auto {
-      width: 150px;
-    }
-  
-    .form-all {
-      font-size: 14px
-    }
-    .form-all .qq-upload-button,
-    .form-all .qq-upload-button,
-    .form-all .form-submit-button,
-    .form-all .form-submit-reset,
-    .form-all .form-submit-print {
-      font-size: 14px
-    }
-    .form-all .form-pagebreak-back-container,
-    .form-all .form-pagebreak-next-container {
-      font-size: 14px
-    }
-  
-    .supernova .form-all, .form-all {
-      background-color: #D9CEB2;
-    }
-  
-    .form-all {
-      color: #7A6A53;
-    }
-    .form-header-group .form-header {
-      color: #7A6A53;
-    }
-    .form-header-group .form-subHeader {
-      color: #7A6A53;
-    }
-    .form-label-top,
-    .form-label-left,
-    .form-label-right,
-    .form-html,
-    .form-checkbox-item label,
-    .form-radio-item label {
-      color: #7A6A53;
-    }
-    .form-sub-label {
-      color: #94846d;
-    }
-  
-    .supernova {
-      background-color: #16257d;
-    }
-    .supernova body {
-      background: transparent;
-    }
-  
-    .form-textbox,
-    .form-textarea,
-    .form-dropdown,
-    .form-radio-other-input,
-    .form-checkbox-other-input,
-    .form-captcha input,
-    .form-spinner input {
-      background-color: #fff;
-    }
-  
-    .supernova {
-      background-image: none;
-    }
-    #stage {
-      background-image: none;
-    }
-  
-      .form-all {
-        background-image: url("https://www.jotform.com/images/brushed.png");
-        background-repeat: repeat;
-        background-attachment: scroll;
-        background-position: center top;
-      }
     
-  .ie-8 .form-all:before { display: none; }
-  .ie-8 {
-    margin-top: auto;
-    margin-top: initial;
-  }
-  
-  /*PREFERENCES STYLE*//*__INSPECT_SEPERATOR__*/
-    /* Injected CSS Code */
-</style>
-
-<script src="https://cdn03.jotfor.ms/static/prototype.forms.js" type="text/javascript"></script>
-<script src="https://cdn01.jotfor.ms/static/jotform.forms.js?3.3.27494" type="text/javascript"></script>
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/punycode/1.4.1/punycode.js"></script>
-<script type="text/javascript">	JotForm.newDefaultTheme = false;
-	JotForm.extendsNewTheme = false;
-	JotForm.newPaymentUIForNewCreatedForms = true;
-	JotForm.newPaymentUI = true;
-	JotForm.clearFieldOnHide="disable";
-	JotForm.submitError="jumpToFirstError";
-
-	JotForm.init(function(){
-	/*INIT-START*/
-      JotForm.alterTexts(undefined);
-	/*INIT-END*/
-	});
-
-   JotForm.prepareCalculationsOnTheFly([null,null,{"name":"submit2","qid":"2","text":"Submit","type":"control_button"},null,null,null,null,null,null,{"description":"","name":"4The","qid":"9","text":"4. The world’s most dangerous animal is","type":"control_checkbox"},null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"description":"","name":"name","qid":"54","text":"Name","type":"control_fullname"},{"description":"","name":"email","qid":"55","subLabel":"example@example.com","text":"Email","type":"control_email"},null,{"description":"","name":"phoneNumber57","qid":"57","text":"Phone Number","type":"control_phone"}]);
-   setTimeout(function() {
-JotForm.paymentExtrasOnTheFly([null,null,{"name":"submit2","qid":"2","text":"Submit","type":"control_button"},null,null,null,null,null,null,{"description":"","name":"4The","qid":"9","text":"4. The world’s most dangerous animal is","type":"control_checkbox"},null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"description":"","name":"name","qid":"54","text":"Name","type":"control_fullname"},{"description":"","name":"email","qid":"55","subLabel":"example@example.com","text":"Email","type":"control_email"},null,{"description":"","name":"phoneNumber57","qid":"57","text":"Phone Number","type":"control_phone"}]);}, 20); 
-</script>
+}
+            </style>
+            <style>
+              /* The container */
+              .container {
+                display: block;
+                position: relative;
+                padding-left: 35px;
+                margin-bottom: 12px;
+                cursor: pointer;
+                font-size: 22px;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+              }
+              
+              /* Hide the browser's default checkbox */
+              .container input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                height: 0;
+                width: 0;
+              }
+              
+              /* Create a custom checkbox */
+              .checkmark {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 25px;
+                width: 25px;
+                background-color: #eee;
+              }
+              
+              /* On mouse-over, add a grey background color */
+              .container:hover input ~ .checkmark {
+                background-color: #ccc;
+              }
+              
+              /* When the checkbox is checked, add a blue background */
+              .container input:checked ~ .checkmark {
+                background-color: #2196F3;
+              }
+              
+              /* Create the checkmark/indicator (hidden when not checked) */
+              .checkmark:after {
+                content: "";
+                position: absolute;
+                display: none;
+              }
+              
+              /* Show the checkmark when checked */
+              .container input:checked ~ .checkmark:after {
+                display: block;
+              }
+              
+              /* Style the checkmark/indicator */
+              .container .checkmark:after {
+                left: 9px;
+                top: 5px;
+                width: 5px;
+                height: 10px;
+                border: solid white;
+                border-width: 0 3px 3px 0;
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+              }
+              </style>
 </head>
-<body>
-<form class="jotform-form" method="POST" >
-  {% csrf_token %}
-  <div role="main" class="form-all">
-    <ul class="form-section page-section">
-      <li class="form-line" data-type="control_fullname" id="id_54">
-        <label class="form-label form-label-left form-label-auto" id="label_54" for="first_54"> Name </label>
-        <div id="cid_54" class="form-input">
-          <div data-wrapper-react="true">
-            <span class="form-sub-label-container" style="vertical-align:top" data-input-type="first">
-              <input type="text" id="first_54" required name="fnam" class="form-textbox" size="10" value="" data-component="first" aria-labelledby="label_54 sublabel_54_first" />
-              <label class="form-sub-label" for="first_54" id="sublabel_54_first" style="min-height:13px" aria-hidden="false"> First Name </label>
-            </span>
-            <span class="form-sub-label-container" style="vertical-align:top" data-input-type="last">
-              <input type="text" id="last_54" required name="lnam" class="form-textbox" size="15" value="" data-component="last" aria-labelledby="label_54 sublabel_54_last" />
-              <label class="form-sub-label" for="last_54" id="sublabel_54_last" style="min-height:13px" aria-hidden="false"> Last Name </label>
-            </span>
-          </div>
-        </div>
-      </li>
-      <li class="form-line form-line-column form-col-1" data-type="control_email" id="id_55">
-        <label class="form-label form-label-top" id="label_55" for="input_55"> Email </label>
-        <div id="cid_55" class="form-input-wide">
-          <span class="form-sub-label-container" style="vertical-align:top">
-            <input type="email" id="input_55" required name="emil" class="form-textbox validate[Email]" size="30" value="" data-component="email" aria-labelledby="label_55 sublabel_input_55" />
-            <label class="form-sub-label" for="input_55" id="sublabel_input_55" style="min-height:13px" aria-hidden="false"> example@example.com </label>
-          </span>
-        </div>
-      </li>
-      <li class="form-line form-line-column form-col-2" data-type="control_phone" id="id_57">
-        <label class="form-label form-label-top" id="label_57" for="input_57_area">Mobile Number </label>
-        <div id="cid_57" class="form-input-wide">
-          <div data-wrapper-react="true">
-           
-            <span class="form-sub-label-container" style="vertical-align:top" data-input-type="phone">
-              <input type="text" id="input_57_phone" name="mob" class="form-textbox" value="" required data-component="phone" aria-labelledby="label_57 sublabel_57_phone" onkeypress="return event.charCode >= 45 &amp;&amp; event.charCode <= 57 &amp;&amp; event.charCode!=47" minlength="10" maxlength="10" />
-              <label class="form-sub-label" for="input_57_phone" id="sublabel_57_phone" style="min-height:13px" aria-hidden="false"> Mobile Number </label>
-            </span>
-          </div>
-        </div>
-      </li>
-      {% for i in ter %}
-      <li class="form-line" data-type="control_checkbox" id="id_9">
-        <label class="form-label form-label-left form-label-auto" id="label_9" for="input_9">{{ i.id }} ) {{ i.quctions }}</label>
-        <div id="cid_9" class="form-input">
-          <div class="form-single-column" role="group" aria-labelledby="label_9" data-component="checkbox">
-            <span class="form-checkbox-item" style="clear:left">
-              <span class="dragger-item">
-              </span>
-              <input type="checkbox" aria-describedby="label_9" class="form-checkbox" id="input_9_0" name="cho{{forloop.counter}}" value="{{ i.choice1 }}" />
-              <label id="label_input_9_0" for="input_9_0"> {{ i.choice1 }} </label>
-            </span>
-            <span class="form-checkbox-item" style="clear:left">
-              <span class="dragger-item">
-              </span>
-              <input type="checkbox" aria-describedby="label_9" class="form-checkbox" id="input_9_1" name="cho{{forloop.counter}}" value="{{ i.choice2 }}" />
-              <label id="label_input_9_1" for="input_9_1"> {{ i.choice2 }} </label>
-            </span>
-            <span class="form-checkbox-item" style="clear:left">
-              <span class="dragger-item">
-              </span>
-              <input type="checkbox" aria-describedby="label_9" class="form-checkbox" id="input_9_2" name="cho{{forloop.counter}}" value="{{ i.choice3 }}" />
-              <label id="label_input_9_2" for="input_9_2"> {{ i.choice3 }} </label>
-            </span>
-            <span class="form-checkbox-item" style="clear:left">
-              <span class="dragger-item">
-              </span>
-              <input type="checkbox" aria-describedby="label_9" class="form-checkbox" id="input_9_3" name="cho{{forloop.counter}}" value="{{ i.choice4 }}" />
-              <label id="label_input_9_3" for="input_9_3"> {{ i.choice4 }} </label>
-            </span>
-            <input type = "hidden"  name = "quu{{forloop.counter}}"  value="{{ i.quctions }}">
-          </div>
-        </div>
-      </li>
-      {% endfor %}
-      <li class="form-line" data-type="control_button" id="id_2">
-        <div id="cid_2" class="form-input-wide">
-          <div style="margin-left:156px" data-align="auto" class="form-buttons-wrapper form-buttons-auto   jsTest-button-wrapperField">
-            <button type="submit" onclick="myFunction()" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" onclick="JSalert()">
-              Submit
-            </button>
-          </div>
-        </div>
-      </li>
-      <li style="display:none">
-        Should be Empty:
-        <input type="text" name="website" value="" />
-      </li>
-    </ul>
-  </div>
+<body >
   
-  
-  <div class="formFooter-heightMask">
-  </div>
- 
-</form>
-<script>
-  function myFunction() {
-    alert("Congurlatios your response has been submitted!");
-  }
-  
-  </script>
+  <div class="containerss mt-sm-5 my-1">
+    <div class="question ml-sm-5 pl-sm-5 pt-2"></div>
+      <form method="POST" id="sss">
+        {% csrf_token %}
+        {% for cat in count_quctions %}
+        <div id="content-{{cat.id}}" >
+          <div class="py-2 h5"><b>Q. {{cat.id}} 
+            {{cat.quctions}}</b></div>
+          <br><br><br>
+          <input type="hidden"   id="que-{{cat.id}}" name="que" value="{{cat.quctions}}">
+          <div style="text-align: left;margin-left: 20px;">
+            <div class="ml-md-3 ml-sm-3 pl-md-5 pt-sm-0 pt-3" id="options">
+            <label class="options">
+                {{ cat.choice1 }}<input  type="radio"   name="ans-{{cat.id}}" onclick="checkval('{{ cat.choice1 }}')" value="{{ cat.choice1 }}">
+          <span style="font-size: 20px;font-weight: 600px;" class="checkmark" ></span></label><br>
+             <br>
+             <label class="options">
+                {{ cat.choice2 }} <input   type="radio"  name="ans-{{cat.id}}" onclick="checkval('{{ cat.choice2 }}')" value="{{ cat.choice2 }}" >
+          <span style="font-size: 20px;font-weight: 600px;" class="checkmark" ></span></label><br>
+              <br>
+              <label class="options">
+                   {{ cat.choice3 }}<input  type="radio"  name="ans-{{cat.id}}" onclick="checkval('{{ cat.choice3 }}')" value="{{ cat.choice3 }}" >
+          <span  style="font-size: 20px;font-weight: 600px;" class="checkmark" ></span></label>
+      </div>
+    </div>
+    </div>
+        {% endfor %}
+        <input type="hidden" id="count" value="{{total}}">
+        </form> 
+       
+        <div class="d-flex align-items-center pt-3">
+         
+          <div class="ml-auto mr-sm-5" id="nextbtn" > <button class="btn btn-success">Next</button> </div>
+      </div>
+    
+        
+		</div>
+	</div>
+
+
+
+ <script>
+     var pid = 1;
+     $(document).ready(function(e) {
+         
+         var count = document.getElementById("count").value;
+         var que = "";
+         var ans = "";
+         
+         for(var i=1;i<=count;i++){
+            if(pid != i){
+                document.getElementById("content-"+i).style.display = "none";
+            }
+            else{
+                document.getElementById("content-"+i).style.display = "block";
+                que = document.getElementById("que-"+i).value;
+                
+            }
+         }
+         pid++;
+        
+    
+    });
+
+    var answer = ""
+
+    function checkval(data){
+        answer = data;
+    }
+          
+    $("#nextbtn").click(function(e) {
+         var count = document.getElementById("count").value;
+         var que = "";
+         var ans = "";
+        
+         for(var i=1;i<=count;i++){
+            if(pid != i){
+                document.getElementById("content-"+i).style.display = "none";
+            }
+            else{
+                document.getElementById("content-"+i).style.display = "block";
+                que = document.getElementById("que-"+i).value;
+                
+            }
+            
+         }
+         if (pid>count){
+              window.location="/thankyou"
+            }
+
+        $.ajax({
+        url:"/mcq_answer/"+ pid + "/?que="+que+"&op1="+answer,
+        success: function(data)
+            {
+                
+            }
+
+        })
+
+
+        pid++;
+        
+    
+    });
+        </script>
+
+
+<br><br><br><br><br><br><br><br><br><br>
+
+<footer class="footer section gray-bg" style="background-color: #000000">
+	<div class="container" style="background-color: #000000">
+		<div class="row">
+			<div class="col-lg-4 mr-auto col-sm-6" style="margin-top: 60px;">
+				<div class="widget mb-5 mb-lg-0">
+					<div class="logo mb-4">
+						<img src="{% static 'header/img/logo-05.png' %}" alt="" class="img-fluid">
+					</div>
+					<p style="color: #fff;line-height: 2.5em;text-align: justify;">The Fit India Company is a health, fitness and well-being-oriented firm that brings to you an inclusive health and wellness array to provide you the utmost of your health from inside-out.</p>
+
+					<ul class="list-inline footer-socials mt-4">
+						<li class="list-inline-item" ><a href="https://www.facebook.com/themefisher"><i class="icofont-facebook"></i></a></li>
+						<li class="list-inline-item"><a href="https://twitter.com/themefisher"><i class="icofont-twitter"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.pinterest.com/themefisher/"><i class="icofont-linkedin"></i></a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="col-lg-2 col-md-6 col-sm-6" style="margin-top: 60px;">
+				<div class="widget mb-5 mb-lg-0">
+					<h4 class="text-capitalize mb-3" style="color: #a7f200;font-size: 22px;font-weight: 700;">Quick Links</h4>
+					<div class="divider mb-4"></div>
+
+					<ul class="list-unstyled footer-menu lh-35">
+						<li><a style="color:#ffee00 ;font-size: 15px;line-height: 2.5em;" href="{% url 'about' %}">About </a></li>
+						<li><a style="color:#ffee00 ;font-size: 15px;line-height: 2.5em;" href="{% url 'team' %}">Teams</a></li>
+						<li><a style="color:#ffee00 ;font-size: 15px;line-height: 2.5em;" href="{% url 'services' %}">Services</a></li>
+						<li><a style="color:#ffee00 ;font-size: 15px;line-height: 2.5em;" href="{% url 'blogs' %}">Blogs</a></li>
+						<li><a style="color:#ffee00 ;font-size: 15px;line-height: 2.5em;" href="{% url 'contact' %}">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="col-lg-2 col-md-6 col-sm-6" style="margin-top: 60px;">
+				<div class="widget mb-5 mb-lg-0">
+					<h4 class="text-capitalize mb-3" style="color: #a7f200;font-size: 22px;font-weight: 700;">Support</h4>
+					<div class="divider mb-4"></div>
+
+					<ul class="list-unstyled footer-menu lh-35" >
+						<li><a style="color:#ffee00 ;font-size: 15px;line-height: 2.5em;" href="{% url 'companey_lisence' %}">Why Choose Us</a></li>
+						<li><a style="color:#ffee00 ;font-size: 15px;line-height: 2.5em;" href="{% url 'terms_conditions' %}">Terms & Conditions</a></li>
+						<li><a style="color:#ffee00;font-size: 15px;line-height: 2.5em;" href="{% url 'privacy_policy' %}">Privacy Policy</a></li>
+						<li><a style="color:#ffee00 ;font-size: 15px;line-height: 2.5em;" href="{% url 'companey_support' %}">Company Support </a></li>
+						<li><a style="color:#ffee00 ;font-size: 15px;line-height: 2.5em;" href="{% url 'faqss' %}">FAQuestions</a></li>
+						
+					</ul>
+				</div>
+			</div>
+
+			<div class="col-lg-3 col-md-6 col-sm-6" style="margin-top: 60px;">
+				<div class="widget widget-contact mb-5 mb-lg-0">
+					<h4 class="text-capitalize mb-3" style="color: #a7f200;font-size: 22px;font-weight: 700;">Get in Touch</h4>
+					<div class="divider mb-4"></div>
+
+					<div class="footer-contact-block mb-4">
+						<div class="icon d-flex align-items-center">
+							<i class="icofont-email mr-3" style="color: #ffee00;"></i>
+							<span class="h6 mb-0" style="color: #ffee00;">Support Available for 24/7</span>
+						</div>
+						<h4  class="mt-2"><a style="color: #fff;" href="fit.indcoy@gmail.com">fit.indcoy@gmail.com</a></h4>
+					</div>
+
+					<div class="footer-contact-block">
+						<div class="icon d-flex align-items-center">
+							<i class="icofont-support mr-3" style="color: #ffee00;"></i>
+							<span class="h6 mb-0" style="color: #ffee00;">Mon to Fri : 08:30 - 18:00</span>
+						</div>
+						<h4  class="mt-2"><a style="color: #fff;" href="+918700955586">+918700955586</a></h4>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer-btm py-4 mt-5">
+			<div class="row align-items-center justify-content-between">
+				<div class="col-lg-6">
+					<div class="copyright" style="background-color: #000000;font-size: 16px;color:#fff">
+						All rights reserved <span class="text-color" style="color: #a7f200;">Design</span>&<span class="text-color" style="color: #a7f200;">Developed</span> by <a href="https://www.vistaarwebx.com/" target="_blank" style="color:#fff"><img src="{% static 'header/img/logos.png' %}" style="width:4%;">istaarwebX</a>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="subscribe-form text-lg-right mt-5 mt-lg-0">
+						<form action="#" class="subscribe">
+              
+							<input type="text" class="form-control" placeholder="Your Email address" style="border-radius: 30px;height:60px;">
+              
+            
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-4">
+					<a class="backtop js-scroll-trigger" href="#top">
+						<i class="icofont-long-arrow-up"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
 </body>
 </html>
-
-
-
-{% include 'footer.html'  %}

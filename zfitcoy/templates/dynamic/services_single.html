@@ -117,7 +117,7 @@
 				</div>
 			</div>
 		</div>
-    
+    <button id="rzp-button1">Pay</button>
 	</div>
 </section>
 
@@ -141,6 +141,42 @@
     
     <script src="{% static 'Inside/js/script.js' %}"></script>
     <script src="{% static 'Inside/js/contact.js' %}"></script>
+
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+        <script>
+        var options = {
+            "key": "rzp_test_iWWvHqSHiNGRRi", // Enter the Key ID generated from the Dashboard
+            "name": "{{ order.notes.name }}",
+            "description": "{{ order.notes.service }}",
+            "image": "{% static 'header/img/logo-03.png' %}",
+            "order_id": "{{ order.id }}", //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
+            "handler": function (response){
+                console.log(
+                  {
+                    razorpay_payment_id:response.razorpay_payment_id,
+                    razorpay_order_id:response.razorpay_payment_id,
+                    razorpay_signature:response.razorpay_signature
+                  }
+                )
+            },
+           
+        };
+        var rzp1 = new Razorpay(options);
+        rzp1.on('payment.failed', function (response){
+                alert(response.error.code);
+                alert(response.error.description);
+                alert(response.error.source);
+                alert(response.error.step);
+                alert(response.error.reason);
+                alert(response.error.metadata.order_id);
+                alert(response.error.metadata.payment_id);
+        });
+        document.getElementById('rzp-button1').onclick = function(e){
+            rzp1.open();
+            e.preventDefault();
+        }
+        </script>
 
   </body>
   </html>
