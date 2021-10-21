@@ -62,29 +62,6 @@
 
     {% include 'team_comp.html' %}
 
-    <div class="row shuffle-wrapper portfolio-gallery">
-		{% for i in te %}
-      	<div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups="[&quot;cat1&quot;,&quot;cat2&quot;]">
-	      	<div class="position-relative doctor-inner-box">
-		        <div class="doctor-profile">
-	               <div class="doctor-img">
-	               		<a href="{% url 'team_single' i.id %}" ><img src="{{ i.image.url }}" alt="doctor-image" style="width: 250px;height: 300px;" class="img-fluid w-100"></a>
-	               </div>
-	            </div>
-                <div class="content mt-3">
-                	<h4 class="mb-0"><a href="{% url 'team_single' i.id %}">{{ i.name }}</a></h4>
-                	<p>{{ i.post }}</p>
-                </div> 
-	      	</div>
-      	</div>
-		  {% endfor %}
-
-    
-
-
-      
-
-      
     </div>
   </div>
 </section>

@@ -332,8 +332,9 @@
                 <div class="col-lg-6 ">
                     <div class="appoinment-content">
                         <img src="{% static 'header/img/opp.jpg' %}"  style="width:520px;border-radius: 15px;" alt="" class="img-fluid">
-                        <div class="emergency" style="border-radius: 15px;background-color: #fff;box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);">
-                            <h2 class="text-lg" style="color: #000000;"  ><i class="icofont-phone-circle text-lg" style="color: #000000;" ></i>+918700955586</h2>
+                        <div class="emergency" style="border-radius: 15px;background-color: #fff;box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);margin-left: -10px;">
+                            <h2 class="text-lg" style="color: #000000;font-size: 24px;margin-left: -10px;"  ><i class="icofont-phone-circle text-lg" style="color: #000000;font-size: 26px;" ></i>+91 870 095 5586  , </i>+91 810 306 5374</h2>
+                            
                         </div>
                     </div>
                 </div>
@@ -374,7 +375,7 @@
                             <textarea style="font-size: 15px;background-color: black;border-radius: 15px;" name="message" id="message" class="form-control" rows="6" placeholder="Your Message"></textarea>
                         </div>
                         <br><br>
-                         <input type="submit" class="btn btn-main btn-round-full" style="width: 400px;height:50px;font-size: 20px;border-radius: 15px;background-color: #a7f200;color: #000000;border-color: #a7f200 ;" value="Make Appoinment " />
+                         <input type="submit" class="btn btn-main btn-round-full" style="width: 410px;height:50px;font-size: 20px;border-radius: 15px;background-color: #a7f200;color: #000000;border-color: #a7f200 ;" value="Make Appoinment " />
                    
                     </form>
                 </div>
@@ -383,6 +384,105 @@
         </div>
     </section>
 
+
+
+
+
+
+
+
+    <!-- Upcoming Event Begin -->
+    <section class="upcoming-event-section spad-2"style="background: linear-gradient(rgba(209%,246%,237%, 1), rgba(33%,255%,191%, 0.64)), url({% static 'header/img/back.jpg' %}); >
+        <div class="container">
+         <div class="row justify-content-center">
+            <div class="col-lg-10 text-center">
+               <div class="section-title">
+                   <h2 style="color:#000000;" >Know your Body</h2>
+                   <div class="divider mx-auto my-4"></div>
+               </div>
+           </div>
+       </div>
+         <br>
+           <!-- Elements Section Begin -->
+    <section class="element-section">
+        <div class="container">
+            <div class="row" style="margin-top: -150px;">
+                <div class="col-lg-12">
+                    <div class="icon-box-title">
+                        <h2  style="color: #000000;background-color: #a7f200;width: 410px;padding-left: 20px;border-radius: 5px;box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);">Ayurvedic Body Types</h2>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single-icon-box">
+                        <div class="">
+                          <a href="{% url 'body_types1' %}"> <img src="{% static 'header/img/11.png' %}" style="height: 140px;" alt=""></a> 
+                        </div>
+                        <a href="{% url 'body_types1' %}"><h5>Ectomorph</h5></a>
+                       
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single-icon-box">
+                        <div class="">
+                            <a href="{% url 'body_types2' %}">  <img src="{% static 'header/img/12.png' %}" style="height: 140px;" alt=""></a>
+                        </div>
+                        <a href="{% url 'body_types2' %}"><h5>MESOMORPH</h5></a>
+                       
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single-icon-box">
+                        <div class="">
+                            <a href="{% url 'body_types3' %}">   <img src="{% static 'header/img/13.png' %}" style="height: 140px;" alt=""></a>
+                        </div>
+                        <a href="{% url 'body_types3' %}"> <h5>Endomorph</h5></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="row" >
+                <div class="col-lg-12">
+                    <div class="icon-box-title">
+                        <h2  style="color: #000000;background-color: #a7f200;width: 410px;padding-left: 20px;border-radius: 5px;box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);">Science of Body Types</h2>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single-icon-box">
+                        <div class="">
+                            <a href=""><img src="{% static 'header/img/111.png' %}" style="height: 140px;" alt=""></a>
+                        </div>
+                        <a href="">  <h5>Vatta</h5></a>
+                       
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single-icon-box">
+                        <div class="">
+                            <a href="">    <img src="{% static 'header/img/222.png' %}" style="height: 140px;" alt=""></a>
+                        </div>
+                        <a href="">   <h5>Kapha</h5></a>
+                       
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single-icon-box">
+                        <div class="">
+                            <a href="">   <img src="{% static 'header/img/333.png' %}" style="height: 140px;" alt=""></a>
+                        </div>
+                        <a href="">  <h5>Pitta</h5></a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Elements Section End -->
+        </div>
+    </section>
+    <!-- Upcoming Event End -->
+  
+    
     
     {% include 'blogs.html' %}
  {% include 'footer.html' %}
