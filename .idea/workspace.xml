@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="380ac8e0-c513-4fe5-bc4f-1b332849b148" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/fitcoy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/fitcoy.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env/bin/Python3" beforeDir="false" afterPath="$PROJECT_DIR$/env/bin/Python3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env/bin/django-admin" beforeDir="false" afterPath="$PROJECT_DIR$/env/bin/django-admin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env/bin/django-admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/bin/django-admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env/bin/normalizer" beforeDir="false" afterPath="$PROJECT_DIR$/env/bin/normalizer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env/bin/pip" beforeDir="false" afterPath="$PROJECT_DIR$/env/bin/pip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env/bin/pip3" beforeDir="false" afterPath="$PROJECT_DIR$/env/bin/pip3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env/bin/pip3.9" beforeDir="false" afterPath="$PROJECT_DIR$/env/bin/pip3.9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env/bin/python" beforeDir="false" afterPath="$PROJECT_DIR$/env/bin/python" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env/bin/python3.9" beforeDir="false" afterPath="$PROJECT_DIR$/env/bin/python3.9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env/bin/sqlformat" beforeDir="false" afterPath="$PROJECT_DIR$/env/bin/sqlformat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env/lib/python3.9/site-packages/django/bin/django-admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.9/site-packages/django/bin/django-admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env/lib/python3.9/site-packages/django/conf/project_template/manage.py-tpl" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.9/site-packages/django/conf/project_template/manage.py-tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/fonts/icomoon/Read Me.txt" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/fonts/icomoon/Read Me.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/fonts/icomoon/demo-files/demo.css" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/fonts/icomoon/demo-files/demo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/fonts/icomoon/demo-files/demo.js" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/fonts/icomoon/demo-files/demo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/fonts/icomoon/fonts/icomoon.eot" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/fonts/icomoon/fonts/icomoon.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/fonts/icomoon/fonts/icomoon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/fonts/icomoon/fonts/icomoon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/fonts/icomoon/fonts/icomoon.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/fonts/icomoon/fonts/icomoon.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/fonts/icomoon/fonts/icomoon.woff" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/fonts/icomoon/fonts/icomoon.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_alert.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_alert.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_badge.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_badge.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_breadcrumb.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_breadcrumb.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_button-group.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_button-group.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_buttons.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_card.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_carousel.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_carousel.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_close.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_close.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_code.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_code.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_custom-forms.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_custom-forms.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_functions.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_functions.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_grid.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_grid.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_input-group.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_input-group.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_jumbotron.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_jumbotron.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_list-group.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_list-group.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_media.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_media.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_modal.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_nav.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_nav.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_navbar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_pagination.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_pagination.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_popover.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_popover.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_print.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_print.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_progress.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_progress.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_reboot.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_reboot.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_root.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_root.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_spinners.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_spinners.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_tables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_tables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_toasts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_toasts.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_tooltip.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_tooltip.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_transitions.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_transitions.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_type.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_type.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_utilities.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_utilities.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/bootstrap-grid.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/bootstrap-grid.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/bootstrap-reboot.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/bootstrap-reboot.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/bootstrap.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/bootstrap.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_alert.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_alert.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_background-variant.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_background-variant.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_badge.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_badge.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_border-radius.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_border-radius.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_box-shadow.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_box-shadow.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_breakpoints.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_breakpoints.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_buttons.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_caret.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_caret.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_clearfix.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_clearfix.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_deprecate.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_deprecate.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_float.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_float.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_forms.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_forms.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_gradients.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_gradients.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_grid-framework.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_grid-framework.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_grid.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_grid.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_hover.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_hover.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_image.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_image.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_list-group.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_list-group.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_lists.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_lists.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_nav-divider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_nav-divider.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_pagination.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_pagination.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_reset-text.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_reset-text.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_resize.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_resize.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_screen-reader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_screen-reader.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_size.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_size.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_table-row.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_table-row.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_text-emphasis.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_text-emphasis.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_text-hide.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_text-hide.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_text-truncate.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_text-truncate.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_transition.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_transition.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_visibility.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/mixins/_visibility.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/utilities/_align.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/utilities/_align.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/utilities/_background.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/utilities/_background.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/utilities/_borders.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/utilities/_borders.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/utilities/_clearfix.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/utilities/_clearfix.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/utilities/_display.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/utilities/_display.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/utilities/_embed.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/utilities/_embed.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/utilities/_flex.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/utilities/_flex.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/utilities/_float.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/utilities/_float.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/utilities/_overflow.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/utilities/_overflow.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/utilities/_position.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/utilities/_position.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/utilities/_screenreaders.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/utilities/_screenreaders.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/utilities/_shadows.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/utilities/_shadows.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/utilities/_sizing.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/utilities/_sizing.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/utilities/_spacing.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/utilities/_spacing.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/utilities/_stretched-link.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/utilities/_stretched-link.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/utilities/_text.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/utilities/_text.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/utilities/_visibility.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/utilities/_visibility.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/vendor/_rfs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/footer/scss/bootstrap/vendor/_rfs.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/header/img/con.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/header/img/logos.png" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/header/img/logos.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/templates/email3.html" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/templates/email3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/templates/pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/templates/pages/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="279v0mfxzQXmCWPCPLgupNH4qe9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="380ac8e0-c513-4fe5-bc4f-1b332849b148" name="Changes" comment="" />
+      <created>1648744897447</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1648744897447</updated>
+    </task>
+    <servers />
+  </component>
+</project>
