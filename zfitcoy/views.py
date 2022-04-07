@@ -230,6 +230,21 @@ def BODY_TYPES3(request):
     d = {"ter": ter}
     return render(request, 'pages/body_types.html',d)
 
+def BODY_TYPES4(request):
+    ter = Body_Typess.objects.get(id=4)
+    d = {"ter": ter}
+    return render(request, 'pages/body_types.html',d)
+
+def BODY_TYPES5(request):
+    ter = Body_Typess.objects.get(id=5)
+    d = {"ter": ter}
+    return render(request, 'pages/body_types.html',d)
+
+def BODY_TYPES6(request):
+    ter = Body_Typess.objects.get(id=6)
+    d = {"ter": ter}
+    return render(request, 'pages/body_types.html',d)
+
 def QUIZ_USER(request):
     if request.method == "POST":
         c = request.POST

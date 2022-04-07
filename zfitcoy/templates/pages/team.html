@@ -18,7 +18,7 @@
   <!-- Slick Slider  CSS -->
   <link rel="stylesheet" href="{% static 'Inside/plugins/slick-carousel/slick/slick.css' %}">
   <link rel="stylesheet" href="{% static 'Inside/plugins/slick-carousel/slick/slick-theme.css' %}">
-
+    <link rel="icon" href="{% static 'header/img/logo_head.png' %}" type="image/gif" sizes="20x20">
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="{% static 'Inside/css/style.css' %}">
 
@@ -51,21 +51,43 @@
 </section>
 
 
-<!-- portfolio -->
 <section class="section doctors">
   <div class="container">
   	  <div class="row justify-content-center">
              <div class="col-lg-6 text-center">
-               
+                <div class="section-title">
+
+                </div>
             </div>
         </div>
 
-    {% include 'team_comp.html' %}
 
+
+    <div class="row shuffle-wrapper portfolio-gallery">
+
+
+
+        {% for i in te %}
+      <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item illustration" data-groups="[&quot;cat2&quot;]">
+        	<div class="position-relative doctor-inner-box">
+		        <div class="doctor-profile">
+		        	<div class="doctor-img">
+		               <img src="{{ i.image.url }}" style="height:300px" alt="doctor-image" class="img-fluid w-100">
+		             </div>
+	             </div>
+                <div class="content mt-3">
+                	<h4 class="mb-0"><a href="{% url 'team_single' i.id %}">{{ i.name }}</a></h4>
+                	<p>{{ i.post }}</p>
+                </div>
+	      	</div>
+        </div>
+        {% endfor %}
     </div>
   </div>
 </section>
-<!-- /portfolio -->
+
+
+
 <section class="section cta-page">
 	<div class="container">
 		<div class="row">
@@ -73,7 +95,7 @@
 				<div class="cta-content">
 					<div class="divider mb-4"></div>
 					<h2 class="mb-5 text-lg">We are pleased to offer you the <span >chance to have the healthy</span></h2>
-					<a href="{% url 'contact' %}" class="btn btn-main-2 btn-round-full">Get appoinment<i class="icofont-simple-right  ml-2"></i></a>
+					<a href="{% url 'contact' %}" class="btn btn-main-2 btn-round-full" style="color:#000000">Get appoinment<i class="icofont-simple-right  ml-2"></i></a>
 				</div>
 			</div>
 		</div>
