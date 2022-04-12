@@ -1,0 +1,58 @@
+{% extends 'admin_base.html' %}
+{% load static %}
+{% block body %}
+
+<div class="clearfix"></div>
+	
+  <div class="content-wrapper">
+    <div class="container-fluid">
+
+
+	  
+
+	<div class="row">
+	 <div class="col-12 col-lg-12">
+	   <div class="card">
+	     <div class="card-header">Contact Us Request
+		  <div class="card-action">
+             <div class="dropdown">
+
+              </div>
+             </div>
+		 </div>
+	       <div class="table-responsive">
+                 <table class="table align-items-center table-flush table-borderless">
+                  <thead>
+                   <tr>
+                    <th>Full Name</th>
+                     <th>Mobile No</th>
+                     <th>Email</th>
+                     <th>Message</th>
+                   </tr>
+                   </thead>
+                      {% for i in con %}
+                   <tbody>
+                   <tr>
+                    <td>{{ i.fname }}{{ i.lname }}</td>
+                    <td>{{ i.mob }}</td>
+                    <td>{{ i.email }}</td>
+                    <td>{{ i.message }}</td>
+                   </tr>
+                 </tbody>
+                     {% endfor %}
+                 </table>
+               </div>
+	   </div>
+	 </div>
+	</div><!--End Row-->
+
+      <!--End Dashboard Content-->
+	  
+	<!--start overlay-->
+		  <div class="overlay toggle-menu"></div>
+		<!--end overlay-->
+		
+    </div>
+  </div>
+    <!-- End container-fluid-->
+      {% endblock %}

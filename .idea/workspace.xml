@@ -2,29 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="380ac8e0-c513-4fe5-bc4f-1b332849b148" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/fitcoy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/fitcoy.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fitcoy/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/fitcoy/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zfitcoy/static/Inside/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/Inside/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zfitcoy/static/bmi/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/bmi/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zfitcoy/static/header/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/static/header/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zfitcoy/templates/blogs.html" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/templates/blogs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zfitcoy/templates/dynamic/blog-single.html" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/templates/dynamic/blog-single.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zfitcoy/templates/dynamic/services_single.html" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/templates/dynamic/services_single.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zfitcoy/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/templates/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zfitcoy/templates/gallery2.html" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/templates/gallery2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zfitcoy/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/templates/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zfitcoy/templates/pages/BMI_calculator.html" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/templates/pages/BMI_calculator.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zfitcoy/templates/pages/Nutrition_calculator.html" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/templates/pages/Nutrition_calculator.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zfitcoy/templates/pages/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/templates/pages/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zfitcoy/templates/pages/blogs.html" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/templates/pages/blogs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zfitcoy/templates/pages/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/templates/pages/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zfitcoy/templates/pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/templates/pages/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zfitcoy/templates/pages/recipie.html" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/templates/pages/recipie.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zfitcoy/templates/pages/service.html" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/templates/pages/service.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zfitcoy/templates/pages/team.html" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/templates/pages/team.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zfitcoy/templates/quiz.html" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/templates/quiz.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zfitcoy/templates/quiz_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/templates/quiz_user.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zfitcoy/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
