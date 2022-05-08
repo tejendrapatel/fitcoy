@@ -7,12 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
   <meta name="description" content=""/>
   <meta name="author" content=""/>
-  <title>..:: GORURBAN ::..</title>
+  <title>..:: FITCOY ::..</title>
   <!-- loader-->
   <link href="{% static 'admin/css/pace.min.css' %}" rel="stylesheet"/>
   <script src="{% static 'admin/js/pace.min.js' %}"></script>
   <!--favicon-->
-  <link rel="icon" href="{% static 'admin/images/favicon.ico' %}" type="image/x-icon">
+  <link rel="icon" href="{% static 'header/img/logo_head.png' %}" type="image/x-icon">
   <!-- Vector CSS -->
   <link href="{% static 'admin/plugins/vectormap/jquery-jvectormap-2.0.2.css' %}" rel="stylesheet"/>
   <!-- simplebar CSS-->
@@ -40,8 +40,8 @@
    <div id="sidebar-wrapper" data-simplebar="" data-simplebar-auto-hide="true">
      <div class="brand-logo">
       <a href="{% url 'home' %}">
-       <img src="{% static 'images/image.png' %}" class="logo-icon" style="width:21%" alt="logo icon">
-       <h5 class="logo-text">Gorurban</h5>
+       <img src="{% static 'header/img/logo_head.png' %}" class="logo-icon" style="width:25%" alt="logo icon">
+       <h5 class="logo-text">Fitcoy</h5>
      </a>
    </div>
    <ul class="sidebar-menu do-nicescrol">
@@ -52,27 +52,22 @@
         </a>
       </li>
 
-      <li>
-        <a href="{% url 'admin_home' %}">
-          <i class="zmdi zmdi-home"></i> <span>Home</span>
-        </a>
-      </li>
+
+
 
       <li>
-        <a href="{% url 'admin_about' %}">
-          <i class="zmdi zmdi-accounts-add"></i> <span>About</span>
+        <a href="{% url 'admin_Teams' %}" >
+          <i class="zmdi zmdi-accounts-add"></i> <span>Teams</span>
         </a>
       </li>
-
-      <li>
-        <a href="{% url 'admin_camps' %}" >
-          <i class="zmdi zmdi-fire"></i> <span>Camps</span>
+    <li>
+        <a href="{% url 'admin_services' %}" >
+          <i class="zmdi zmdi-delicious"></i> <span>Services</span>
         </a>
       </li>
-
        <li>
-        <a href="{% url 'admin_opportunities' %}" >
-          <i class="zmdi zmdi-airline-seat-recline-extra"></i> <span>Opportunities Request</span>
+        <a href="{% url 'admin_appointment' %}" >
+          <i class="zmdi zmdi-twitch"></i> <span>Appoinment Request</span>
         </a>
       </li>
         <li>
@@ -80,18 +75,23 @@
           <i class="zmdi zmdi-accounts-list"></i> <span>Contact Request</span>
         </a>
       </li>
-        <li>
-        <a href="{% url 'admin_mail' %}" >
-          <i class="zmdi zmdi-email-open"></i> <span>E mail Send</span>
-          <small class="badge float-right badge-light">New</small>
-        </a>
-      </li>
+
 
       <li class="sidebar-header">Media</li>
-      <li><a href="{% url 'admin_gallery' %}"><i class="zmdi zmdi-collection-folder-image text-info "></i> <span>Gallery</span></a></li>
-      <li><a href="{% url 'admin_news' %}"><i class="zmdi zmdi-file-text text-success"></i> <span>News</span></a></li>
-      <li><a href="{% url 'admin_blogs' %}"><i class="zmdi zmdi-blogger text-danger"></i> <span>Blogs</span></a></li>
-      <li><a href="{% url 'admin_events' %}"><i class="zmdi zmdi-layers text-info"></i> <span>Events</span></a></li>
+      <li><a href="{% url 'admin_blogs' %}"><i class="zmdi zmdi-blogger text-danger"></i> <span>Blogs/Recipe</span></a></li>
+       <li class="sidebar-header">Elements</li>
+         <li><a href="{% url 'admin_water' %}"><i class="zmdi zmdi-cloud-circle "></i> <span>Water</span></a></li>
+       <li><a href="{% url 'admin_earth' %}"><i class="zmdi zmdi-globe "></i> <span>Earth</span></a></li>
+       <li><a href="{% url 'admin_fire' %}"><i class="zmdi zmdi-fire "></i> <span>Fire</span></a></li>
+       <li><a href="{% url 'admin_air' %}"><i class="zmdi zmdi-plaster "></i> <span>Air</span></a></li>
+       <li><a href="{% url 'admin_space' %}"><i class="zmdi zmdi-nature-people"></i> <span>Space</span></a></li>
+       <li class="sidebar-header">Body Types</li>
+       <li><a href="{% url 'admin_vatta' %}"><i class="zmdi zmdi-dot-circle text-danger"></i> <span>Vatta</span></a></li>
+       <li><a href="{% url 'admin_kapha' %}"><i class="zmdi zmdi-dot-circle text-danger"></i> <span>Kapha</span></a></li>
+       <li><a href="{% url 'admin_pitta' %}"><i class="zmdi zmdi-dot-circle text-danger"></i> <span>Pitta</span></a></li>
+       <li><a href="{% url 'admin_ectomorph' %}"><i class="zmdi zmdi-dot-circle text-danger"></i> <span>Ectomorph</span></a></li>
+       <li><a href="{% url 'admin_mesomorph' %}"><i class="zmdi zmdi-dot-circle text-danger"></i> <span>Mesomorph</span></a></li>
+       <li><a href="{% url 'admin_endomorph' %}"><i class="zmdi zmdi-dot-circle text-danger"></i> <span>Endomorph</span></a></li>
 
     </ul>
 
@@ -117,7 +117,7 @@
 
   <ul class="navbar-nav align-items-center right-nav-link">
     <li class="nav-item dropdown-lg">
-      <a class="nav-link dropdown-toggle dropdown-toggle-nocaret waves-effect" href="{% url 'admin_mail' %}">
+      <a class="nav-link dropdown-toggle dropdown-toggle-nocaret waves-effect" href="">
       <i class="fa fa-envelope-open-o"></i></a>
     </li>
     <li class="nav-item dropdown-lg">
@@ -125,7 +125,7 @@
       <i class="fa fa-google"></i></a>
     </li>
     <li class="nav-item dropdown-lg">
-      <a class="nav-link dropdown-toggle dropdown-toggle-nocaret waves-effect" href="{% url 'admin_youtube' %}">
+      <a class="nav-link dropdown-toggle dropdown-toggle-nocaret waves-effect" href="">
       <i class="fa fa-youtube"></i></a>
     </li>
    
@@ -165,7 +165,7 @@
 	<footer class="footer">
       <div class="container">
         <div class="text-center">
-          Design & Developed by <a href="https://www.vistaarwebx.com/"><img src="{% static 'images/logos.png' %}" style="width:1.5%">istaarwebX</a>
+          Design & Developed by <a href="https://www.vistaarwebx.com/"><img src="{% static 'header/img/logos.png' %}" style="width:1.5%">istaarwebX</a>
         </div>
       </div>
     </footer>

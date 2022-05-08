@@ -34,6 +34,7 @@ class Team(models.Model):
 
 class Services(models.Model):
     name =  models.CharField(null=True,max_length=50)
+    price = models.IntegerField(null=True)
     detail = models.CharField(null=True,max_length=500)
     discription = RichTextField(null=True)
     image = models.FileField(null=True)
@@ -87,21 +88,27 @@ class WHY_CHOOSE_Us(models.Model):
     cont = RichTextField(null=True)
 
 class Water(models.Model):
+    image = models.FileField(null=True)
     cont = RichTextField(null=True)
 
 class Fire(models.Model):
+    image = models.FileField(null=True)
     cont = RichTextField(null=True)
 
 class Body_Typess(models.Model):
+    image = models.FileField(null=True)
     cont = RichTextField(null=True)
 
 class Air(models.Model):
+    image = models.FileField(null=True)
     cont = RichTextField(null=True)
 
 class Earth(models.Model):
+    image = models.FileField(null=True)
     cont = RichTextField(null=True)
 
 class Space(models.Model):
+    image = models.FileField(null=True)
     cont = RichTextField(null=True)
 
 class faqss(models.Model):

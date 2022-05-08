@@ -88,6 +88,8 @@ def TEAMS(request):
 
 
 
+
+
 # def MCQS(request):
 #     if request.method == "POST":
 #         fnam = request.POST['fnam']
@@ -136,13 +138,17 @@ def SERVICES_SINGLE(request,blo_id):
         SERVICE_CONTACT.objects.create(name=cname, email=cmail, mobile=cmob, age=cage,message=cmessage)
         ter = MCQUSER.objects.filter().last()
     sersingle = Services.objects.get(id=blo_id)
+    fir = Services.objects.get(id=blo_id)
+    nam = fir.name
+    amt = fir.price*100
+   
     data={
-        'amount' : 100*100,
-        'currency' : 'INR',
+        'amount':amt,
+        'currency':'INR',
         'receipt' : 'receipt id of order',
         'notes':{ 
-            "name":'hgfhg',
-            "service":"zumba",
+            "name":nam,
+           
         },
     }
 
@@ -286,413 +292,242 @@ def LOGIN(request):
         user = authenticate(username=u, password=p)
         if user:
             login(request, user)
-            return redirect('admin_pannel/admin_index')
+            return redirect('admin_index')
         else:
             error = True
     d = {'error': error}
     return render(request, "admin_pannel/login.html", d)
-
-def FORGOT(request):
-    error = False
-    form = False
-    udata = False
-    if request.method == "POST":
-        dd = request.POST
-        name = dd["form"]
-        if name == "submit email":
-            e = dd['em']
-            user = User.objects.filter(email = e)
-            if user:
-                form = True
-                udata = user[0]
-            else:
-                error = True
-        if name == 'submit pwd':
-            p = dd ['pwd']
-            c = dd ['cpwd']
-            u = dd ['idd']
-            user = User.objects.get(id=u)
-            user.set_password(p)
-            user.save()
-            return redirect ('Login')
-    d = {"form":form,"error":error,"udata":udata}
-    return render(request,'forgot.html',d)
+######Used#####
 
 def LOGOUT(request):
     logout(request)
     return redirect('home')
-
-
-def ADMIN_YOUTUBE(request):
-    return render(request, 'admin_youtube.html')
-
-
-def ADMIN_INDEX(request):
-    li = []
-    em1 = EMAIL_LETTERS.objects.all()
-    for i in em1:
-        li.append(i.mubmail)
-    if request.method == "POST":
-        if 'new' in request.POST:
-            c = request.POST
-            subject = c['sub']
-            imgg = c['img']
-            content = c['msg']
-            email = li
-            # Contact.objects.create(fname=cname, lname=clname, mob=cmobile, email=cemail,message=cmessage)
-            msg = msg = EmailMultiAlternatives(subject, content, EMAIL_HOST_USER, email)
-            d = {'subject': subject, "imgg": imgg, "content": content}
-            html = get_template('email.html').render(d)
-            msg.attach_alternative(html, 'text/html')
-            msg.send()
-            return redirect('admin_index')
-        elif 'pos' in request.POST:
-            imgg = request.FILES['imagg']
-            EMIMG.objects.create(imagess=imgg)
-            return redirect('admin_index')
-    podd = EMIMG.objects.latest('id')
-    opps = Oppurtunities.objects.all().order_by('-id')
-    cons = Contact.objects.all().order_by('-id')
-    cam = Camps.objects.all().order_by('-id')
-    opp = opps[:5]
-    con = cons[:5]
-    emp = Team.objects.all()
-    d = {"opp": opp, "con": con, "emp": emp, "cam": cam, "podd": podd}
-    return render(request, 'admin_index.html', d)
-
+######Used#####
 
 def ADMIN_CONTACT(request):
     con = Contact.objects.all()
     d = {"con": con}
-    return render(request, 'admin_contact.html', d)
+    return render(request, 'admin_pannel/admin_contact.html', d)
+######Used#####
 
+def ADMIN_APPOINTMENT(request):
+    con = Appionment.objects.all()
+    d = {"con": con}
+    return render(request, 'admin_pannel/admin_Appointment.html', d)
 
-def ADMIN_OPPORTUNITIES(request):
-    opp = Oppurtunities.objects.all()
-    d = {"opp": opp}
-    return render(request, 'admin_oppurtunities.html', d)
-
-
-def ADMIN_MAIl(request):
-    li = []
-    em1 = EMAIL_LETTERS.objects.all()
-    for i in em1:
-        li.append(i.mubmail)
+def ADMIN_SERVICES(request):
     if request.method == "POST":
-        if 'em' in request.POST:
-            c = request.POST
-            email = c['emi']
-            subject = c['sub']
-            imgg = c['img']
-            content = c['msg']
-            # Contact.objects.create(fname=cname, lname=clname, mob=cmobile, email=cemail,message=cmessage)
-            msg = EmailMultiAlternatives(subject, f'{content}', EMAIL_HOST_USER, [f'{email}'])
-            d = {'email': email, 'subject': subject, "imgg": imgg, "content": content}
-            html = get_template('email.html').render(d)
-            msg.attach_alternative(html, 'text/html')
-            msg.send()
-            return redirect('admin_mail')
-        elif 'new' in request.POST:
-            c = request.POST
-            subject = c['sub']
-            imgg = c['img']
-            content = c['msg']
-            email = li
-            # Contact.objects.create(fname=cname, lname=clname, mob=cmobile, email=cemail,message=cmessage)
-            msg = msg = EmailMultiAlternatives(subject, content, EMAIL_HOST_USER, email)
-            d = {'subject': subject, "imgg": imgg, "content": content}
-            html = get_template('email.html').render(d)
-            msg.attach_alternative(html, 'text/html')
-            msg.send()
-            return redirect('admin_mail')
-
-    return render(request, 'admin_mail.html')
-
-
-def ADMIN_ABOUT(request):
-    abo = About.objects.get(id=1)
-    abo2 = About.objects.get(id=2)
-    abo3 = About.objects.get(id=3)
-    emp = Team.objects.all()
-    if request.method == "POST":
-        if 'about' in request.POST:
-            c = request.POST
-            hedd = c['head']
-            parr = c['para']
-            imgg = request.FILES['img']
-            abow = About.objects.filter(id=1)
-            abow.update(heading=hedd, paragraph=parr, image1=imgg)
-            return redirect('admin_about')
-        elif 'history' in request.POST:
-            c = request.POST
-            hedd = c['head']
-            parr = c['para']
-            imgg = request.FILES['img']
-            abow = About.objects.filter(id=2)
-            abow.update(heading=hedd, paragraph=parr, image1=imgg)
-            return redirect('admin_about')
-        elif 'objective' in request.POST:
-            c = request.POST
-            hedd = c['head']
-            parr = c['para']
-            imgg = request.FILES['img']
-            abow = About.objects.filter(id=3)
-            abow.update(heading=hedd, paragraph=parr, image1=imgg)
-            return redirect('admin_about')
-        elif 'team' in request.POST:
-            c = request.POST
-            nam = c['head']
-            mobi = c['mob']
-            imgg = request.FILES['img']
-            idobbb = c['dobb']
-            emaill = c['emai']
-            desi = c['desig']
-            Team.objects.create(name=nam, mobile=mobi, image1=imgg, dob=idobbb, email=emaill, designation=desi)
-            return redirect('admin_about')
-    d = {"emp": emp, "abo": abo, "abo2": abo2, "abo3": abo3}
-    return render(request, 'admin_about.html', d)
-
-
-def ADMIN_HOME(request):
-    if request.method == "POST":
-        if 'testi' in request.POST:
-            c = request.POST
-            nam = c['cat']
-            posit = c['head']
-            imgg = request.FILES['img']
-            detai = c['det']
-            face = c['fb']
-            linkedi = c['link']
-            insta = c['inst']
-            twitt = c['twit']
-            TESTIMONY.objects.create(name=nam, position=posit, image=imgg, Detail=detai, facebook=face,
-                                     linkedin=linkedi, instagram=insta, twitter=twitt)
-            return redirect('admin_home')
-
-        elif 'bann' in request.POST:
-            c = request.POST
-            posit = c['about']
-            bans = BANNER_ABOUT.objects.filter(id=1)
-            bans.update(Discription=posit)
-            return redirect('admin_home')
-    test = TESTIMONY.objects.all()
-    ban = BANNER_ABOUT.objects.get(id=1)
-    d = {"test": test, "ban": ban}
-    return render(request, 'admin_home.html', d)
-
-
-def ADMIN_HOME2(request):
-    if request.method == "POST":
-        if 'testi' in request.POST:
-            c = request.POST
-            nam = c['cat']
-            posit = c['head']
-            imgg = request.FILES['img']
-            detai = c['det']
-            face = c['fb']
-            linkedi = c['link']
-            insta = c['inst']
-            twitt = c['twit']
-            TESTIMONY.objects.create(name=nam, position=posit, image=imgg, Detail=detai, facebook=face,
-                                     linkedin=linkedi, instagram=insta, twitter=twitt)
-            return redirect('admin_home2')
-
-        elif 'bann' in request.POST:
-            c = request.POST
-            posit = c['about']
-            bans = BANNER_CAMPS.objects.filter(id=1)
-            bans.update(Discription=posit)
-            return redirect('admin_home2')
-    test = TESTIMONY.objects.all()
-    ban = BANNER_CAMPS.objects.get(id=1)
-    d = {"test": test, "ban": ban}
-    return render(request, 'admin_home2.html', d)
-
-
-def ADMIN_HOME3(request):
-    if request.method == "POST":
-        if 'testi' in request.POST:
-            c = request.POST
-            nam = c['cat']
-            posit = c['head']
-            imgg = request.FILES['img']
-            detai = c['det']
-            face = c['fb']
-            linkedi = c['link']
-            insta = c['inst']
-            twitt = c['twit']
-            TESTIMONY.objects.create(name=nam, position=posit, image=imgg, Detail=detai, facebook=face,
-                                     linkedin=linkedi, instagram=insta, twitter=twitt)
-            return redirect('admin_home3')
-
-        elif 'bann' in request.POST:
-            c = request.POST
-            posit = c['about']
-            bans = BANNER_ANANTMANDI.objects.filter(id=1)
-            bans.update(Discription=posit)
-            return redirect('admin_home3')
-    test = TESTIMONY.objects.all()
-    ban = BANNER_ANANTMANDI.objects.get(id=1)
-    d = {"test": test, "ban": ban}
-    return render(request, 'admin_home3.html', d)
-
-
-def ADMIN_HOME4(request):
-    if request.method == "POST":
-        if 'testi' in request.POST:
-            c = request.POST
-            nam = c['cat']
-            posit = c['head']
-            imgg = request.FILES['img']
-            detai = c['det']
-            face = c['fb']
-            linkedi = c['link']
-            insta = c['inst']
-            twitt = c['twit']
-            TESTIMONY.objects.create(name=nam, position=posit, image=imgg, Detail=detai, facebook=face,
-                                     linkedin=linkedi, instagram=insta, twitter=twitt)
-            return redirect('admin_home4')
-
-        elif 'bann' in request.POST:
-            c = request.POST
-            posit = c['about']
-            bans = BANNER_STORE.objects.filter(id=1)
-            bans.update(Discription=posit)
-            return redirect('admin_home4')
-    test = TESTIMONY.objects.all()
-    ban = BANNER_STORE.objects.get(id=1)
-    d = {"test": test, "ban": ban}
-    return render(request, 'admin_home4.html', d)
-
-
-def ADMIN_CAMPS(request):
-    if request.method == "POST":
-        if 'cpma' in request.POST:
-            c = request.POST
-            cname = c['cmpp']
-            dayy = c['day']
-            strdte = c['strda']
-            dimg = request.FILES['img']
-            sdeta = c['det']
-            text = c['about']
-            Camps.objects.create(camp_name=cname, no_of_days=dayy, date=strdte, image=dimg, detail=sdeta, content=text)
-    camp = Camps.objects.all()
-    d = {"camp": camp}
-    return render(request, 'admin_camps.html', d)
-
-
-def ADMIN_NEWS(request):
-    if request.method == "POST":
-        campna = request.POST['cam']
-        nyear = request.POST['year']
-        nimg = request.FILES['img']
-        fir = Camps.objects.get(camp_name=campna)
-        fir.content = campna
-        fir.save()
-        NEWSS.objects.create(Year=nyear, image=nimg)
-    camp = Camps.objects.all()
-    fir = NEWSS.objects.filter(Year="2018")
-    sec = NEWSS.objects.filter(Year="2018")
-    thi = NEWSS.objects.filter(Year="2019")
-    fou = NEWSS.objects.filter(Year="2020")
-    fiv = NEWSS.objects.filter(Year="2021")
-    d = {"fir": fir, "sec": sec, "thi": thi, "fou": fou, "fiv": fiv, "camp": camp}
-    return render(request, 'admin_news.html', d)
-
-
-def ADMIN_GALLERY(request):
-    if request.method == "POST":
-        campna = request.POST['cam']
-        nyear = request.POST['year']
-        nimg = request.FILES['img']
-        fir = Camps.objects.get(camp_name=campna)
-        fir.content = campna
-        fir.save()
-        GALLERY.objects.create(Year=nyear, image=nimg)
-    camp = Camps.objects.all()
-    fir = GALLERY.objects.filter(Year="2018")
-    sec = GALLERY.objects.filter(Year="2018")
-    thi = GALLERY.objects.filter(Year="2019")
-    fou = GALLERY.objects.filter(Year="2020")
-    fiv = GALLERY.objects.filter(Year="2021")
-    d = {"fir": fir, "sec": sec, "thi": thi, "fou": fou, "fiv": fiv, "camp": camp}
-    return render(request, 'admin_gallery.html', d)
-
+        d = request.POST
+        namm = d['nam']
+        prii = d['pri']
+        dell = d['det']
+        aboo = d['about']
+        imgg = request.FILES['img']
+        Services.objects.create(name=namm, price=prii,detail=dell,discription=aboo,image=imgg)
+    te = Services.objects.all()
+    d = {"te":te}
+    return render(request, 'admin_pannel/admin_services.html',d)
 
 def ADMIN_BLOGS(request):
     if request.method == "POST":
         bcat = request.POST['cat']
-        bhead = request.POST['head']
+        bhead = request.POST['nam']
         bimg = request.FILES['img']
-        bdet = request.POST['det']
         btxt = request.POST['txt']
-        btag = request.POST['tag']
-        BLOGS.objects.create(category=bcat, Heading=bhead, image1=bimg, Detail=bdet, Discription=btxt, tags=btag)
-    bl = BLOGS.objects.all()
-    d = {"bl": bl}
-    return render(request, 'admin_blogs.html', d)
-
-
-def ADMIN_EVENTS(request):
-    if request.method == "POST":
-        campna = request.POST['cam']
-        nyear = request.POST['year']
-        nimg = request.FILES['img']
-        fir = Camps.objects.get(camp_name=campna)
-        fir.content = campna
+        fir = Blog_category.objects.get(name=bcat)
+        fir.content = bcat
         fir.save()
-        EVENTSS.objects.create(Year=nyear, image=nimg)
-    camp = Camps.objects.all()
+        Blogs.objects.create( name=bhead, image=bimg, detail=btxt)
+    bl = Blogs.objects.all()
+    d = {"bl": bl}
+    return render(request, 'admin_pannel/admin_blogs.html', d)
+  ##############used ##########
 
-    fir = EVENTSS.objects.filter(Year="2018")
-    sec = EVENTSS.objects.filter(Year="2018")
-    thi = EVENTSS.objects.filter(Year="2019")
-    fou = EVENTSS.objects.filter(Year="2020")
-    fiv = EVENTSS.objects.filter(Year="2021")
-    d = {"fir": fir, "sec": sec, "thi": thi, "fou": fou, "fiv": fiv, "camp": camp}
-    return render(request, 'admin_events.html', d)
+def ADMIN_TEAMS(request):
+    if request.method == "POST":
+        if 'cpma' in request.POST:
+            c = request.POST
+            cname = c['nam']
+            postt = c['pos']
+            dimg = request.FILES['img']
+            face = c['fb']
+            twit = c['tw']
+            inst = c['in']
+            link = c['li']
+            deta = c['about']
+            Team.objects.create(name=cname, post=postt, detail=deta, image=dimg, facebook=face, twitter=twit,instagram=inst,linkedin=link)
+    camp = Team.objects.all()
+    d = {"camp": camp}
+    return render(request, 'admin_pannel/admin_team.html', d)
+###################used#############
+
+
+
+def ADMIN_AIR(request):
+    if request.method == "POST":
+            c = request.POST
+            cname = c['txt']
+            dimg = request.FILES['img']
+            abow = Air.objects.filter(id=1)
+            abow.update(image=dimg, cont=cname)
+            return redirect('admin_air')
+    fir = Air.objects.get(id=1)
+    d = {"fir":fir}
+    return render(request, 'admin_pannel/admin_air.html',d)
+
+def ADMIN_WATER(request):
+    if request.method == "POST":
+            c = request.POST
+            cname = c['txt']
+            dimg = request.FILES['img']
+            abow = Water.objects.filter(id=1)
+            abow.update(image=dimg, cont=cname)
+            return redirect('admin_water')
+    fir = Water.objects.get(id=1)
+    d = {"fir":fir}
+    return render(request, 'admin_pannel/admin_water.html',d)
+
+def ADMIN_FIRE(request):
+    if request.method == "POST":
+            c = request.POST
+            cname = c['txt']
+            dimg = request.FILES['img']
+            abow = Fire.objects.filter(id=1)
+            abow.update(image=dimg, cont=cname)
+            return redirect('admin_fire')
+    fir = Fire.objects.get(id=1)
+    d = {"fir":fir}
+    return render(request, 'admin_pannel/admin_fire.html',d)
+
+def ADMIN_SPACE(request):
+    if request.method == "POST":
+        c = request.POST
+        cname = c['txt']
+        dimg = request.FILES['img']
+        abow = Space.objects.filter(id=1)
+        abow.update(image=dimg, cont=cname)
+        return redirect('admin_space')
+    fir = Space.objects.get(id=1)
+    d = {"fir": fir}
+    return render(request, 'admin_pannel/admin_space.html',d)
+
+def ADMIN_EARTH(request):
+    if request.method == "POST":
+        c = request.POST
+        cname = c['txt']
+        dimg = request.FILES['img']
+        abow = Earth.objects.filter(id=1)
+        abow.update(image=dimg, cont=cname)
+        return redirect('admin_earth')
+    fir = Earth.objects.get(id=1)
+    d = {"fir": fir}
+    return render(request, 'admin_pannel/admin_earth.html',d)
+
+def ADMIN_VAATA(request):
+    if request.method == "POST":
+        c = request.POST
+        cname = c['txt']
+        dimg = request.FILES['img']
+        abow = Body_Typess.objects.filter(id=4)
+        abow.update(image=dimg, cont=cname)
+        return redirect('admin_ectomorph')
+    fir = Body_Typess.objects.get(id=4)
+    d = {"fir": fir}
+    return render(request, 'admin_pannel/admin_vatta.html',d)
+
+def ADMIN_KAPHA(request):
+    if request.method == "POST":
+        c = request.POST
+        cname = c['txt']
+        dimg = request.FILES['img']
+        abow = Body_Typess.objects.filter(id=5)
+        abow.update(image=dimg, cont=cname)
+        return redirect('admin_ectomorph')
+    fir = Body_Typess.objects.get(id=5)
+    d = {"fir": fir}
+    return render(request, 'admin_pannel/admin_kapha.html',d)
+
+def ADMIN_PITTA(request):
+    if request.method == "POST":
+        c = request.POST
+        cname = c['txt']
+        dimg = request.FILES['img']
+        abow = Body_Typess.objects.filter(id=6)
+        abow.update(image=dimg, cont=cname)
+        return redirect('admin_ectomorph')
+    fir = Body_Typess.objects.get(id=6)
+    d = {"fir": fir}
+    return render(request, 'admin_pannel/admin_pitta.html',d)
+
+def ADMIN_ECTOMORPH(request):
+    if request.method == "POST":
+        c = request.POST
+        cname = c['txt']
+        dimg = request.FILES['img']
+        abow = Body_Typess.objects.filter(id=1)
+        abow.update(image=dimg, cont=cname)
+        return redirect('admin_ectomorph')
+    fir = Body_Typess.objects.get(id=1)
+    d = {"fir": fir}
+    return render(request, 'admin_pannel/admin_ectomorph.html',d)
+
+def ADMIN_MESOMORPH(request):
+    if request.method == "POST":
+        c = request.POST
+        cname = c['txt']
+        dimg = request.FILES['img']
+        abow = Body_Typess.objects.filter(id=2)
+        abow.update(image=dimg, cont=cname)
+        return redirect('admin_ectomorph')
+    fir = Body_Typess.objects.get(id=2)
+    d = {"fir": fir}
+    return render(request, 'admin_pannel/admin_mesomorph.html',d)
+
+def ADMIN_ENDOMORPH(request):
+    if request.method == "POST":
+        c = request.POST
+        cname = c['txt']
+        dimg = request.FILES['img']
+        abow = Body_Typess.objects.filter(id=3)
+        abow.update(image=dimg, cont=cname)
+        return redirect('admin_ectomorph')
+    fir = Body_Typess.objects.get(id=3)
+    d = {"fir": fir}
+    return render(request, 'admin_pannel/admin_endomorph.html',d)
+
+
+def ADMIN_INDEX(request):
+    camd = Appionment.objects.all()
+    cam = camd[:8]
+    camde = Contact.objects.all()
+    camh = camde[:8]
+    d = {"camh":camh,"cam":cam}
+
+    return render(request, 'admin_pannel/admin_index.html',d)
+
+
+
+
+
+
 
 
 #####     admin delete ####
 
-def ADMIN_GALLERY_DELETE(request, del_id):
-    GALLERY.objects.get(id=del_id).delete()
-    return redirect('admin_gallery')
-
-
-def ADMIN_NEWS_DELETE(request, del_id):
-    NEWSS.objects.get(id=del_id).delete()
-    return redirect('admin_news')
-
-
-def ADMIN_EVENTS_DELETE(request, del_id):
-    EVENTSS.objects.get(id=del_id).delete()
-    return redirect('admin_events')
-
 
 def ADMIN_BLOGS_DYNAMICC_DELETE(request, del_id):
-    BLOGS.objects.get(id=del_id).delete()
+    Blogs.objects.get(id=del_id).delete()
     return redirect('admin_blogs')
+#######new############
 
 
 def ADMIN_TEAM_DELETE(request, del_id):
     Team.objects.get(id=del_id).delete()
-    return redirect('admin_about')
+    return redirect('admin_Teams')
 
-
-def ADMIN_TESTIMONY_DELETE(request, del_id):
-    TESTIMONY.objects.get(id=del_id).delete()
-    return redirect('admin_home')
-
-
-def ADMIN_CAMPS_DELETE(request, del_id):
-    Camps.objects.get(id=del_id).delete()
-    return redirect('admin_camps')
-
-
-def ADMIN_PARTICPANT_DELETE(request, del_id):
-    CAMPparticipants.objects.get(id=del_id).delete()
-    return redirect('admin_camps')
+def ADMIN_SERVICE_DELETE(request, del_id):
+    Services.objects.get(id=del_id).delete()
+    return redirect('admin_services')
 
     ####  admin dynamic functions  #####
 
@@ -716,3 +551,10 @@ def ADMIN_CAMPS_DYNAMICC(request, camp_id):
     d = {"blosingle": blosingle, "par": par}
     return render(request, 'admin_camps_dynamic.html', d)
 
+    ####  admin dynamic functions  #####
+
+def ADMIN_BLOGS_DYNAMICC(request,bdy_id):
+    blosingle = Blogs.objects.get(id=bdy_id)
+    d = {"blosingle":blosingle}
+    return render(request, 'admin_pannel/admin_blogs_dynamic.html',d)
+###########new#########

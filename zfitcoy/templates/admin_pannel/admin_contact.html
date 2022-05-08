@@ -1,4 +1,4 @@
-{% extends 'admin_base.html' %}
+{% extends 'admin_pannel/admin_base.html' %}
 {% load static %}
 {% block body %}
 
@@ -25,7 +25,7 @@
                   <thead>
                    <tr>
                     <th>Full Name</th>
-                     <th>Mobile No</th>
+
                      <th>Email</th>
                      <th>Message</th>
                    </tr>
@@ -33,8 +33,7 @@
                       {% for i in con %}
                    <tbody>
                    <tr>
-                    <td>{{ i.fname }}{{ i.lname }}</td>
-                    <td>{{ i.mob }}</td>
+                    <td>{{ i.name }}</td>
                     <td>{{ i.email }}</td>
                     <td>{{ i.message }}</td>
                    </tr>

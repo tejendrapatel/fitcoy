@@ -35,7 +35,7 @@ urlpatterns = [
     path('Pitta',BODY_TYPES6,name='body_types6'),
     path('Quiz',MCQS, name='mcqs'),
     path('UserVerification',QUIZ_USER, name='quiz_user'),
-    path('Thankyou',THANKYOU, name='thankyou'),
+    path('thankyou',THANKYOU, name='thankyou'),
 
     ####           dynamic urls       #######
     path('Quiz/<int:blo_id>/',MCQ_ANSWER, name='mcq_answer'),
@@ -47,20 +47,31 @@ urlpatterns = [
 
     path('Logout/',LOGOUT,name='Logout'),
     path('Login/',LOGIN,name='Login'),
-    path('Forgot/',FORGOT,name='Forgot'),
     path('admin_index',ADMIN_INDEX,name= 'admin_index'),
     path('admin_contact',ADMIN_CONTACT,name= 'admin_contact'),
-    path('admin_opportunities',ADMIN_OPPORTUNITIES,name= 'admin_opportunities'),
-    path('admin_mail',ADMIN_MAIl,name= 'admin_mail'),
-    path('admin_about',ADMIN_ABOUT,name= 'admin_about'),
-    path('admin_home', ADMIN_HOME, name='admin_home'),
-    path('admin_home2', ADMIN_HOME2, name='admin_home2'),
-    path('admin_home3', ADMIN_HOME3, name='admin_home3'),
-    path('admin_home4', ADMIN_HOME4, name='admin_home4'),
-    path('admin_camps', ADMIN_CAMPS, name='admin_camps'),
-    path('admin_news', ADMIN_NEWS, name='admin_news'),
-    path('admin_gallery', ADMIN_GALLERY, name='admin_gallery'),
+    path('admin_appointment', ADMIN_APPOINTMENT, name='admin_appointment'),
     path('admin_blogs', ADMIN_BLOGS, name='admin_blogs'),
-    path('admin_events', ADMIN_EVENTS, name='admin_events'),
-    path('admin_youtube',ADMIN_YOUTUBE, name='admin_youtube'),
+    path('admin_Teams', ADMIN_TEAMS, name='admin_Teams'),
+    path('admin_services', ADMIN_SERVICES, name='admin_services'),
+    path('admin_air',ADMIN_AIR,name= 'admin_air'),
+    path('admin_water',ADMIN_WATER,name= 'admin_water'),
+    path('admin_fire',ADMIN_FIRE,name= 'admin_fire'),
+    path('admin_space',ADMIN_SPACE,name= 'admin_space'),
+    path('admin_earth',ADMIN_EARTH,name= 'admin_earth'),
+    path('admin_vaata',ADMIN_VAATA,name= 'admin_vatta'),
+    path('admin_kapha',ADMIN_KAPHA,name= 'admin_kapha'),
+    path('admin_pitta',ADMIN_PITTA,name= 'admin_pitta'),
+    path('admin_ectomorph',ADMIN_ECTOMORPH,name= 'admin_ectomorph'),
+    path('admin_mesomorph',ADMIN_MESOMORPH,name= 'admin_mesomorph'),
+    path('admin_endomorph',ADMIN_ENDOMORPH,name= 'admin_endomorph'),
+
+
+
+####### admin dynamic functions  ######
+    path('admin_blogs_dynamic/<int:bdy_id>/', ADMIN_BLOGS_DYNAMICC, name='admin_blogs_dynamic'),
+
+##############admin delete ###########
+    path('admin_blogs_delete/<int:del_id>/', ADMIN_BLOGS_DYNAMICC_DELETE, name='admin_blogs_delete'),
+    path('admin_team_delete/<int:del_id>/', ADMIN_TEAM_DELETE, name='admin_team_delete'),
+path('admin_service_delete/<int:del_id>/', ADMIN_SERVICE_DELETE, name='admin_service_delete'),
 ]+ static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

@@ -102,7 +102,7 @@ function calcBMI(array) {
           var BMRresult = calcBMR(inputArray);
 
           $('#result').html(
-             '<h3><span>TDEE: </span><p>' + result.toString() + ' </p><b>Calories per day</b></h3>' + '<h3><span>BMI: </span><p>' + BMIresult.toString() + '</p><b> kg/m<sup>2</sup></b></h3>' + '<h3><span>BMR: </span><p>'  + BMRresult.toString() + '</p></h3>' + '<table class="table resultanswer"><thead class="thead-dark"><tr><th scope="col"></th><th scope="col">Mild<span>(0.5kg/week)</span></th><th scope="col">Moderate<span>(0.7kg/week)</span></th><th scope="col">Extreme<span>(1kg/week)</span></th></tr></thead><tbody><tr><th scope="row">Weight Loss</th><td>' + (result.toString() - 531) + '</td><td>' + (result.toString() - 750) + '</td><td>' + (result.toString() - 1071) + '</td></tr><tr><th scope="row">Weight Gain</th><td>' + (parseInt(result.toString()) + 531) + '</td><td>' + (parseInt(result.toString()) + 750) + '</td><td>' + (parseInt(result.toString()) + 1071) + '</td></tr></tbody></table>'
+             '<h3><span>TDEE: </span><p>' + result.toString() + ' </p><b>Calories per day</b></h3>' + '<h3><span>BMI: </span><p>' + BMIresult.toString() + '</p><b> kg/m<sup>2</sup></b></h3>' + '<h3><span>BMR: </span><p>'  + BMRresult.toString() + '</p></h3>' + '<table class="table resultanswer"><thead class="thead-dark"><tr><th scope="col"></th><th scope="col">Mild<span>(0.5kg/week)</span></th><th scope="col">Moderate<span>(0.7kg/week)</span></th><th scope="col">Extreme<span>(1kg/week)</span></th></tr></thead>'
           );
        }
      var reg = /^(?:\d*\.\d{1,2}|\d+)$/;
