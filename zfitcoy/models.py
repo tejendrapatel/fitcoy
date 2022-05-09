@@ -15,7 +15,16 @@ class Blogs(models.Model):
     name =  models.CharField(max_length=50)
     detail = RichTextField(null=True)
     image = models.FileField(null=True)
+    date = models.DateField(null=True)
+    def __str__(self):
+        return self.name
+
+class Comments(models.Model):
+    name =  models.CharField(max_length=50)
+    email = models.EmailField(null=True)
+    image = models.FileField(null=True)
     date = models.DateField(auto_now=True)
+    message =  models.TextField(null=True)
     def __str__(self):
         return self.name
 

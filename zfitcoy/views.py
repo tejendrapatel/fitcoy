@@ -123,8 +123,17 @@ def BLOG_SINGLE(request,blo_id):
     pop = Blogs.objects.all().order_by('id')
     p = pop[:3]
     ca = Blog_category.objects.all()
-    
-    d = {"blosingle":blosingle,"ca":ca,"p":p}
+    comc = Comments.objects.all()
+    com = comc[:10]
+    if request.method == "POST":
+        c = request.POST
+        cname = c['nam']
+        clname = c['mai']
+        imgg = request.FILES['img']
+        cmessage = c['com']
+        Comments.objects.create(name=cname,email=clname,image=imgg,message=cmessage)
+        return redirect('blogs')
+    d = {"blosingle":blosingle,"ca":ca,"p":p,"com":com}
     return render(request, 'dynamic/blog-single.html',d)
 
 def SERVICES_SINGLE(request,blo_id):
@@ -334,10 +343,12 @@ def ADMIN_BLOGS(request):
         bhead = request.POST['nam']
         bimg = request.FILES['img']
         btxt = request.POST['txt']
+        datt = request.POST['dat']
+
         fir = Blog_category.objects.get(name=bcat)
         fir.content = bcat
         fir.save()
-        Blogs.objects.create( name=bhead, image=bimg, detail=btxt)
+        Blogs.objects.create( name=bhead, image=bimg, detail=btxt,date=datt)
     bl = Blogs.objects.all()
     d = {"bl": bl}
     return render(request, 'admin_pannel/admin_blogs.html', d)
