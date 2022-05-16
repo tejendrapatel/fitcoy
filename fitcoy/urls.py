@@ -35,7 +35,7 @@ urlpatterns = [
     path('Pitta',BODY_TYPES6,name='body_types6'),
     path('Quiz',MCQS, name='mcqs'),
     path('UserVerification',QUIZ_USER, name='quiz_user'),
-    path('Thankyou',THANKYOU, name='thankyou'),
+    path('thankyou',THANKYOU, name='thankyou'),
 
     ####           dynamic urls       #######
     path('Quiz/<int:blo_id>/',MCQ_ANSWER, name='mcq_answer'),
@@ -43,4 +43,37 @@ urlpatterns = [
     path('Blog/<int:blo_id>/',BLOG_CATEGORY_FILTER, name='blog_category_filter'),
     path('Service/<int:blo_id>/',SERVICES_SINGLE, name='services_single'),
     path('Team/<int:blo_id>/',TEAM_SINGLE, name='team_single'),
+#####       admin pannel   ##########
+
+    path('Logout/',LOGOUT,name='Logout'),
+    path('Login/',LOGIN,name='Login'),
+    path('admin_index',ADMIN_INDEX,name= 'admin_index'),
+    path('admin_contact',ADMIN_CONTACT,name= 'admin_contact'),
+    path('admin_appointment', ADMIN_APPOINTMENT, name='admin_appointment'),
+    path('admin_blogs', ADMIN_BLOGS, name='admin_blogs'),
+    path('admin_Teams', ADMIN_TEAMS, name='admin_Teams'),
+    path('admin_services', ADMIN_SERVICES, name='admin_services'),
+    path('admin_air',ADMIN_AIR,name= 'admin_air'),
+    path('admin_water',ADMIN_WATER,name= 'admin_water'),
+    path('admin_fire',ADMIN_FIRE,name= 'admin_fire'),
+    path('admin_space',ADMIN_SPACE,name= 'admin_space'),
+    path('admin_earth',ADMIN_EARTH,name= 'admin_earth'),
+    path('admin_vaata',ADMIN_VAATA,name= 'admin_vatta'),
+    path('admin_kapha',ADMIN_KAPHA,name= 'admin_kapha'),
+    path('admin_pitta',ADMIN_PITTA,name= 'admin_pitta'),
+    path('admin_ectomorph',ADMIN_ECTOMORPH,name= 'admin_ectomorph'),
+    path('admin_mesomorph',ADMIN_MESOMORPH,name= 'admin_mesomorph'),
+    path('admin_endomorph',ADMIN_ENDOMORPH,name= 'admin_endomorph'),
+
+
+
+####### admin dynamic functions  ######
+    path('admin_blogs_dynamic/<int:bdy_id>/', ADMIN_BLOGS_DYNAMICC, name='admin_blogs_dynamic'),
+
+##############admin delete ###########
+    path('admin_blogs_delete/<int:del_id>/', ADMIN_BLOGS_DYNAMICC_DELETE, name='admin_blogs_delete'),
+    path('admin_team_delete/<int:del_id>/', ADMIN_TEAM_DELETE, name='admin_team_delete'),
+    path('admin_service_delete/<int:del_id>/', ADMIN_SERVICE_DELETE, name='admin_service_delete'),
+
+    path('search/',SEARCH,name='search'),
 ]+ static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

@@ -35,7 +35,6 @@
 			<div class="blog-item-content mt-5">
 				<div class="blog-item-meta mb-3">
 					<span class="text-color-2 text-capitalize mr-3"><i class="icofont-book-mark mr-2"></i> {{ blosingle.categorys }}</span>
-					<span class="text-muted text-capitalize mr-3"><i class="icofont-comment mr-2"></i>5 Comments</span>
 					<span class="text-black text-capitalize mr-3"><i class="icofont-calendar mr-2"></i>{{ blosingle.date }}</span>
 				</div> 
 
@@ -46,6 +45,65 @@
 		</div>
 	</div>
 
+	<div class="col-lg-12">
+		<div class="comment-area mt-4 mb-5">
+			<h4 class="mb-4">Comments  </h4>
+			<ul class="comment-tree list-unstyled">
+				{% for i in com %}
+				<li class="mb-5">
+					<div class="comment-area-box">
+						<div class="comment-thumb float-left">
+							<img alt="" src="{{ i.image.url }}" style="width: 70px;height:80px" class="img-fluid">
+						</div>
+
+						<div class="comment-info">
+							<h5 class="mb-1">{{ i.name }}</h5>
+							<span class="date-comm">Posted {{ i.date }}</span>
+						</div>
+						
+
+						<div class="comment-content mt-3">
+							<p>{{ i.message }}</p>
+						</div>
+					</div>
+				</li>
+				{% endfor %}
+
+			
+			</ul>
+		</div>
+	</div>
+
+
+	<div class="col-lg-12">
+		<form class="comment-form my-5" method="POST" enctype="multipart/form-data">
+			{% csrf_token %}
+			<h4 class="mb-4">Write a comment</h4>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+						<input class="form-control" type="text" name="nam"  placeholder="Name:">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<input class="form-control" type="file" name="img" placeholder="Name:">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<input class="form-control" type="text" name="mai" placeholder="Email:">
+					</div>
+				</div>
+			</div>
+
+
+			<textarea class="form-control mb-4" name="com"  cols="30" rows="5" placeholder="Comment"></textarea>
+
+			<input class="btn btn-main-2 btn-round-full" type="submit" name="submit-contact" id="submit_contact" value="Submit Message">
+		</form>
+	</div>
+
 	
 		
 
@@ -53,6 +111,9 @@
 	
 </div>
             </div>
+			
+
+			
             <div class="col-lg-4">
                 <div class="sidebar-wrap pl-lg-4 mt-5 mt-lg-0">
 	<div class="sidebar-widget search  mb-3 ">

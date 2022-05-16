@@ -120,7 +120,7 @@
     </div>
     <!-- Page Preloder -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<a href="https://api.whatsapp.com/send?phone=+918700955586" class="float" target="_blank">
+	<a href="https://api.whatsapp.com/send?phone=+919009202414" class="float" target="_blank">
 		
 	<i class="fa fa-whatsapp my-float"></i>
 	</a>
@@ -169,11 +169,11 @@
     <section class="search-bar-wrap">
         <span class="search-close"><i class="fa fa-close"></i></span>
         <div class="search-bar-table">
-            <div class="search-bar-tablecell">
-                <div class="search-bar-inner">
-                    <h2>Search</h2>
-                    <form action="#">
-                        <input type="search" placeholder="Type Keywords">
+            <div class="search-bar-tablecell" style="background-color:#000000;"  >
+                <div class="search-bar-inner" >
+                    <h2 style="color: #fff;" >Search</h2>
+                    <form action="/search" method="get">
+                        <input type="search" id="key" name="key" placeholder="Type Keywords">
                         <button type="submit">Search</button>
                     </form>
                 </div>
@@ -185,7 +185,7 @@
     <div class="top-social">
         <div class="top-social-links" >
             <ul>
-                <li><a href="https://www.facebook.com/profile.php?id=100075640911160" style="color: #000000;background-color: #FDC20A;"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.facebook.com/Fitcoy-106695185198594/" style="color: #000000;background-color: #FDC20A;"><i class="fa fa-facebook"></i></a></li>
                 <li><a href="https://www.instagram.com/fitmoreons/?utm_medium=copy_link" style="color: #000000;background-color: #FDC20A;"><i class="fa fa-instagram"></i></a></li>
                 <li><a href="https://twitter.com/Fitcoy21" style="color: #000000;background-color: #FDC20A;"><i class="fa fa-twitter"></i></a></li>
                 <li><a href="https://www.linkedin.com/in/fit-coy-989186228/" style="color: #000000;background-color: #FDC20A;"><i class="fa fa-linkedin"></i></a></li>
@@ -197,20 +197,23 @@
     <!-- Hero Slider Section Begin -->
     <section class="hero-slider">
         <div class="slide-items owl-carousel" >
-            <div class="single-slide set-bg active" data-setbg="{% static 'header/img/bg_1.jpg' %}">
-                <a href="https://www.youtube.com/watch?v=SEVuD_djKrU" class="play-btn pop-up"><i class="fa fa-play"></i></a>
-                <h1>Be Fit.Top Gym</h1>
-                <a href="#" class="primary-btn">Read More</a>
+            <div class="single-slide set-bg active" data-setbg="{% static 'header/img/qq.jpg' %}">
+                
+            </div>
+            <div class="single-slide set-bg" data-setbg="{% static 'header/img/bg_1.jpg' %}">
+                <a href="https://www.youtube.com/channel/UCZ7bHEUHop4qI_psN3zxjyw" target="_blank" class="play-btn "><i class="fa fa-play"></i></a>
+                <h1>Be Fit.Top Trainer</h1>
+                <a href="{% url 'services' %}" class="primary-btn">Buy Our Services</a>
             </div>
             <div class="single-slide set-bg" data-setbg="{% static 'header/img/bg_2.jpg' %}">
-                <a href="https://www.youtube.com/watch?v=SEVuD_djKrU" class="play-btn pop-up"><i class="fa fa-play"></i></a>
+                <a href="https://www.youtube.com/channel/UCZ7bHEUHop4qI_psN3zxjyw" target="_blank"  class="play-btn "><i class="fa fa-play"></i></a>
                 <h1>Be Fit.Top Trainer</h1>
-                <a href="#" class="primary-btn">Read More</a>
+                <a href="{% url 'services' %}" class="primary-btn">Buy Our Services</a>
             </div>
             <div class="single-slide set-bg" data-setbg="{% static 'header/img/bg_3.jpg' %}">
-                <a href="https://www.youtube.com/watch?v=SEVuD_djKrU" class="play-btn pop-up"><i class="fa fa-play"></i></a>
+                <a href="https://www.youtube.com/channel/UCZ7bHEUHop4qI_psN3zxjyw" target="_blank"  class="play-btn "><i class="fa fa-play"></i></a>
                 <h1>Be Fit.Top Body</h1>
-                <a href="#" class="primary-btn">Read More</a>
+                <a href="{% url 'services' %}" class="primary-btn">Buy Our Services</a>
             </div>
         </div> 
     </section>
@@ -374,19 +377,19 @@
 			<div class="col-lg-8">
 				<div class="row">
 					<div class="col-lg-4 col-md-6 col-sm-6">
-						<div class="award-img" style="height:250px;border-radius:25px;box-shadow: -2px 0px 15px 0px rgb(24 24 24 / 50%);background-color:#129848" >
+						<div class="award-img" style="height:250px;border-radius:25px;box-shadow: -2px 0px 15px 0px rgb(24 24 24 / 50%);background-color:owl-crousel" >
 							<img src="{% static 'header/img/11.png' %}" style="height: 90%;" alt="" class="img-fluid">
 						</div>
                          <a href="{% url 'body_types4' %}">  <h5 style="font-size:23px;text-align:center;">Vatta</h5></a>
 					</div>
 					<div class="col-lg-4 col-md-6 col-sm-6">
-						<div class="award-img" style="height:250px;border-radius:25px;box-shadow: -2px 0px 15px 0px rgb(24 24 24 / 50%);background-color:#129848" >
+						<div class="award-img" style="height:250px;border-radius:25px;box-shadow: -2px 0px 15px 0px rgb(24 24 24 / 50%);background-color:owl-crousel" >
 							<img src="{% static 'header/img/12.png' %}" style="height: 90%;" alt="" >
 						</div>
                         <a href="{% url 'body_types5' %}">  <h5 style="font-size:23px;text-align:center;">Kapha</h5></a>
 					</div>
 					<div class="col-lg-4 col-md-6 col-sm-6">
-						<div class="award-img" style="height:250px;border-radius:25px;box-shadow: -2px 0px 15px 0px rgb(24 24 24 / 50%);background-color:#129848">
+						<div class="award-img" style="height:250px;border-radius:25px;box-shadow: -2px 0px 15px 0px rgb(24 24 24 / 50%);background-color:owl-crousel">
 							<img src="{% static 'header/img/13.png' %}" style="height: 90%;" alt="" class="img-fluid">
 						</div>
                         <a href="{% url 'body_types6' %}">  <h5 style="font-size:23px;text-align:center;">Pitta</h5></a>

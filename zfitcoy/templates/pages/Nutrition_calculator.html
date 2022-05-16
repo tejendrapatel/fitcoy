@@ -156,11 +156,11 @@
     <div class="top-social">
         <div class="top-social-links">
          <ul>
-            <li><a href="#" style="color: #000000;background-color: #FDC20A;"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#" style="color: #000000;background-color: #FDC20A;"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="#" style="color: #000000;background-color: #FDC20A;"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#" style="color: #000000;background-color: #FDC20A;"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="#" style="color: #000000;background-color: #FDC20A;"><i class="fa fa-whatsapp"></i></a></li>
+            <li><a href="#" style="color: #000000;background-color: #a7f200;"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#" style="color: #000000;background-color: #a7f200;"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#" style="color: #000000;background-color: #a7f200;"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#" style="color: #000000;background-color: #a7f200;"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#" style="color: #000000;background-color: #a7f200;"><i class="fa fa-whatsapp"></i></a></li>
         </ul>
         </div>
     </div>
@@ -266,12 +266,13 @@
                                     </div>
                                  </fieldset>
                                  <fieldset class="form-group">
-                                    <div class="row">
-                                    <legend class="col-form-label col-sm-3 pt-0"></legend>
+                                    <div class="row" style="display:none" >
+                                    <legend class="col-form-label col-sm-3 pt-0">BMR Formula:</legend>
                                        <div class="col-sm-9">
                                           <div class="col-md-12">
-                                             <input class="form-check-input" type="hidden" name="formula" value="opt1" id="opt1" checked />
+                                             <input class="form-check-input" type="radio" name="formula" value="opt1" id="opt1" checked />
                                              <label class="form-check-label" for="opt1">
+                                                Harris Benedict
                                              </label>
                                           </div>
                                          
@@ -336,8 +337,8 @@
                   </div>
                </div>
                <div class="col-md-7 tdeetext">
-                <img src="{% static 'header/img/nut.jpg' %}"   alt="" class="img-fluid">
-               </div>
+                  <img src="{% static 'header/img/nut.jpg' %}"   alt="" class="img-fluid">
+                 </div>
             </div>
          </div>
       </div>
@@ -361,7 +362,7 @@
 			<div class="col-lg-4 mr-auto col-sm-6" style="margin-top: 60px;">
 				<div class="widget mb-5 mb-lg-0">
 					<div class="logo mb-4">
-						<img src="{% static 'header/img/logo_head.png' %}" style="width:30%"  alt="" class="img-fluid">
+						<img src="{% static 'header/img/logo_head.png' %}" style="width: 30%;" alt="" class="img-fluid">
 					</div>
 					<p style="color: #fff;line-height: 2.5em;text-align: justify;">The Fit India Company is a health, fitness and well-being-oriented firm that brings to you an inclusive health and wellness array to provide you the utmost of your health from inside-out.</p>
 
@@ -375,30 +376,30 @@
 
 			<div class="col-lg-2 col-md-6 col-sm-6" style="margin-top: 60px;">
 				<div class="widget mb-5 mb-lg-0">
-					<h4 class="text-capitalize mb-3" style="color: #FDC20A;font-size: 22px;font-weight: 700;">Quick Links</h4>
+					<h4 class="text-capitalize mb-3" style="color: #a7f200;font-size: 22px;font-weight: 700;">Quick Links</h4>
 					<div class="divider mb-4"></div>
 
 					<ul class="list-unstyled footer-menu lh-35">
-						<li><a style="color:#129848 ;font-size: 15px;line-height: 2.5em;" href="{% url 'about' %}">About </a></li>
-						<li><a style="color:#129848 ;font-size: 15px;line-height: 2.5em;" href="{% url 'team' %}">Teams</a></li>
-						<li><a style="color:#129848 ;font-size: 15px;line-height: 2.5em;" href="{% url 'services' %}">Services</a></li>
-						<li><a style="color:#129848 ;font-size: 15px;line-height: 2.5em;" href="{% url 'blogs' %}">Blogs</a></li>
-						<li><a style="color:#129848 ;font-size: 15px;line-height: 2.5em;" href="{% url 'contact' %}">Contact</a></li>
+						<li><a style="color:#ffee00 ;font-size: 15px;line-height: 2.5em;" href="{% url 'about' %}">About </a></li>
+						<li><a style="color:#ffee00 ;font-size: 15px;line-height: 2.5em;" href="{% url 'team' %}">Teams</a></li>
+						<li><a style="color:#ffee00 ;font-size: 15px;line-height: 2.5em;" href="{% url 'services' %}">Services</a></li>
+						<li><a style="color:#ffee00 ;font-size: 15px;line-height: 2.5em;" href="{% url 'blogs' %}">Blogs</a></li>
+						<li><a style="color:#ffee00 ;font-size: 15px;line-height: 2.5em;" href="{% url 'contact' %}">Contact</a></li>
 					</ul>
 				</div>
 			</div>
 
 			<div class="col-lg-2 col-md-6 col-sm-6" style="margin-top: 60px;">
 				<div class="widget mb-5 mb-lg-0">
-					<h4 class="text-capitalize mb-3" style="color: #FDC20A;font-size: 22px;font-weight: 700;">Support</h4>
+					<h4 class="text-capitalize mb-3" style="color: #a7f200;font-size: 22px;font-weight: 700;">Support</h4>
 					<div class="divider mb-4"></div>
 
 					<ul class="list-unstyled footer-menu lh-35" >
-						<li><a style="color:#129848 ;font-size: 15px;line-height: 2.5em;" href="{% url 'companey_lisence' %}">Why Choose Us</a></li>
-						<li><a style="color:#129848 ;font-size: 15px;line-height: 2.5em;" href="{% url 'terms_conditions' %}">Terms & Conditions</a></li>
-						<li><a style="color:#129848;font-size: 15px;line-height: 2.5em;" href="{% url 'privacy_policy' %}">Privacy Policy</a></li>
-						<li><a style="color:#129848 ;font-size: 15px;line-height: 2.5em;" href="{% url 'companey_support' %}">Company Support </a></li>
-						<li><a style="color:#129848 ;font-size: 15px;line-height: 2.5em;" href="{% url 'faqss' %}">FAQuestions</a></li>
+						<li><a style="color:#ffee00 ;font-size: 15px;line-height: 2.5em;" href="{% url 'companey_lisence' %}">Why Choose Us</a></li>
+						<li><a style="color:#ffee00 ;font-size: 15px;line-height: 2.5em;" href="{% url 'terms_conditions' %}">Terms & Conditions</a></li>
+						<li><a style="color:#ffee00;font-size: 15px;line-height: 2.5em;" href="{% url 'privacy_policy' %}">Privacy Policy</a></li>
+						<li><a style="color:#ffee00 ;font-size: 15px;line-height: 2.5em;" href="{% url 'companey_support' %}">Company Support </a></li>
+						<li><a style="color:#ffee00 ;font-size: 15px;line-height: 2.5em;" href="{% url 'faqss' %}">FAQuestions</a></li>
 						
 					</ul>
 				</div>
@@ -406,21 +407,21 @@
 
 			<div class="col-lg-3 col-md-6 col-sm-6" style="margin-top: 60px;">
 				<div class="widget widget-contact mb-5 mb-lg-0">
-					<h4 class="text-capitalize mb-3" style="color: #FDC20A;font-size: 22px;font-weight: 700;">Get in Touch</h4>
+					<h4 class="text-capitalize mb-3" style="color: #a7f200;font-size: 22px;font-weight: 700;">Get in Touch</h4>
 					<div class="divider mb-4"></div>
 
 					<div class="footer-contact-block mb-4">
 						<div class="icon d-flex align-items-center">
-							<i class="icofont-email mr-3" style="color: #129848;"></i>
-							<span class="h6 mb-0" style="color: #129848;">Support Available for 24/7</span>
+							<i class="icofont-email mr-3" style="color: #ffee00;"></i>
+							<span class="h6 mb-0" style="color: #ffee00;">Support Available for 24/7</span>
 						</div>
 						<h4  class="mt-2"><a style="color: #fff;" href="fit.indcoy@gmail.com">fit.indcoy@gmail.com</a></h4>
 					</div>
 
 					<div class="footer-contact-block">
 						<div class="icon d-flex align-items-center">
-							<i class="icofont-support mr-3" style="color: #129848;"></i>
-							<span class="h6 mb-0" style="color: #129848;">Mon to Fri : 08:30 - 18:00</span>
+							<i class="icofont-support mr-3" style="color: #ffee00;"></i>
+							<span class="h6 mb-0" style="color: #ffee00;">Mon to Fri : 08:30 - 18:00</span>
 						</div>
 						<h4  class="mt-2"><a style="color: #fff;" href="+918700955586">+918700955586</a></h4>
 					</div>
@@ -432,7 +433,7 @@
 			<div class="row align-items-center justify-content-between">
 				<div class="col-lg-6">
 					<div class="copyright" style="background-color: #000000;font-size: 16px;color:#fff">
-						All rights reserved <span class="text-color" style="color: #FDC20A;">Design</span>&<span class="text-color" style="color: #FDC20A;">Developed</span> by <a href="https://www.vistaarwebx.com/" target="_blank" style="color:#fff"><img src="{% static 'header/img/logos.png' %}" style="width:4%;">istaarwebX</a>
+						All rights reserved <span class="text-color" style="color: #a7f200;">Design</span>&<span class="text-color" style="color: #a7f200;">Developed</span> by <a href="https://www.vistaarwebx.com/" target="_blank" style="color:#fff"><img src="{% static 'header/img/logos.png' %}" style="width:4%;">istaarwebX</a>
 					</div>
 				</div>
 				<div class="col-lg-6">
@@ -457,4 +458,3 @@
 		</div>
 	</div>
 </footer>
-   

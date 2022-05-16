@@ -1,0 +1,121 @@
+{% extends 'admin_pannel/admin_base.html' %}
+{% load static %}
+{% block body %}
+
+
+
+
+<div class="clearfix"></div>
+
+  <div class="content-wrapper">
+    <div class="container-fluid">
+
+      
+
+      <div class="col-lg-12">
+        <div class="card">
+          <div class="card-body">
+          <div class="card-title">Upload New Team</div>
+          <hr>
+           <form method="POST" enctype="multipart/form-data">
+               {% csrf_token %}
+
+           <div class="form-group">
+               <label for="input-1"> Name</label>
+               <input type="text" required name="nam" class="form-control" id="input-1" placeholder="Enter  Name">
+               </div>     
+
+           <div class="form-group">
+               <label for="input-1">Post</label>
+               <input type="text" required name= "pos" class="form-control" id="input-1" placeholder="Enter Post">
+               </div>
+            <div class="form-group">
+              <label for="input-3">Image</label>
+              <input type="file" name="img" class="form-control" id="input-3" >
+              </div>
+
+                 <div class="form-group">
+                   <label for="input-3">Facebook</label>
+                   <input type="url" name="fb" class="form-control" id="input-3" placeholder="Enter Url">
+                  </div>
+                <div class="form-group">
+                   <label for="input-3">Twitter</label>
+                   <input type="url" name="tw" class="form-control" id="input-3" placeholder="Enter Url">
+                  </div>
+                <div class="form-group">
+                   <label for="input-3">Instagram</label>
+                   <input type="url" name="in" class="form-control" id="input-3" placeholder="Enter Url">
+                  </div>
+                <div class="form-group">
+                   <label for="input-3">Linkedin</label>
+                   <input type="url" name="li" class="form-control" id="input-3" placeholder="Enter Url">
+                  </div>
+
+
+           <div class="form-group">
+            <div class="col-sm-12" style="width: 900px;" >
+            <textarea cols="0" id="text_content" name="about" rows="10" data-sample-short></textarea>
+            </div>
+          </div>
+             <br>
+          <div class="form-group">
+           <input type="submit" name="cpma"  value="Upload"  class="btn btn-light px-5">
+         </div>
+         </form>
+        </div>
+        </div>
+     </div>
+         
+
+<div class="col-lg-13">
+           <div class="card">
+            <div class="card-body">
+          
+            <div class="tab-content p-3">  
+              
+
+
+                  <div class="tab-pane active " id="last">
+	       <div class="table-responsive">
+          <div class="container-fluid">
+                <div class="row el-element-overlay">
+                  {% for i in camp %}
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                            <div class="el-card-item" style="width:270px;height:200px">
+                                <div class="el-card-avatar el-overlay-1"> <img src="{{ i.image.url }}" style="width:100%;height:200px" alt="user" />
+                                </div>
+                                
+                            </div>
+                            <div class="el-card-content">
+                                    <h4 class="m-b-0"> &nbsp {{ i.name }}</h4> <span> &nbsp  &nbsp POST  - {{ i.post }}  </span>
+                                </div>
+                            <a href ="{% url 'admin_team_delete' i.id %}"><button type="button" class="btn btn-light btn-block waves-effect waves-light" > <i class="fa fa-bin"></i> &nbsp Delete</button></a>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+               </div>
+	   </div>
+
+	 </div>
+	</div><!--End Row-->
+
+      <!--End Dashboard Content-->
+
+	<!--start overlay-->
+		  <div class="overlay toggle-menu"></div>
+		<!--end overlay-->
+
+
+    <!-- End container-fluid-->
+
+    </div>
+  </div>
+
+
+
+
+
+{% endblock %}
