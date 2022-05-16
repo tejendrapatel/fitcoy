@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="description" content="TopGym Template">
+    <meta name="keywords" content="TopGym, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fitcoy</title>
+    <link rel="icon" href="{% static 'header/img/logo_head.png' %}" type="image/gif" sizes="20x20">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,500,700,900" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{% static 'header/css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'header/css/font-awesome.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'header/css/owl.carousel.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'header/css/magnific-popup.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'header/css/barfiller.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'header/css/slicknav.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'header/css/style.css' %}" type="text/css">
+    <style>.columns {
+        float: left;
+        width: 32%;
+        padding: 0 10px;
+      }
+      
+      /* Remove extra left and right margins, due to padding */
+      .rows {margin: 0 -5px;}
+      
+      /* Clear floats after the columns */
+      .rows:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      /* Responsive columns */
+      @media screen and (max-width: 600px) {
+        .columns {
+          width: 100%;
+          display: block;
+          margin-bottom: 20px;
+        }
+      }
+      
+      /* Style the counter cards */
+      .cards {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        padding: 16px;
+        text-align: center;
+        background-color: #f1f1f1;
+      }
+      </style></style>
+         <style>
+            .dropbtn {
+              background-color: transparent;
+              color: white;
+              padding: 16px;
+              font-size: 16px;
+              border: none;
+            }
+            
+            .dropdown {
+              position: relative;
+              display: inline-block;
+            }
+            
+            .dropdown-content {
+              display: none;
+              position: absolute;
+              background-color: #000000;
+              min-width: 16px;
+              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+              z-index: 1;
+            }
+            
+            .dropdown-content a {
+              float: left;  
+              color: black;
+              padding: 12px 16px;
+              text-decoration: none;
+              display: block;
+            }
+            
+            .dropdown-content a:hover {background-color: #FDC20A;}
+            
+            .dropdown:hover .dropdown-content {display: block;}
+            
+            .float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	left:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+            </style>
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://api.whatsapp.com/send?phone=+918700955586" class="float" target="_blank">
+      
+    <i class="fa fa-whatsapp my-float"></i>
+    </a>
+  
+        <!-- Header Section Begin -->
+        <header class="header-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="main-menu">
+                            <div class="logo">
+                                <a href="{% url 'home' %}">
+                                    <img src="{% static 'header/img/logo_colour.png' %}" style="width:120px;height:100px" alt="">
+                                </a>
+                            </div>
+                            <nav class="mobile-menu">
+                                <ul >
+                                    <li ><a href="{% url 'home' %}" style="font-size: 15px;margin-top: 16px;" >Home</a></li>
+                                    <li><a href="{% url 'about' %}"  style="font-size: 15px;margin-top: 16px;"  >About us</a></li>
+                                    <li><a href="{% url 'team' %}" style="font-size: 15px;margin-top: 16px;"  >Our Team</a></li>
+                                    <li><a href="{% url 'services' %}" style="font-size: 15px;margin-top: 16px;"  ></a></li>
+                                    <li><a href="{% url 'services' %}" style="font-size: 15px;margin-top: 16px; "  >Services</a></li>
+                                    </li>
+                                    <li><div class="dropdown">
+                                        <a href=""><button class="dropbtn" style="font-size: 15px;margin-left: -30px;font-weight: 900px;"  >RESOURCES<img src="{% static 'header/img/ado.png' %}" style="width:15px;margin-top: -3px;"></button></a>
+                                        <div class="dropdown-content">
+                                          <a href="{% url 'blogs' %}" style="font-size: 15px;"  >Blogs</a>
+                                          <a href="{% url 'recipie' %}" style="font-size: 15px;"  >Recipes</a>
+                                        </div>
+                                      </div>
+                                    </li>
+                                    <li><a href="{% url 'contact' %}" style="font-size: 15px;"  >Contact</a></li>
+                                    <li class="search-btn search-trigger"><i class="fa fa-search"></i></li>
+                                </ul>
+                            </nav>
+                            
+                            <div id="mobile-menu-wrap"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+<!-- Search Bar Begin -->
+<section class="search-bar-wrap">
+  <span class="search-close"><i class="fa fa-close"></i></span>
+  <div class="search-bar-table">
+      <div class="search-bar-tablecell" style="background-color:#000000;"  >
+          <div class="search-bar-inner" >
+              <h2 style="color: #fff;" >Search</h2>
+              <form action="/search" method="get">
+                  <input type="search" id="key" name="key" placeholder="Type Keywords">
+                  <button type="submit">Search</button>
+              </form>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- Search Bar End -->
+    <!-- Top Social Begin -->
+    <div class="top-social">
+        <div class="top-social-links">
+          <ul>
+            <li><a href="https://www.facebook.com/Fitcoy-106695185198594/" style="color: #000000;background-color: #FDC20A;"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/fitmoreons/?utm_medium=copy_link" style="color: #000000;background-color: #FDC20A;"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com/Fitcoy21" style="color: #000000;background-color: #FDC20A;"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/fit-coy-989186228/" style="color: #000000;background-color: #FDC20A;"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=+919009202414"  target="_blank"  style="color: #000000;background-color: #FDC20A;"><i class="fa fa-whatsapp"></i></a></li>
+        </ul>
+        </div>
+    </div>
+    <!-- Top Social End -->
+
+
+    <!-- Js Plugins -->
+    <script src="{% static 'header/js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'header/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'header/js/jquery.slicknav.js' %}"></script>
+    <script src="{% static 'header/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'header/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'header/js/circle-progress.min.js' %}"></script>
+    <script src="{% static 'header/js/jquery.barfiller.js' %}"></script>
+    <script src="{% static 'header/js/main.js' %}"></script>
+</body>
+
+</html>

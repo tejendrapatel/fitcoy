@@ -1,0 +1,162 @@
+{% include 'header.html' %}
+{% load static %}
+
+<h1 style="padding-top:132px;background-color:#000000"></h1>
+<section class="page-title bg-1" style="background-image: url({{ blosingle.image.url }});height:600px;">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block text-center"><br><br><br><br>
+
+
+          <!-- <ul class="list-inline breadcumb-nav">
+            <li class="list-inline-item"><a href="index.html" class="text-white">Home</a></li>
+            <li class="list-inline-item"><span class="text-white">/</span></li>
+            <li class="list-inline-item"><a href="#" class="text-white-50">News details</a></li>
+          </ul> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section blog-wrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="row">
+	<div class="col-lg-12 mb-5">
+		<div class="single-blog-item">
+			<img src="images/blog/blog-1.jpg" alt="" class="img-fluid">
+
+			<div class="blog-item-content mt-5">
+				<div class="blog-item-meta mb-3">
+					<span class="text-color-2 text-capitalize mr-3"><i class="icofont-book-mark mr-2"></i> {{ blosingle.categorys }}</span>
+					<span class="text-black text-capitalize mr-3"><i class="icofont-calendar mr-2"></i>{{ blosingle.date }}</span>
+				</div> 
+
+				<h2 class="mb-4 text-md">{{ blosingle.name }}</h2>
+
+				{{ blosingle.detail|safe }}
+			</div>
+		</div>
+	</div>
+
+	<div class="col-lg-12">
+		<div class="comment-area mt-4 mb-5">
+			<h4 class="mb-4">Comments  </h4>
+			<ul class="comment-tree list-unstyled">
+				{% for i in com %}
+				<li class="mb-5">
+					<div class="comment-area-box">
+						<div class="comment-thumb float-left">
+							<img alt="" src="{{ i.image.url }}" style="width: 70px;height:80px" class="img-fluid">
+						</div>
+
+						<div class="comment-info">
+							<h5 class="mb-1">{{ i.name }}</h5>
+							<span class="date-comm">Posted {{ i.date }}</span>
+						</div>
+						
+
+						<div class="comment-content mt-3">
+							<p>{{ i.message }}</p>
+						</div>
+					</div>
+				</li>
+				{% endfor %}
+
+			
+			</ul>
+		</div>
+	</div>
+
+
+	<div class="col-lg-12">
+		<form class="comment-form my-5" method="POST" enctype="multipart/form-data">
+			{% csrf_token %}
+			<h4 class="mb-4">Write a comment</h4>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+						<input class="form-control" type="text" name="nam"  placeholder="Name:">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<input class="form-control" type="file" name="img" placeholder="Name:">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<input class="form-control" type="text" name="mai" placeholder="Email:">
+					</div>
+				</div>
+			</div>
+
+
+			<textarea class="form-control mb-4" name="com"  cols="30" rows="5" placeholder="Comment"></textarea>
+
+			<input class="btn btn-main-2 btn-round-full" type="submit" name="submit-contact" id="submit_contact" value="Submit Message">
+		</form>
+	</div>
+
+	
+		
+
+
+	
+</div>
+            </div>
+			
+
+			
+            <div class="col-lg-4">
+                <div class="sidebar-wrap pl-lg-4 mt-5 mt-lg-0">
+	<div class="sidebar-widget search  mb-3 ">
+		<h5>Search Here</h5>
+		<form action="#" class="search-form">
+			<input type="text" class="form-control" placeholder="search">
+			<i class="ti-search"></i>
+		</form>
+	</div>
+
+
+	<div class="sidebar-widget category mb-3">
+		<h5 class="mb-4">Categories</h5>
+		{% for i in ca %}
+		<ul class="list-unstyled">
+		  <li class="align-items-center">
+			<a href="{% url 'blog_category_filter' i.id %}">{{ i.name }}</a>
+		  </li>
+		</ul>
+		{% endfor %}
+	</div>
+
+
+<div class="sidebar-widget latest-post mb-3">
+<h5>Popular Posts</h5>
+{% for i in p %}
+<div class="py-2">
+<span class="text-sm text-muted">{{ i.date }}</span>
+<h6 class="my-2"><a href="{% url 'blog_single' i.id %}">{{ i.name }}</a></h6>
+</div>
+{% endfor %}
+
+</div>
+
+
+	
+
+</div>
+            </div>   
+        </div>
+    </div>
+</section>
+
+
+
+{% include 'footer.html' %}

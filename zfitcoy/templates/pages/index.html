@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="zxx" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="description" content="TopGym Template">
+    <meta name="keywords" content="TopGym, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fitcoy</title>
+    <link rel="icon" href="{% static 'header/img/logo_head.png' %}" type="image/gif" sizes="20x20">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,500,700,900" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{% static 'header/css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'header/css/font-awesome.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'header/css/owl.carousel.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'header/css/magnific-popup.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'header/css/barfiller.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'header/css/slicknav.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'header/css/style.css' %}" type="text/css">
+    <style>.columns {
+        float: left;
+        width: 32%;
+        padding: 0 10px;
+      }
+      
+      /* Remove extra left and right margins, due to padding */
+      .rows {margin: 0 -5px;}
+      
+      /* Clear floats after the columns */
+      .rows:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      /* Responsive columns */
+      @media screen and (max-width: 600px) {
+        .columns {
+          width: 100%;
+          display: block;
+          margin-bottom: 20px;
+        }
+      }
+      
+      /* Style the counter cards */
+      .cards {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        padding: 16px;
+        text-align: center;
+        background-color: #f1f1f1;
+      }
+      </style>
+      <style>
+                      
+                      .float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	left:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+        .dropbtn {
+          background-color: transparent;
+          color: white;
+          padding: 16px;
+          font-size: 16px;
+          border: none;
+        }
+        
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #000000;
+          min-width: 16px;
+        
+          z-index: 1;
+        }
+        
+        .dropdown-content a {
+          float: left;  
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+        
+        .dropdown-content a:hover {background-color: #FDC20A;}
+        
+        .dropdown:hover .dropdown-content {display: block;}
+        
+        
+        </style>
+  
+   
+</head>
+
+<body>
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+    <!-- Page Preloder -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<a href="https://api.whatsapp.com/send?phone=+919009202414" class="float" target="_blank">
+		
+	<i class="fa fa-whatsapp my-float"></i>
+	</a>
+
+    <!-- Header Section Begin -->
+    <header class="header-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="main-menu">
+                        <div class="logo">
+                            <a href="{% url 'home' %}">
+                                <img src="{% static 'header/img/logo_colour.png' %}" style="width:120px;height:100px" alt="">
+                            </a>
+                        </div>
+                        <nav class="mobile-menu">
+                            <ul>
+                                <li ><a href="{% url 'home' %}" style="font-size: 15px;margin-top: 16px;" >Home</a></li>
+                                <li><a href="{% url 'about' %}"  style="font-size: 15px;margin-top: 16px;"  >About us</a></li>
+                                <li><a href="{% url 'team' %}" style="font-size: 15px;margin-top: 16px;"  >Our Team</a></li>
+                                <li><a href="{% url 'services' %}" style="font-size: 15px;margin-top: 16px;"  ></a></li>
+                                <li><a href="{% url 'services' %}" style="font-size: 15px;margin-top: 16px;">Services</a></li>
+                                </li>
+                                <li><div class="dropdown">
+                                    <a href=""><button class="dropbtn" style="font-size: 15px;margin-left: -30px;"  >RESOURCES<img src="{% static 'header/img/ado.png' %}" style="width:15px;margin-top: -3px;">
+                                    </button></a> 
+                                    <div class="dropdown-content">
+                                        <a href="{% url 'blogs' %}" style="font-size: 15px;"  >Blogs</a>
+                                      <a href="{% url 'recipie' %}" style="font-size: 15px;"  >Recipes</a>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li><a href="{% url 'contact' %}" style="font-size: 15px;"  >Contact</a></li>
+                                <li class="search-btn search-trigger"><i class="fa fa-search"></i></li>
+                            </ul>
+                        </nav>
+                        
+                        <div id="mobile-menu-wrap"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+ <!-- Search Bar Begin -->
+ <section class="search-bar-wrap">
+    <span class="search-close"><i class="fa fa-close"></i></span>
+    <div class="search-bar-table">
+        <div class="search-bar-tablecell" style="background-color:#000000;"  >
+            <div class="search-bar-inner" >
+                <h2 style="color: #fff;" >Search</h2>
+                <form action="/search" method="get">
+                    <input type="search" id="key" name="key" placeholder="Type Keywords">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Search Bar End -->
+    <!-- Top Social Begin -->
+    <div class="top-social">
+        <div class="top-social-links" >
+            <ul>
+                <li><a href="https://www.facebook.com/Fitcoy-106695185198594/" style="color: #000000;background-color: #FDC20A;"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/fitmoreons/?utm_medium=copy_link" style="color: #000000;background-color: #FDC20A;"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://twitter.com/Fitcoy21" style="color: #000000;background-color: #FDC20A;"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/fit-coy-989186228/" style="color: #000000;background-color: #FDC20A;"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=+919009202414"  target="_blank"  style="color: #000000;background-color: #FDC20A;"><i class="fa fa-whatsapp"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Top Social End -->
+    <!-- Hero Slider Section Begin -->
+    <section class="hero-slider">
+        <div class="slide-items owl-carousel" >
+            <div class="single-slide set-bg active" data-setbg="{% static 'header/img/qq.jpg' %}">
+               
+            </div>
+            <div class="single-slide set-bg active" data-setbg="{% static 'header/img/bg_1.jpg' %}">
+                <a href="https://www.youtube.com/channel/UCZ7bHEUHop4qI_psN3zxjyw" target="_blank" class="play-btn "><i class="fa fa-play"></i></a>
+                <h1>Be Fit.Top Gym</h1>
+                <a href="{% url 'services' %}" class="primary-btn">Buy Our Services</a>
+            </div>
+            <div class="single-slide set-bg" data-setbg="{% static 'header/img/bg_2.jpg' %}">
+                <a href="https://www.youtube.com/channel/UCZ7bHEUHop4qI_psN3zxjyw" target="_blank" class="play-btn "><i class="fa fa-play"></i></a>
+                <h1>Be Fit.Top Trainer</h1>
+                <a href="{% url 'services' %}" class="primary-btn">Buy Our Services</a>
+            </div>
+            <div class="single-slide set-bg" data-setbg="{% static 'header/img/bg_3.jpg' %}">
+                <a href="https://www.youtube.com/channel/UCZ7bHEUHop4qI_psN3zxjyw" target="_blank" class="play-btn"><i class="fa fa-play"></i></a>
+                <h1>Be Fit.Top Body</h1>
+                <a href="{% url 'services' %}" class="primary-btn">Buy Our Services</a>
+            </div>
+        </div> 
+    </section>
+    <!-- Hero Slider End -->
+    <!-- Trainer Section Begin -->
+   <!-- Page Preloder -->
+  
+                 
+    <!-- Features Section Begin -->
+    <section class="features-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="single-features">
+                        <div class="features-img">
+                            <a href="{% url 'bmi' %}"><img src="{% static 'header/img/n1.jpg' %}" style="border-radius: 10px;" alt=""></a>
+                        </div>
+                        <div class="feature-text">
+                            <div class="feature-icon" style="background-color: #FDC20A;box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);">
+                                <a href="{% url 'bmi' %}"><img src="{% static 'header/img/bbmi.png' %}" style="width:40%" alt=""></a> 
+                            </div>
+                            <a href="{% url 'bmi' %}"><h5>BMI calculator</h5></a>
+                            <p style="color: #000000;">Feed in your Age, height, and weight to know your present health-about</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="single-features">
+                        <div class="features-img">
+                            <a href=""> <img src="{% static 'header/img/quiz.jpg' %}" style="border-radius: 10px;" alt=""></a>
+                        </div>
+                        <div class="feature-text">
+                            <div class="feature-icon"  style="background-color: #FDC20A;box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);">
+                                <a href="{% url 'quiz_user' %}"><img src="{% static 'header/img/bquiz.png' %}" style="width:40%"  alt=""></a>
+                            </div>
+                            <a href="{% url 'quiz_user' %}"><h5>Quiz</h5></a>
+                            <p style="color: #000000;">Take our MBS (Mind Body Soul) quiz and know what the nature has to offer you based on your existence. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="single-features">
+                        <div class="features-img">
+                            <a href="{% url 'nutrition_calculator' %}"><img src="{% static 'header/img/nn1.jpg' %}" style="border-radius: 10px;" alt=""></a>
+                        </div>
+                        <div class="feature-text">
+                            <div class="feature-icon"  style="background-color: #FDC20A;box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);">
+                                <a href="{% url 'nutrition_calculator' %}"> <img src="{% static 'header/img/bnutrition.png' %}" style="width:40%" alt=""></a>
+                            </div>
+                            <a href="{% url 'nutrition_calculator' %}"> <h5>Nutrition Calculator</h5></a>
+                            <p style="color: #000000;">Know how many calories to consume based on your health goals. Rest, we are here for your rescue!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Features Section End -->
+   {% include 'gallery2.html' %}
+   
+     
+   
+    
+     
+            {% include 'service_crousel.html' %}
+         
+
+
+
+
+
+
+<!-- # -->
+
+
+    <section class="section appoinment" style="background-image: url({% static 'header/img/qwe.jpg' %});">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 ">
+                    <div class="appoinment-content">
+                        <img src="{% static 'header/img/opp.jpg' %}"  style="width:520px;border-radius: 15px;" alt="" class="img-fluid">
+                        <div class="emergency" style="border-radius: 15px;background-color: #fff;box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);margin-left: -10px;">
+                            <h2 class="text-lg" style="color: #000000;font-size: 24px;margin-left: -10px;"  ><i class="icofont-phone-circle text-lg" style="color: #000000;font-size: 26px;" ></i>+91 900 920 2414 , </i>+91 810 306 5374</h2>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-10 ">
+                    <div class="appoinment-wrap mt-5 mt-lg-0">
+                        <h2 class="mb-2 title-color" style="color: #000000;">Book appoinment</h2>
+                        <p class="mb-4" style="color: #000000;">Mollitia dicta commodi est recusandae iste, natus eum asperiores corrupti qui velit . Iste dolorum atque similique praesentium soluta.</p>
+                             <form  class="appoinment-form" method="POST">
+                                 {% csrf_token %}
+                        <div class="row" >
+                            <div class="col-lg-6" >
+                                <div class="form-group" >
+                                    <input  name="name"  type="text" class="form-control" style="border-radius: 15px;" placeholder="Full Name" >
+                                </div>
+                            </div>
+    
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input name="phone" id="phone" type="text" style="border-radius: 15px;"  onkeypress="return event.charCode >= 45 &amp;&amp; event.charCode <= 57 &amp;&amp; event.charCode!=47" required minlength="10" maxlength="10" class="form-control" placeholder="Mobile Number">
+                                </div>
+                            </div>
+                        
+    
+                             <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="date" name="date"  type="text" style="border-radius: 15px;"  class="form-control" placeholder="dd/mm/yyyy">
+                                </div>
+                            </div>
+    
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="time" name="time"  type="text" style="border-radius: 15px;"  class="form-control" placeholder="Time">
+                                </div>
+                            </div>
+                      
+                        </div>
+                        <div class="form-group-2 mb-4">
+                            <textarea style="font-size: 15px;background-color: black;border-radius: 15px;" name="message" id="message" class="form-control" rows="6" placeholder="Your Message"></textarea>
+                        </div>
+                        <br><br>
+                         <input type="submit" class="btn btn-main btn-round-full" style="width: 410px;height:50px;font-size: 20px;border-radius: 15px;background-color: #FDC20A;color: #000000;border-color: #FDC20A ;" value="Make Appoinment " />
+                   
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <!-- Upcoming Event Begin -->
+    <section class="upcoming-event-section spad-2"style="background: linear-gradient(rgba(209%,246%,237%, 1), rgba(33%,255%,191%, 0.64)), url({% static 'header/img/back.jpg' %}); >
+        <div class="container" >
+         <div class="row justify-content-center">
+            <div class="col-lg-10 text-center">
+               <div class="section-title">
+                   <h2 style="color:#000000;" >Know your Body</h2>
+                   <div class="divider mx-auto my-4"></div>
+               </div>
+           </div>
+       </div>
+
+
+    <section class="section awards" style="margin-top:-150px">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-lg-4">
+				<h2 class="title" style="color:#000000">Ayurvedic Body Types</h2>
+				<div class="divider mt-4 mb-5 mb-lg-0"></div>
+			</div>
+			<div class="col-lg-8">
+				<div class="row">
+					<div class="col-lg-4 col-md-6 col-sm-6">
+						<div class="award-img" style="height:250px;border-radius:25px;box-shadow: -2px 0px 15px 0px rgb(24 24 24 / 50%);background-color:#129848" >
+							<img src="{% static 'header/img/11.png' %}" style="height: 90%;" alt="" class="img-fluid">
+						</div>
+                         <a href="{% url 'body_types4' %}">  <h5 style="font-size:23px;text-align:center;">Vatta</h5></a>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6">
+						<div class="award-img" style="height:250px;border-radius:25px;box-shadow: -2px 0px 15px 0px rgb(24 24 24 / 50%);background-color:#129848" >
+							<img src="{% static 'header/img/12.png' %}" style="height: 90%;" alt="" >
+						</div>
+                        <a href="{% url 'body_types5' %}">  <h5 style="font-size:23px;text-align:center;">Kapha</h5></a>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6">
+						<div class="award-img" style="height:250px;border-radius:25px;box-shadow: -2px 0px 15px 0px rgb(24 24 24 / 50%);background-color:#129848">
+							<img src="{% static 'header/img/13.png' %}" style="height: 90%;" alt="" class="img-fluid">
+						</div>
+                        <a href="{% url 'body_types6' %}">  <h5 style="font-size:23px;text-align:center;">Pitta</h5></a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+	<div class="container">
+		<div class="row align-items-center">
+
+			<div class="col-lg-8">
+				<div class="row">
+					<div class="col-lg-4 col-md-6 col-sm-6">
+						<div class="award-img" style="height:250px;border-radius:25px;box-shadow: -2px 0px 15px 0px rgb(24 24 24 / 50%);background-color:#FDC20A" >
+							<img src="{% static 'header/img/11.png' %}" style="height: 90%;" alt="" class="img-fluid">
+						</div>
+                         <a href="{% url 'body_types1' %}">  <h5 style="font-size:23px;text-align:center;">Ectomorph</h5></a>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6">
+						<div class="award-img" style="height:250px;border-radius:25px;box-shadow: -2px 0px 15px 0px rgb(24 24 24 / 50%);background-color:#FDC20A" >
+							<img src="{% static 'header/img/12.png' %}" style="height: 90%;" alt="" class="img-fluid">
+						</div>
+                         <a href="{% url 'body_types2' %}">  <h5 style="font-size:23px;text-align:center;">Mesomorph</h5></a>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6">
+						<div class="award-img" style="height:250px;border-radius:25px;box-shadow: -2px 0px 15px 0px rgb(24 24 24 / 50%);background-color:#FDC20A" >
+							<img src="{% static 'header/img/13.png' %}" style="height: 90%;" alt="" class="img-fluid">
+						</div>
+                         <a href="{% url 'body_types3' %}">  <h5 style="font-size:23px;text-align:center;">Endomorph</h5></a>
+					</div>
+			</div>
+				</div>
+            <div class="col-lg-4">
+				<h2 class="title" style="color:#000000" >Science of body types</h2>
+				<div class="divider mt-4 mb-5 mb-lg-0"></div>
+			</div>
+			</div>
+		</div>
+	</div>
+
+    </section>
+
+    
+    
+    {% include 'blogs.html' %}
+ {% include 'footer.html' %}
+
+    <!-- Js Plugins -->
+    <script src="{% static 'header/js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'header/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'header/js/jquery.slicknav.js' %}"></script>
+    <script src="{% static 'header/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'header/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'header/js/circle-progress.min.js' %}"></script>
+    <script src="{% static 'header/js/jquery.barfiller.js' %}"></script>
+    <script src="{% static 'header/js/main.js' %}"></script>
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://md-aqil.github.io/images/swiper.min.css">
+<style>
+
+
+.accordion .accordion-item {
+  border-bottom: 1px solid #fff;
+}
+.accordion .accordion-item button[aria-expanded=true] {
+  border-bottom: 1px solid #c20000;
+}
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+.accordion button:hover, .accordion button:focus {
+  cursor: pointer;
+  color: #c20000;
+}
+.accordion button:hover::after, .accordion button:focus::after {
+  cursor: pointer;
+  color: #c20000;
+  border: 1px solid #c20000;
+}
+.accordion button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+}
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+.accordion button[aria-expanded=true] {
+  color: #c20000;
+}
+.accordion button[aria-expanded=true] .icon::after {
+  width: 0;
+}
+.accordion button[aria-expanded=true] + .accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 2em 0;
+}
+</style>
+
+</head>
+<body>
+<section class="spacer">
+
+  <div class="container">
+    <h2>Frequently Asked Questions</h2>
+    <div class="accordion">
+      {% for i in fa %}
+      <div class="accordion-item">
+        <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">{{ i.quction }}</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>{{ i.answer }}</p>
+        </div>
+      </div>
+    {% endfor %}
+   
+    </div>
+  </div>
+</section>
+
+</body>
+<script>
+  const items = document.querySelectorAll(".accordion button");
+  
+  function toggleAccordion() {
+    const itemToggle = this.getAttribute("aria-expanded");
+  
+    for (i = 0; i < items.length; i++) {
+      items[i].setAttribute("aria-expanded", "false");
+    }
+  
+    if (itemToggle == "false") {
+      this.setAttribute("aria-expanded", "true");
+    }
+  }
+  
+  items.forEach((item) => item.addEventListener("click", toggleAccordion));
+  </script>
+  
+
+</html>

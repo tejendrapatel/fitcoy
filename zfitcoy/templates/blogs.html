@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	  {% load static %}
+    <title>Yogalax - Free Bootstrap 4 Template by Colorlib</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'yoga/css/open-iconic-bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'yoga/css/animate.css' %}">
+    
+    <link rel="stylesheet" href="{% static 'yoga/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'yoga/css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'yoga/css/magnific-popup.css' %}">
+
+    <link rel="stylesheet" href="{% static 'yoga/css/aos.css' %}">
+
+    <link rel="stylesheet" href="{% static 'yoga/css/ionicons.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'yoga/css/bootstrap-datepicker.css' %}">
+    <link rel="stylesheet" href="{% static 'yoga/css/jquery.timepicker.css' %}">
+
+    
+    <link rel="stylesheet" href="{% static 'yoga/css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'yoga/css/icomoon.css' %}">
+    <link rel="stylesheet" href="{% static 'yoga/css/style.css' %}">
+  </head>
+  <body>
+  
+ 
+
+    <section class="ftco-section bg-light">
+      <div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-10 text-center">
+			   <div class="section-title">
+				   <h2 style="color:#000000;" >Our Recent Blogs</h2>
+				   <div class="divider mx-auto my-4"></div>
+			   </div>
+		   </div>
+	   </div>
+        <div class="row d-flex">
+		{% for i in blog %}
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end"  style="width: 352px;border-radius: 10px;">
+              <a href="{% url 'blog_single' i.id %}" class="block-20" style="background-image: url({{ i.image.url }});">
+              </a>
+              <div class="text p-4 float-right d-block">
+              	<div class="d-flex align-items-center pt-2 mb-4">
+              		<div class="one">
+              			<span class="day" style="color: #FDC20A;">28</span>
+              		</div>
+              		<div class="two">
+              			<span class="yr">2021</span>
+              			<span class="mos" >September</span>
+              		</div>
+              	</div>
+                <h3 class="heading mt-2"><a href="{% url 'blog_single' i.id %}">{{ i.categorys }}</a></h3>
+                <p>{{ i.name }}</p>
+              </div>
+            </div>
+          </div>
+         {% endfor %}
+         
+        </div>
+      </div>
+    </section>
+
+	
+  
+
+  
+
+  <script src="{% static 'yoga/js/jquery.min.js' %}"></script>
+  <script src="{% static 'yoga/js/jquery-migrate-3.0.1.min.js' %}"></script>
+  <script src="{% static 'yoga/js/popper.min.js' %}"></script>
+  <script src="{% static 'yoga/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'yoga/js/jquery.easing.1.3.js' %}"></script>
+  <script src="{% static 'yoga/js/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'yoga/js/jquery.stellar.min.js' %}"></script>
+  <script src="{% static 'yoga/js/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'yoga/js/jquery.magnific-popup.min.js' %}"></script>
+  <script src="{% static 'yoga/js/aos.js' %}"></script>
+  <script src="{% static 'yoga/js/jquery.animateNumber.min.js' %}"></script>
+  <script src="{% static 'yoga/js/bootstrap-datepicker.js' %}"></script>
+  <script src="{% static 'yoga/js/jquery.timepicker.min.js' %}"></script>
+  <script src="{% static 'yoga/js/scrollax.min.js' %}"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="{% static 'yoga/js/google-map.js' %}"></script>
+  <script src="{% static 'yoga/js/main.js' %}"></script>
+    
+  </body>
+</html>

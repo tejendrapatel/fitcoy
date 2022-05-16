@@ -1,0 +1,126 @@
+{% extends 'admin_pannel/admin_base.html' %}
+{% load static %}
+{% block body %}
+
+<div class="clearfix"></div>
+	
+  <div class="content-wrapper">
+    <div class="container-fluid">
+
+  <!--Start Dashboard Content-->
+
+	<div class="card mt-3">
+    <div class="card-content">
+        <div class="row row-group m-0">
+           
+            <div class="col-12 col-lg-6 col-xl-3 border-light">
+              <div class="card-body">
+                <a href="{% url 'admin_Teams' %}"><h5 class="text-white mb-0"><center><img src="{% static 'admin/images/team (1).png' %}" style="height: 50px; width:50px" ></center></h5></a>
+                <a href="{% url 'admin_Teams' %}"><p class="mb-0 text-white large-font"><center>Teams </center></p></a>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-6 col-xl-3 border-light">
+              <div class="card-body">
+                <a href="{% url 'admin_services' %}"><h5 class="text-white mb-0"><center><img src="{% static 'admin/images/target.png' %}" style="height: 50px; width:50px" ></center></h5></a>
+                <a href="{% url 'admin_services' %}"><p class="mb-0 text-white large-font"><center>Services </center></p></a>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-3 border-light">
+              <div class="card-body">
+                <a href="{% url 'admin_appointment' %}"><h5 class="text-white mb-0"><center><img src="{% static 'admin/images/deadline.png' %}" style="height: 50px; width:50px" ></center></h5></a>
+                <a href="{% url 'admin_appointment' %}"><p class="mb-0 text-white large-font"><center>Appointment</center></p></a>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-3 border-light">
+              <div class="card-body">
+                <a href="{% url 'admin_contact' %}"><h5 class="text-white mb-0"><center><img src="{% static 'admin/images/contact.png' %}" style="height: 50px; width:50px" ></center></h5></a>
+                <a href="{% url 'admin_contact' %}"><p class="mb-0 text-white large-font"><center>Contact</center></p></a>
+              </div>
+            </div>
+
+
+        </div>
+    </div>
+ </div>  
+ 
+
+
+	
+	<div class="row">
+	 <div class="col-12 col-lg-12">
+	   <div class="card">
+	     <div class="card-header">Appointment Request
+		
+	       <div class="table-responsive">
+                 <table class="table align-items-center table-flush table-borderless">
+                  <thead>
+                   <tr>
+                     <th>Name</th>
+                     <th>Date</th>
+                     <th>Time</th>
+                     <th>Mobile</th>
+
+                   </tr>
+                   </thead>
+                   <tbody>
+                    {% for i in cam %}
+                    <tbody><tr>
+                     <td>{{ i.name }}</td>
+                     <td>{{ i.date }}</td>
+                     <td>{{ i.mobile }}</td>
+                     <td>{{ i.time }}</td>
+
+                  </tbody>
+                      {% endfor %}
+                 </tbody></table>
+               </div>
+	   </div>
+	 </div>
+	</div><!--End Row-->
+
+
+         <div class="col-12 col-lg-12">
+	   <div class="card">
+	     <div class="card-header">Contact Request
+
+	       <div class="table-responsive">
+                 <table class="table align-items-center table-flush table-borderless">
+                  <thead>
+                   <tr>
+                     <th>Name</th>
+                     <th>Email</th>
+                     <th>Mobile</th>
+
+                   </tr>
+                   </thead>
+                   <tbody>
+                    {% for i in camh %}
+                    <tbody><tr>
+                     <td>{{ i.name }}</td>
+                     <td>{{ i.email }}</td>
+                     <td>{{ i.mobile }}</td>
+
+
+                  </tbody>
+                      {% endfor %}
+                 </tbody></table>
+               </div>
+	   </div>
+	 </div>
+	</div><!--End Row-->
+
+
+
+      
+	  
+	<!--start overlay-->
+		  <div class="overlay toggle-menu"></div>
+		<!--end overlay-->
+		
+    </div>
+
+    <!-- End container-fluid-->
+
+    
+      {% endblock %}

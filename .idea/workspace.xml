@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="380ac8e0-c513-4fe5-bc4f-1b332849b148" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/zfitcoy/templates/admin_pannel/admin_air.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfitcoy/templates/admin_pannel/admin_earth.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfitcoy/templates/admin_pannel/admin_ectomorph.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfitcoy/templates/admin_pannel/admin_endomorph.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfitcoy/templates/admin_pannel/admin_fire.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfitcoy/templates/admin_pannel/admin_kapha.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfitcoy/templates/admin_pannel/admin_mesomorph.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfitcoy/templates/admin_pannel/admin_pitta.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfitcoy/templates/admin_pannel/admin_services.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfitcoy/templates/admin_pannel/admin_space.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfitcoy/templates/admin_pannel/admin_vatta.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfitcoy/templates/admin_pannel/admin_water.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fitcoy/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/fitcoy/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/css/animated.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/css/fontawesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/css/owl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/css/templatemo-seo-dream.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/fonts/Flaticon.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/fonts/flexslider-icon.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/fonts/flexslider-icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/fonts/flexslider-icon.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/fonts/flexslider-icon.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/fonts/slick.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/fonts/slick.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/fonts/slick.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/fonts/slick.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/images/about-left-image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/images/banner-dec-left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/images/banner-dec-right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/images/banner-right-image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/images/contact-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/images/contact-icon-01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/images/contact-icon-02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/images/contact-icon-03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/images/features-icon-black-01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/images/features-icon-black-02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/images/features-icon-white-01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/images/features-icon-white-02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/images/features-number-01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/images/features-number-02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/images/features-number-03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/images/features-number-04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/images/logo-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/images/portfolio-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/images/portfolio-02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/images/portfolio-03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/images/portfolio-04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/images/portfolio-05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/images/portfolio-06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/images/service-icon-01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/images/service-icon-02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/images/service-icon-03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/js/animation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/js/custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/js/imagesloaded.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/js/isotope.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/js/owl-carousel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/js/tabs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/vendor/bootstrap/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/vendor/bootstrap/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/vendor/bootstrap/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/vendor/jquery/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/vendor/jquery/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/vendor/jquery/jquery.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/vendor/jquery/jquery.slim.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/vendor/jquery/jquery.slim.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/static/assets/vendor/jquery/jquery.slim.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/templates/admin/air.html" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/templates/admin/air.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/templates/admin_pannel/admin_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/templates/admin_pannel/admin_base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/templates/admin_pannel/admin_blogs.html" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/templates/admin_pannel/admin_blogs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/templates/admin_pannel/admin_blogs_dynamic.html" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/templates/admin_pannel/admin_blogs_dynamic.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/templates/admin_pannel/admin_camps.html" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/templates/admin_pannel/admin_team.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/templates/admin_pannel/admin_contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/templates/admin_pannel/admin_contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/templates/admin_pannel/admin_home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/templates/admin_pannel/admin_home2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/templates/admin_pannel/admin_home3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/templates/admin_pannel/admin_home4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/templates/admin_pannel/admin_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/templates/admin_pannel/admin_index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/templates/admin_pannel/admin_oppurtunities.html" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/templates/admin_pannel/admin_Appointment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/templates/admin_pannel/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/templates/admin_pannel/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/templates/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/templates/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/templates/pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/templates/pages/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/templates/quiz.html" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/templates/quiz.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfitcoy/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/zfitcoy/views.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="279v0mfxzQXmCWPCPLgupNH4qe9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/zfitcoy/templates/admin_pannel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/zfitcoy/templates/admin_pannel" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="380ac8e0-c513-4fe5-bc4f-1b332849b148" name="Changes" comment="" />
+      <created>1648744897447</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1648744897447</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
