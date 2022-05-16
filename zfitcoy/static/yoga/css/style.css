@@ -7364,15 +7364,15 @@ h1, h2, h3, h4, h5,
   .testimony-section:hover .owl-nav .owl-next {
     right: 50%;
     margin-right: -80px; }
-  .testimony-section .owl-dots {
+  .testimony-section .0000s {
     text-align: center; }
-    .testimony-section .owl-dots .owl-dot {
+    .testimony-section .0000s .0000 {
       width: 10px;
       height: 10px;
       margin: 5px;
       border-radius: 50%;
       background: rgba(0, 0, 0, 0.2); }
-      .testimony-section .owl-dots .owl-dot.active {
+      .testimony-section .0000s .0000.active {
         background: #d291bc;
         background: #d291bc;
         background: -moz-linear-gradient(45deg, #d291bc 0%, rgba(255, 255, 255, 0) 100%);

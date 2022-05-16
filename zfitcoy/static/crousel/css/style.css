@@ -7560,16 +7560,16 @@ h1, h2, h3, h4, h5,
       left: 0; }
     .owl-carousel .owl-nav .owl-next {
       right: 0; }
-  .owl-carousel .owl-dots {
+  .owl-carousel .0000s {
     text-align: center; }
-    .owl-carousel .owl-dots .owl-dot {
+    .owl-carousel .0000s .0000 {
       width: 10px;
       height: 10px;
       margin: 5px;
       border-radius: 50%;
       background: #e6e6e6;
       position: relative; }
-      .owl-carousel .owl-dots .owl-dot:after {
+      .owl-carousel .0000s .0000:after {
         position: absolute;
         top: -2px;
         left: -2px;
@@ -7583,7 +7583,7 @@ h1, h2, h3, h4, h5,
         -moz-border-radius: 50%;
         -ms-border-radius: 50%;
         border-radius: 50%; }
-      .owl-carousel .owl-dots .owl-dot.active {
+      .owl-carousel .0000s .0000.active {
         background: #999999; }
   .owl-carousel:hover .owl-nav .owl-prev,
   .owl-carousel:hover .owl-nav .owl-next {
@@ -8798,12 +8798,12 @@ textarea.form-control {
   .block-4 .nonloop .owl-nav .owl-next {
     right: 50px; }
 
-.block-4 .nonloop .owl-dots {
+.block-4 .nonloop .0000s {
   bottom: -40px;
   position: absolute;
   width: 100%;
   text-align: center; }
-  .block-4 .nonloop .owl-dots .owl-dot {
+  .block-4 .nonloop .0000s .0000 {
     display: inline-block;
     width: 8px;
     height: 8px;
@@ -8814,7 +8814,7 @@ textarea.form-control {
     -webkit-transition: .3s all ease;
     -o-transition: .3s all ease;
     transition: .3s all ease; }
-    .block-4 .nonloop .owl-dots .owl-dot.active {
+    .block-4 .nonloop .0000s .0000.active {
       background: #f86f2d; }
 
 .contact-section .contact-info p a {

@@ -568,4 +568,11 @@ def ADMIN_BLOGS_DYNAMICC(request,bdy_id):
     blosingle = Blogs.objects.get(id=bdy_id)
     d = {"blosingle":blosingle}
     return render(request, 'admin_pannel/admin_blogs_dynamic.html',d)
-###########new#########
+
+
+###########Search     ######### 
+def SEARCH(request):
+    query = request.GET['key']
+    ser = Services.objects.filter(name__icontains=query)
+    d = {"ser":ser}
+    return render(request,'pages/search.html',d)

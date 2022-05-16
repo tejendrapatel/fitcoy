@@ -73,5 +73,7 @@ urlpatterns = [
 ##############admin delete ###########
     path('admin_blogs_delete/<int:del_id>/', ADMIN_BLOGS_DYNAMICC_DELETE, name='admin_blogs_delete'),
     path('admin_team_delete/<int:del_id>/', ADMIN_TEAM_DELETE, name='admin_team_delete'),
-path('admin_service_delete/<int:del_id>/', ADMIN_SERVICE_DELETE, name='admin_service_delete'),
+    path('admin_service_delete/<int:del_id>/', ADMIN_SERVICE_DELETE, name='admin_service_delete'),
+
+    path('search/',SEARCH,name='search'),
 ]+ static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
